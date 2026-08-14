@@ -765,7 +765,7 @@ glaucoplastic KnowledgeStudioApplication, application:
     version "0.1.0"
 
   states:
-    ActivePage = "materias"
+    ActivePage = "inicio"
     ActiveSessionId = 0
     SessionTitleDraft = ""
     SessionRenameDraft = ""
@@ -1146,17 +1146,17 @@ glaucoplastic KnowledgeStudioApplication, application:
           aside class = "ks-sidebar":
             divi class = "ks-brand":
               strong AppTitle
-              small "BNCC â†’ tÃ³pico â†’ OKF â†’ memÃ³ria Metis"
+              small "Conversa â†’ Processo â†’ OKF â†’ Safetensors"
             divi class = "ks-pill":
               text "Chave"
               span maskedKey(jsonStr(activeSettings(), "applicationKey"))
             nav class = "ks-nav":
-              button Materias:
-                text "MatÃ©rias BNCC"
               button Inicio:
                 text "InÃ­cio"
               button Conversas:
                 text "Conversas"
+              button Materias:
+                text "Habilidades BNCC"
               button Canvas:
                 text "Canvas"
               button DocumentosOkf:
@@ -1308,6 +1308,28 @@ glaucoplastic KnowledgeStudioApplication, application:
                     text "Produzir OKF deste ponto"
                   button RequestSafetensors:
                     text "Solicitar Safetensors"
+              article class = "ks-card":
+                divi class = "ks-toolbar":
+                  divi:
+                    strong "Habilidades BNCC"
+                    small "Acesse o OKF e a memória Metis sem sair do workspace de conversa."
+                  span class = "ks-pill":
+                    text $allRows("BnccSkill").len & " tópicos"
+                if activeBnccSkill().kind != JNull:
+                  divi class = "ks-row":
+                    strong jsonStr(activeBnccSkill(), "code", "Nenhuma habilidade selecionada")
+                    small jsonStr(activeBnccSkill(), "statement", "Selecione uma habilidade para abrir seu contexto.")
+                    divi class = "ks-footer":
+                      span class = "ks-pill":
+                        text "Tensor: " & jsonStr(activeBnccSkill(), "tensorStatus", "missing")
+                      button BnccSkillOpen(value = jsonStr(activeBnccSkill(), "code")):
+                        text "Continuar estudo"
+                else:
+                  small class = "ks-muted":
+                    text "O canvas, o chat e as conversas continuam sendo a entrada principal."
+                divi class = "ks-footer":
+                  button Materias:
+                    text "Abrir catálogo BNCC"
 
             if states.ActivePage == "conversas":
               article class = "ks-card":

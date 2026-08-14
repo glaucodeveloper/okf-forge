@@ -29,6 +29,8 @@ O aplicativo foi compilado com Nim, iniciado pelo runtime Network Web do GlaucoP
 - Ações de carregar e reconstruir memória/tensor Metis.
 - Navegação integrada com conversas, canvas, documentos OKF, produções e configurações.
 - Preservação do preview HTML e das telas PNG existentes.
+- O frontend anterior permanece como shell principal: conversa, chat contextual, mini canvas de processo, grafo de conhecimento e navegação original continuam na entrada `Início`.
+- Os gatilhos BNCC/Metis foram incorporados à mesma shell, com acesso por `Habilidades BNCC` e um resumo BNCC no workspace inicial.
 
 ### Runtime e integração
 
@@ -71,6 +73,24 @@ O aplicativo foi compilado com Nim, iniciado pelo runtime Network Web do GlaucoP
 5. O chat envia mensagens no contexto da habilidade selecionada.
 6. O estado da memória é persistido no tensor correspondente quando o runtime Metis está disponível.
 7. Ao trocar de habilidade, a memória ativa é substituída pelo contexto do novo tópico.
+
+### Composição do frontend
+
+O desenho anterior não foi substituído pelo catálogo BNCC. A composição final usa:
+
+```text
+Shell antiga
+  ├── Conversas e chatbox
+  ├── Mini canvas de processo
+  ├── Grafo de conhecimento
+  ├── Documentos OKF e Produções
+  └── Habilidades BNCC
+        ├── gatilho de abertura da habilidade
+        ├── carregamento/reconstrução Metis
+        └── chat de estudo vinculado ao OKF
+```
+
+`Início` voltou a ser a página inicial. O catálogo BNCC é acessado pela navegação `Habilidades BNCC` e também pelo card de integração no workspace inicial.
 
 ## 5. Handlers frontend/backend
 
