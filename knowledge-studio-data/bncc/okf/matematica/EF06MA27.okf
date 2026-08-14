@@ -1,0 +1,103 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA27",
+  "topic_key": "matematica/EF06MA27",
+  "title": "EF06MA27 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 305
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA27",
+    "year_block": "6º ano",
+    "statement": "Determinar medidas da abertura de ângulos, por meio de transferidor e/ou tecnologias digitais.",
+    "verbs": [
+      "determinar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-MED",
+      "axis_name": "Grandezas e medidas",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "academic_topics": "plano cartesiano, prismas, pirâmides, polígonos, ângulos, retas, simetrias e construções",
+      "formal_system": "propriedades geométricas, coordenadas, classificação e instrumentos de desenho",
+      "transfer_field": "mapear, construir e justificar soluções espaciais",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M6-MED",
+      "axis_name": "Grandezas e medidas",
+      "academic_topics": "comprimento, massa, tempo, temperatura, área, perímetro, capacidade, volume e conversões",
+      "formal_system": "unidades, estimativa, relações entre perímetro e área e cálculo de volume",
+      "transfer_field": "planejar medições e validar resultados em projetos concretos",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA27",
+    "topic_has_okf": "bncc:EF06MA27 HAS_OKF okf:bncc:EF06MA27",
+    "okf_compiles_tensor": "okf:bncc:EF06MA27 COMPILES_TO tensor:bncc:EF06MA27"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3b34f56c1fefe19c17ed17f43b3148c1912c4a2a5c00bcc76d19eb04d64c34e1"
+}

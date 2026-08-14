@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08GE05",
+  "topic_key": "geografia/EF08GE05",
+  "title": "EF08GE05 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 391
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08GE05",
+    "year_block": "8º ano",
+    "statement": "Aplicar os conceitos de Estado, nação, território, governo e país para o entendimento de conflitos e tensões na contemporaneidade, com destaque para as situações geopolíticas na América e na África e suas múltiplas regionalizações a partir do pós-guerra.",
+    "verbs": [
+      "aplicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Mapear",
+    "competences": [
+      "Aplicar",
+      "Contextualizar",
+      "Mapear"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Aplicar | Contextualizar | Mapear",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "academic_topics": "territórios, fronteiras, redes, regionalizações, mapas temáticos e geopolítica",
+      "formal_system": "território, escala, projeção, fluxo, regionalização e poder",
+      "transfer_field": "mapear conflito ou desigualdade em diferentes escalas",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF08GE05",
+    "topic_has_okf": "bncc:EF08GE05 HAS_OKF okf:bncc:EF08GE05",
+    "okf_compiles_tensor": "okf:bncc:EF08GE05 COMPILES_TO tensor:bncc:EF08GE05"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3cf149b56179cde2a450ca36e0367af3103a4fe77b37d80d2bb88db73a61c619"
+}

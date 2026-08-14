@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI10",
+  "topic_key": "historia/EF09HI10",
+  "title": "EF09HI10 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 431
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI10",
+    "year_block": "9º ano",
+    "statement": "Identificar e relacionar as dinâmicas do capitalismo e suas crises, os grandes conflitos mundiais e os conflitos vivenciados na Europa.",
+    "verbs": [
+      "identificar",
+      "relacionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "academic_topics": "República, fascismo, nazismo, ditaduras, democracia, instituições, conflitos e ordem mundial",
+      "formal_system": "Estado, ideologia, autoritarismo, participação, direitos e relações internacionais",
+      "transfer_field": "avaliar instituições e deliberar sobre ameaça democrática",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "academic_topics": "industrialização, crises, globalização, trabalho, consumo, tecnologia, finanças e desigualdade",
+      "formal_system": "sistema econômico, crise, divisão internacional do trabalho, precarização e rede",
+      "transfer_field": "relacionar mudança tecnológica a trabalho e desigualdade",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI10",
+    "topic_has_okf": "bncc:EF09HI10 HAS_OKF okf:bncc:EF09HI10",
+    "okf_compiles_tensor": "okf:bncc:EF09HI10 COMPILES_TO tensor:bncc:EF09HI10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "717502c8f716c3bca00fd0fc19e47fce71c50a57bf1b1f76ff77db31e2d29f8f"
+}

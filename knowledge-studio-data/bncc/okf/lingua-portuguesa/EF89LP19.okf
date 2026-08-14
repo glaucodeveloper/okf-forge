@@ -1,0 +1,253 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP19",
+  "topic_key": "lingua-portuguesa/EF89LP19",
+  "title": "EF89LP19 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 185
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP19",
+    "year_block": "8º e 9º anos",
+    "statement": "Analisar, a partir do contexto de produção, a forma de organização das cartas abertas, abaixo-assinados e petições on-line (identificação dos signatários, explicitação da reivindicação feita, acompanhada ou não de uma breve apresentação da problemática e/ou de justificativas que visam sustentar a reivindicação) e a proposição, discussão e aprovação de propostas políticas ou de soluções para problemas de interesse público, apresentadas ou lidas nos canais digitais de participação, identificando suas marcas linguísticas, como forma de possibilitar a escrita ou subscrição consciente de abaixo-assinados e textos dessa natureza e poder se posicionar de forma crítica e fundamentada frente às propostas.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Organizar",
+      "Textualizar",
+      "Comunicar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Autoria pública",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ORAL",
+      "axis_name": "Debate regrado, seminário e negociação",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ALIS",
+      "axis_name": "Sintaxe, coesão, modalização e estilo",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ORAL",
+      "axis_name": "Defesa oral, mediação e apresentação pública",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ALIS",
+      "axis_name": "Estilo, sintaxe complexa e variação",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Textualizar | Comunicar | Avaliar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "academic_topics": "debate, proposta, reivindicação, campanha, comentário, posicionamento e negociação",
+      "formal_system": "tese, argumento, contra-argumento, refutação, modalização, dados e ética",
+      "transfer_field": "deliberar sobre problema real e responder criticamente ao contraditório",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L8-ORAL",
+      "axis_name": "Debate regrado, seminário e negociação",
+      "academic_topics": "debate, exposição, mesa, podcast, entrevista, escuta, réplica, síntese e apoio visual",
+      "formal_system": "regras de interação, planejamento, evidência oral, resposta ao outro e performance",
+      "transfer_field": "conduzir fala pública e negociar posições com responsabilidade",
+      "supported_competences": [
+        "Comunicar",
+        "Argumentar",
+        "Organizar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "L8-ALIS",
+      "axis_name": "Sintaxe, coesão, modalização e estilo",
+      "academic_topics": "orações coordenadas e subordinadas, conectivos, pontuação, concordância, figuras, vozes e variação",
+      "formal_system": "relações sintáticas, modalização, coesão textual, estilo e adequação",
+      "transfer_field": "editar texto complexo justificando efeitos de cada escolha",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "academic_topics": "artigo de opinião, editorial, resenha, reportagem, divulgação científica, literatura e textos multimodais",
+      "formal_system": "tese, argumentos, vozes, evidências, intertextualidade, ironia e confiabilidade",
+      "transfer_field": "comparar discursos complexos e formular leitura crítica própria",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "academic_topics": "problema público, política, direitos, mídia, ciência, debate e proposta de intervenção",
+      "formal_system": "tese, cadeia argumentativa, contra-argumento, refutação, evidência e princípio ético",
+      "transfer_field": "deliberar, negociar e defender decisão em contexto novo",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L9-ORAL",
+      "axis_name": "Defesa oral, mediação e apresentação pública",
+      "academic_topics": "debate, banca, seminário, entrevista, pitch, mediação, síntese e recursos digitais",
+      "formal_system": "estrutura expositiva, presença, evidência, réplica, escuta e negociação",
+      "transfer_field": "defender projeto e mediar discussão diante de público real",
+      "supported_competences": [
+        "Comunicar",
+        "Argumentar",
+        "Organizar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "L9-ALIS",
+      "axis_name": "Estilo, sintaxe complexa e variação",
+      "academic_topics": "orações complexas, coesão, concordância, regência, pontuação, figuras, vozes, norma e variação",
+      "formal_system": "relações sintático-semânticas, estilo, autoria, adequação e efeitos de sentido",
+      "transfer_field": "editar e explicar escolhas em texto de alta complexidade",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "academic_topics": "editorial, ensaio, manifesto, reportagem multimídia, crítica, pesquisa, literatura e redes",
+      "formal_system": "discurso, ideologia, tese, voz, evidência, enquadramento, intertextualidade e estilo",
+      "transfer_field": "avaliar discursos concorrentes e formular interpretação autoral",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP19",
+    "topic_has_okf": "bncc:EF89LP19 HAS_OKF okf:bncc:EF89LP19",
+    "okf_compiles_tensor": "okf:bncc:EF89LP19 COMPILES_TO tensor:bncc:EF89LP19"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "49d4aa422f1be86c8a8563909fc499fe65817d9f8aa0d78c13b57778a2c2a2f0"
+}

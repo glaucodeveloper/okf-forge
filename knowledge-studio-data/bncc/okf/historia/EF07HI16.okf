@@ -1,0 +1,102 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07HI16",
+  "topic_key": "historia/EF07HI16",
+  "title": "EF07HI16 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 425
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07HI16",
+    "year_block": "7º ano",
+    "statement": "Analisar os mecanismos e as dinâmicas de comércio de escravizados em suas diferentes fases, identificando os agentes responsáveis pelo tráfico e as regiões e zonas africanas de procedência dos escravizados.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-CULT",
+      "axis_name": "Povos, culturas e identidades do Brasil e das Américas",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-CULT",
+      "axis_name": "Povos, culturas e identidades do Brasil e das Américas",
+      "academic_topics": "indígenas, africanos, europeus, mestiçagens, religiões, línguas e patrimônios",
+      "formal_system": "identidade, resistência, contato cultural, violência e diversidade",
+      "transfer_field": "produzir narrativa plural sobre formação cultural e pertencimento",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "academic_topics": "agropecuária, mineração, indústria, circulação, trabalho escravizado e livre e redes urbanas",
+      "formal_system": "produção, divisão territorial do trabalho, mercado e desigualdade",
+      "transfer_field": "relacionar economia, trabalho e organização do território",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF07HI16",
+    "topic_has_okf": "bncc:EF07HI16 HAS_OKF okf:bncc:EF07HI16",
+    "okf_compiles_tensor": "okf:bncc:EF07HI16 COMPILES_TO tensor:bncc:EF07HI16"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4ff8d75ad6d18575ad7be6fb27b5d3fdc0a73ab265e9076ac89f17bc7bff34e1"
+}

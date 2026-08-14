@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA18",
+  "topic_key": "matematica/EF08MA18",
+  "title": "EF08MA18 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 317
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA18",
+    "year_block": "8º ano",
+    "statement": "Reconhecer e construir figuras obtidas por composições de transformações geométricas (translação, reflexão e rotação), com o uso de instrumentos de desenho ou de softwares de geometria dinâmica.",
+    "verbs": [
+      "reconhecer",
+      "construir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "academic_topics": "triângulos, quadriláteros, mediatriz, bissetriz, transformações, congruência e semelhança",
+      "formal_system": "critérios, propriedades, demonstração informal e construção",
+      "transfer_field": "projetar, mapear e justificar solução geométrica complexa",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA18",
+    "topic_has_okf": "bncc:EF08MA18 HAS_OKF okf:bncc:EF08MA18",
+    "okf_compiles_tensor": "okf:bncc:EF08MA18 COMPILES_TO tensor:bncc:EF08MA18"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "10a0859445406086809f8977a785fa2c13aa1dc11a0dd9b8bf71c752c38774f3"
+}

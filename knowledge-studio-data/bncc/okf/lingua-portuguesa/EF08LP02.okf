@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08LP02",
+  "topic_key": "lingua-portuguesa/EF08LP02",
+  "title": "EF08LP02 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 179
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF08LP02",
+    "year_block": "8º ano",
+    "statement": "Justificar diferenças ou semelhanças no tratamento dado a uma mesma informação veiculada em textos diferentes, consultando sites e serviços de checadores de fatos.",
+    "verbs": [
+      "justificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Textualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "academic_topics": "artigo de opinião, editorial, resenha, reportagem, divulgação científica, literatura e textos multimodais",
+      "formal_system": "tese, argumentos, vozes, evidências, intertextualidade, ironia e confiabilidade",
+      "transfer_field": "comparar discursos complexos e formular leitura crítica própria",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF08LP02",
+    "topic_has_okf": "bncc:EF08LP02 HAS_OKF okf:bncc:EF08LP02",
+    "okf_compiles_tensor": "okf:bncc:EF08LP02 COMPILES_TO tensor:bncc:EF08LP02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "5562ea49a2a71bc967fe0da098075258fa28485625239aadfa49bba3ffc2c4e7"
+}

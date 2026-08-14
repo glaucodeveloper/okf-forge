@@ -1,0 +1,157 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP28",
+  "topic_key": "lingua-portuguesa/EF89LP28",
+  "title": "EF89LP28 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 187
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP28",
+    "year_block": "8º e 9º anos",
+    "statement": "Tomar nota de videoaulas, aulas digitais, apresentações multimídias, vídeos de divulgação científica, documentários e afins, identificando, em função dos objetivos, informações principais para apoio ao estudo e realizando, quando necessário, uma síntese final que destaque e reorganize os pontos ou conceitos centrais e suas relações e que, em alguns casos, seja acompanhada de reflexões pessoais, que podem conter dúvidas, questionamentos, considerações etc.",
+    "verbs": [
+      "tomar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Argumentar",
+      "Organizar",
+      "Aplicar",
+      "Comunicar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ORAL",
+      "axis_name": "Debate regrado, seminário e negociação",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Argumentar | Organizar | Aplicar | Comunicar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ALIS",
+      "axis_name": "Sintaxe, coesão, modalização e estilo",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Argumentar | Organizar | Aplicar | Comunicar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ORAL",
+      "axis_name": "Defesa oral, mediação e apresentação pública",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Argumentar | Organizar | Aplicar | Comunicar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ALIS",
+      "axis_name": "Estilo, sintaxe complexa e variação",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Argumentar | Organizar | Aplicar | Comunicar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ORAL",
+      "axis_name": "Debate regrado, seminário e negociação",
+      "academic_topics": "debate, exposição, mesa, podcast, entrevista, escuta, réplica, síntese e apoio visual",
+      "formal_system": "regras de interação, planejamento, evidência oral, resposta ao outro e performance",
+      "transfer_field": "conduzir fala pública e negociar posições com responsabilidade",
+      "supported_competences": [
+        "Comunicar",
+        "Argumentar",
+        "Organizar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "L8-ALIS",
+      "axis_name": "Sintaxe, coesão, modalização e estilo",
+      "academic_topics": "orações coordenadas e subordinadas, conectivos, pontuação, concordância, figuras, vozes e variação",
+      "formal_system": "relações sintáticas, modalização, coesão textual, estilo e adequação",
+      "transfer_field": "editar texto complexo justificando efeitos de cada escolha",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L9-ORAL",
+      "axis_name": "Defesa oral, mediação e apresentação pública",
+      "academic_topics": "debate, banca, seminário, entrevista, pitch, mediação, síntese e recursos digitais",
+      "formal_system": "estrutura expositiva, presença, evidência, réplica, escuta e negociação",
+      "transfer_field": "defender projeto e mediar discussão diante de público real",
+      "supported_competences": [
+        "Comunicar",
+        "Argumentar",
+        "Organizar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "L9-ALIS",
+      "axis_name": "Estilo, sintaxe complexa e variação",
+      "academic_topics": "orações complexas, coesão, concordância, regência, pontuação, figuras, vozes, norma e variação",
+      "formal_system": "relações sintático-semânticas, estilo, autoria, adequação e efeitos de sentido",
+      "transfer_field": "editar e explicar escolhas em texto de alta complexidade",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP28",
+    "topic_has_okf": "bncc:EF89LP28 HAS_OKF okf:bncc:EF89LP28",
+    "okf_compiles_tensor": "okf:bncc:EF89LP28 COMPILES_TO tensor:bncc:EF89LP28"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "27f30ebdd17cf956b960d3f781bd98ef967a1932651c100a8aa6f8720bf8bb1f"
+}

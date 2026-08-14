@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09GE17",
+  "topic_key": "geografia/EF09GE17",
+  "title": "EF09GE17 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 397
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09GE17",
+    "year_block": "9º ano",
+    "statement": "Explicar as características físico-naturais e a forma de ocupação e usos da terra em diferentes regiões da Europa, da Ásia e da Oceania.",
+    "verbs": [
+      "explicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TERR",
+      "axis_name": "Globalização, blocos e cartografias geopolíticas",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TERR",
+      "axis_name": "Globalização, blocos e cartografias geopolíticas",
+      "academic_topics": "Europa, Ásia, Oceania, blocos, fronteiras, conflitos, mapas e redes globais",
+      "formal_system": "geopolítica, escala, fluxo, território, regionalização e representação",
+      "transfer_field": "mapear conflito ou rede e justificar leitura geopolítica",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF09GE17",
+    "topic_has_okf": "bncc:EF09GE17 HAS_OKF okf:bncc:EF09GE17",
+    "okf_compiles_tensor": "okf:bncc:EF09GE17 COMPILES_TO tensor:bncc:EF09GE17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "b6da05c537dc9023934f7fd88b488c60cecdab8868b95ce1d98d07fa45e60a2f"
+}

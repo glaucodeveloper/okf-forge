@@ -1,0 +1,86 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI26",
+  "topic_key": "historia/EF09HI26",
+  "title": "EF09HI26 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 433
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI26",
+    "year_block": "9º ano",
+    "statement": "Discutir e analisar as causas da violência contra populações marginalizadas (negros, indígenas, mulheres, homossexuais, camponeses, pobres etc.) com vistas à tomada de consciência e à construção de uma cultura de paz, empatia e respeito às pessoas.",
+    "verbs": [
+      "discutir",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Cuidado e responsabilidade",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar | Criar",
+      "vertentes_sociais": "Diálogo e mediação | Cuidado e responsabilidade | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "academic_topics": "racismo, gênero, povos indígenas, juventudes, cultura, direitos humanos e movimentos sociais",
+      "formal_system": "identidade, reconhecimento, representação, desigualdade e resistência",
+      "transfer_field": "argumentar sobre direitos com base histórica e múltiplas vozes",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI26",
+    "topic_has_okf": "bncc:EF09HI26 HAS_OKF okf:bncc:EF09HI26",
+    "okf_compiles_tensor": "okf:bncc:EF09HI26 COMPILES_TO tensor:bncc:EF09HI26"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "d29bc7b3915eb1290d50e3d1b38129a92678a6a3848828ae4e24707ece33f9f1"
+}

@@ -1,0 +1,152 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA12",
+  "topic_key": "matematica/EF08MA12",
+  "title": "EF08MA12 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 315
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA12",
+    "year_block": "8º ano",
+    "statement": "Identificar a natureza da variação de duas grandezas, diretamente, inversamente proporcionais ou não proporcionais, expressando a relação existente por meio de sentença algébrica e representá-la no plano cartesiano.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Organizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Organizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-MED",
+      "axis_name": "Áreas, circunferência e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Organizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Organizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-PROP",
+      "axis_name": "Variação e proporcionalidade",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Organizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "academic_topics": "triângulos, quadriláteros, mediatriz, bissetriz, transformações, congruência e semelhança",
+      "formal_system": "critérios, propriedades, demonstração informal e construção",
+      "transfer_field": "projetar, mapear e justificar solução geométrica complexa",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M8-MED",
+      "axis_name": "Áreas, circunferência e volumes",
+      "academic_topics": "área de figuras, círculo, comprimento da circunferência, volume e capacidade",
+      "formal_system": "decomposição, fórmulas, constantes, unidades e estimativa de erro",
+      "transfer_field": "dimensionar projeto e otimizar uso de material",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "academic_topics": "expressões algébricas, produtos notáveis introdutórios, equações, sistemas, sequências e padrões",
+      "formal_system": "equivalência, variável, sistema linear, generalização e representação",
+      "transfer_field": "modelar relações e comparar métodos de solução",
+      "supported_competences": [
+        "Calcular",
+        "Organizar",
+        "Interpretar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M8-PROP",
+      "axis_name": "Variação e proporcionalidade",
+      "academic_topics": "grandezas direta e inversamente proporcionais, porcentagens, taxas e gráficos",
+      "formal_system": "taxa de variação, proporcionalidade, representação algébrica e gráfica",
+      "transfer_field": "analisar orçamento, velocidade, escala e crescimento",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA12",
+    "topic_has_okf": "bncc:EF08MA12 HAS_OKF okf:bncc:EF08MA12",
+    "okf_compiles_tensor": "okf:bncc:EF08MA12 COMPILES_TO tensor:bncc:EF08MA12"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3ea643bd9d3bbaf4edb612c777c002d2fcd1af4ec0cfc798f84f3807b8e7d12d"
+}

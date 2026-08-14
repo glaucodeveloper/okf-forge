@@ -1,0 +1,108 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA16",
+  "topic_key": "matematica/EF08MA16",
+  "title": "EF08MA16 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 317
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA16",
+    "year_block": "8º ano",
+    "statement": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um hexágono regular de qualquer área, a partir da medida do ângulo central e da utilização de esquadros e compasso.",
+    "verbs": [
+      "descrever"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Textualizar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-MED",
+      "axis_name": "Áreas, circunferência e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "academic_topics": "triângulos, quadriláteros, mediatriz, bissetriz, transformações, congruência e semelhança",
+      "formal_system": "critérios, propriedades, demonstração informal e construção",
+      "transfer_field": "projetar, mapear e justificar solução geométrica complexa",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M8-MED",
+      "axis_name": "Áreas, circunferência e volumes",
+      "academic_topics": "área de figuras, círculo, comprimento da circunferência, volume e capacidade",
+      "formal_system": "decomposição, fórmulas, constantes, unidades e estimativa de erro",
+      "transfer_field": "dimensionar projeto e otimizar uso de material",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA16",
+    "topic_has_okf": "bncc:EF08MA16 HAS_OKF okf:bncc:EF08MA16",
+    "okf_compiles_tensor": "okf:bncc:EF08MA16 COMPILES_TO tensor:bncc:EF08MA16"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "bd354e2e659210a018ca401fe98c9b268e5debd722406a144f424845fb480c30"
+}

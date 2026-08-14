@@ -1,0 +1,155 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP04",
+  "topic_key": "lingua-portuguesa/EF89LP04",
+  "title": "EF89LP04 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 179
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP04",
+    "year_block": "8º e 9º anos",
+    "statement": "Identificar e avaliar teses/opiniões/posicionamentos explícitos e implícitos, argumentos e contra-argumentos em textos argumentativos do campo (carta de leitor, comentário, artigo de opinião, resenha crítica etc.), posicionando-se frente à questão controversa de forma sustentada.",
+    "verbs": [
+      "identificar",
+      "avaliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Textualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Autoria pública",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "academic_topics": "debate, proposta, reivindicação, campanha, comentário, posicionamento e negociação",
+      "formal_system": "tese, argumento, contra-argumento, refutação, modalização, dados e ética",
+      "transfer_field": "deliberar sobre problema real e responder criticamente ao contraditório",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "academic_topics": "artigo de opinião, editorial, resenha, reportagem, divulgação científica, literatura e textos multimodais",
+      "formal_system": "tese, argumentos, vozes, evidências, intertextualidade, ironia e confiabilidade",
+      "transfer_field": "comparar discursos complexos e formular leitura crítica própria",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "academic_topics": "problema público, política, direitos, mídia, ciência, debate e proposta de intervenção",
+      "formal_system": "tese, cadeia argumentativa, contra-argumento, refutação, evidência e princípio ético",
+      "transfer_field": "deliberar, negociar e defender decisão em contexto novo",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "academic_topics": "editorial, ensaio, manifesto, reportagem multimídia, crítica, pesquisa, literatura e redes",
+      "formal_system": "discurso, ideologia, tese, voz, evidência, enquadramento, intertextualidade e estilo",
+      "transfer_field": "avaliar discursos concorrentes e formular interpretação autoral",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP04",
+    "topic_has_okf": "bncc:EF89LP04 HAS_OKF okf:bncc:EF89LP04",
+    "okf_compiles_tensor": "okf:bncc:EF89LP04 COMPILES_TO tensor:bncc:EF89LP04"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "0a5a14aed349402ed6e43a13d123db4974bdcb9e6f5ac4a9bbe59dae33f6cdf2"
+}

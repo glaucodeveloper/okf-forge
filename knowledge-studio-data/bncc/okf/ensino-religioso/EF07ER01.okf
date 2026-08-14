@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07ER01",
+  "topic_key": "ensino-religioso/EF07ER01",
+  "title": "EF07ER01 — Ensino Religioso",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 457
+  },
+  "matter": {
+    "id": 9,
+    "name": "Ensino Religioso",
+    "slug": "ensino-religioso",
+    "bncc_area": "Ensino Religioso"
+  },
+  "skill": {
+    "code": "EF07ER01",
+    "year_block": "7º ano",
+    "statement": "Reconhecer e respeitar as práticas de comunicação com as divindades em distintas manifestações e tradições religiosas.",
+    "verbs": [
+      "reconhecer",
+      "respeitar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Aplicar",
+      "Contextualizar",
+      "Comunicar"
+    ],
+    "social_axes": [
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "E7-MAN",
+      "axis_name": "Místicas, espiritualidades e práticas",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Aplicar | Contextualizar | Comunicar",
+      "vertentes_sociais": "Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "E7-MAN",
+      "axis_name": "Místicas, espiritualidades e práticas",
+      "academic_topics": "oração, meditação, peregrinação, celebração, lideranças e formas de comunicação com o sagrado",
+      "formal_system": "experiência religiosa, prática, instituição e diversidade de expressão",
+      "transfer_field": "comparar práticas sem reduzir sua complexidade cultural",
+      "supported_competences": [
+        "Interpretar",
+        "Contextualizar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ensino-religioso HAS_TOPIC bncc:EF07ER01",
+    "topic_has_okf": "bncc:EF07ER01 HAS_OKF okf:bncc:EF07ER01",
+    "okf_compiles_tensor": "okf:bncc:EF07ER01 COMPILES_TO tensor:bncc:EF07ER01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8a2100f098e72f0b0019f5bca9e59e203cae8130b4b83e6d30543db52a84a8d8"
+}

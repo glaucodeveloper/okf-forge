@@ -1,0 +1,102 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI10",
+  "topic_key": "ciencias/EF06CI10",
+  "title": "EF06CI10 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI10",
+    "year_block": "6º ano",
+    "statement": "Explicar como o funcionamento do sistema nervoso pode ser afetado por substâncias psicoativas.",
+    "verbs": [
+      "explicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "academic_topics": "célula, níveis de organização, sistemas nervoso, sensorial e locomotor, visão e interação organismo-meio",
+      "formal_system": "estrutura e função, coordenação, integração de sistemas e modelos do corpo",
+      "transfer_field": "explicar casos de saúde, analisar modelos e justificar cuidados",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "academic_topics": "misturas homogêneas e heterogêneas, separação de materiais, transformações químicas, materiais sintéticos e medicamentos",
+      "formal_system": "propriedades, evidências de transformação, métodos de separação e impactos tecnológicos",
+      "transfer_field": "investigar materiais cotidianos e propor uso ou descarte responsável",
+      "supported_competences": [
+        "Investigar",
+        "Organizar",
+        "Interpretar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI10",
+    "topic_has_okf": "bncc:EF06CI10 HAS_OKF okf:bncc:EF06CI10",
+    "okf_compiles_tensor": "okf:bncc:EF06CI10 COMPILES_TO tensor:bncc:EF06CI10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "774e6d6f9e1ce826a17b000366e59905a9ab8a6f1a116615f0b5920b2358fc28"
+}

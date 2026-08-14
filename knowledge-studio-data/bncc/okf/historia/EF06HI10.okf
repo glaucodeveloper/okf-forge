@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06HI10",
+  "topic_key": "historia/EF06HI10",
+  "title": "EF06HI10 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 423
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06HI10",
+    "year_block": "6º ano",
+    "statement": "Explicar a formação da Grécia Antiga, com ênfase na formação da pólis e nas transformações políticas, sociais e culturais.",
+    "verbs": [
+      "explicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-CULT",
+      "axis_name": "Sociedades, culturas e identidades",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "academic_topics": "fontes históricas, memória, tempo, periodização, origens humanas, Antiguidade e diferentes sociedades",
+      "formal_system": "evidência histórica, cronologia, permanência, mudança, causalidade e ponto de vista",
+      "transfer_field": "reconstruir explicações históricas comparando fontes e temporalidades",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H6-CULT",
+      "axis_name": "Sociedades, culturas e identidades",
+      "academic_topics": "povos originários, sociedades antigas, religião, cultura, gênero, família e diversidade",
+      "formal_system": "identidade, alteridade, patrimônio, práticas culturais e formas de organização social",
+      "transfer_field": "comparar culturas sem hierarquia e explicar identidades em contexto",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF06HI10",
+    "topic_has_okf": "bncc:EF06HI10 HAS_OKF okf:bncc:EF06HI10",
+    "okf_compiles_tensor": "okf:bncc:EF06HI10 COMPILES_TO tensor:bncc:EF06HI10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "701ee84475ffcc083d2998cbf5496c0325c4cc6d3cf5cf2e519872b4a420a624"
+}

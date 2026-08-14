@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89EF10",
+  "topic_key": "educacao-fisica/EF89EF10",
+  "title": "EF89EF10 — Educação Física",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 239
+  },
+  "matter": {
+    "id": 7,
+    "name": "Educação Física",
+    "slug": "educacao-fisica",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89EF10",
+    "year_block": "8º e 9º anos",
+    "statement": "Experimentar e fruir um ou mais tipos de ginástica de conscientização corporal, identificando as exigências corporais dos mesmos.",
+    "verbs": [
+      "experimentar",
+      "fruir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Investigar",
+    "competences": [
+      "Interpretar",
+      "Investigar",
+      "Comunicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-CORP",
+      "axis_name": "Práticas corporais, saúde e cultura global",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Investigar | Comunicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-CORP",
+      "axis_name": "Autonomia corporal, saúde e participação",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Investigar | Comunicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-CORP",
+      "axis_name": "Práticas corporais, saúde e cultura global",
+      "academic_topics": "esportes de rede, campo, invasão e combate, condicionamento, consciência corporal, dança de salão, lutas do mundo e aventura na natureza",
+      "formal_system": "tática, técnica, treinamento, saúde, segurança, ética e cultura corporal",
+      "transfer_field": "planejar prática inclusiva, avaliar risco e adaptar estratégia",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L9-CORP",
+      "axis_name": "Autonomia corporal, saúde e participação",
+      "academic_topics": "esportes, condicionamento, consciência corporal, dança, lutas e aventura na natureza",
+      "formal_system": "planejamento, tática, autocuidado, segurança, inclusão, cultura e ética",
+      "transfer_field": "liderar prática corporal e avaliar impactos para saúde e comunidade",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:educacao-fisica HAS_TOPIC bncc:EF89EF10",
+    "topic_has_okf": "bncc:EF89EF10 HAS_OKF okf:bncc:EF89EF10",
+    "okf_compiles_tensor": "okf:bncc:EF89EF10 COMPILES_TO tensor:bncc:EF89EF10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "98268f643336d5be83fa2ae2535039fac0cb78bee86030a36a46645b135c6e27"
+}

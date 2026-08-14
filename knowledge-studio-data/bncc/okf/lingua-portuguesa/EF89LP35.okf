@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP35",
+  "topic_key": "lingua-portuguesa/EF89LP35",
+  "title": "EF89LP35 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 189
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP35",
+    "year_block": "8º e 9º anos",
+    "statement": "Criar contos ou crônicas (em especial, líricas), crônicas visuais, minicontos, narrativas de aventura e de ficção científica, dentre outros, com temáticas próprias ao gênero, usando os conhecimentos sobre os constituintes estruturais e recursos expressivos típicos dos gêneros narrativos pretendidos, e, no caso de produção em grupo, ferramentas de escrita colaborativa.",
+    "verbs": [
+      "criar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Colaboração"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Textualizar | Criar",
+      "vertentes_sociais": "Colaboração",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Textualizar | Criar",
+      "vertentes_sociais": "Colaboração",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "academic_topics": "literatura, fotografia, vídeo, música, teatro, dança, artes visuais e cultura digital",
+      "formal_system": "linguagem, processo criativo, contexto, autoria, apropriação e curadoria",
+      "transfer_field": "criar obra crítica que combine linguagens e repertórios",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "academic_topics": "literatura, audiovisual, música, teatro, dança, artes visuais, cultura digital e intervenção",
+      "formal_system": "curadoria, poética, processo, repertório, contexto, autoria e crítica",
+      "transfer_field": "conceber obra ou mostra interdisciplinar com posicionamento",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP35",
+    "topic_has_okf": "bncc:EF89LP35 HAS_OKF okf:bncc:EF89LP35",
+    "okf_compiles_tensor": "okf:bncc:EF89LP35 COMPILES_TO tensor:bncc:EF89LP35"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8bf9d66885cc5ebed525e3f414a2013967c8901b96cbf18dc5c8fa9cfe24b512"
+}

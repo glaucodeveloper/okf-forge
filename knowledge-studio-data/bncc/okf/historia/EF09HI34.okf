@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI34",
+  "topic_key": "historia/EF09HI34",
+  "title": "EF09HI34 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 435
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI34",
+    "year_block": "9º ano",
+    "statement": "Discutir as motivações da adoção de diferentes políticas econômicas na América Latina, assim como seus impactos sociais nos países da região.",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Argumentar",
+      "Contextualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Argumentar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "academic_topics": "industrialização, crises, globalização, trabalho, consumo, tecnologia, finanças e desigualdade",
+      "formal_system": "sistema econômico, crise, divisão internacional do trabalho, precarização e rede",
+      "transfer_field": "relacionar mudança tecnológica a trabalho e desigualdade",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI34",
+    "topic_has_okf": "bncc:EF09HI34 HAS_OKF okf:bncc:EF09HI34",
+    "okf_compiles_tensor": "okf:bncc:EF09HI34 COMPILES_TO tensor:bncc:EF09HI34"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7f10cc2e1c1bc78d55e9722a6f52ce18abc5b6ede379ecee91d7381fea4ddefb"
+}

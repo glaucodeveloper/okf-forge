@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08GE03",
+  "topic_key": "geografia/EF08GE03",
+  "title": "EF08GE03 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 391
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08GE03",
+    "year_block": "8º ano",
+    "statement": "Analisar aspectos representativos da dinâmica demográfica, considerando características da população (perfil etário, crescimento vegetativo e mobilidade espacial).",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-NAT",
+      "axis_name": "População, migração, urbanização e ambiente",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-NAT",
+      "axis_name": "População, migração, urbanização e ambiente",
+      "academic_topics": "migrações, cidades, recursos, redes, conflitos socioambientais, América e África",
+      "formal_system": "mobilidade, segregação, uso de recursos, risco e sustentabilidade",
+      "transfer_field": "avaliar política territorial e propor intervenção",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF08GE03",
+    "topic_has_okf": "bncc:EF08GE03 HAS_OKF okf:bncc:EF08GE03",
+    "okf_compiles_tensor": "okf:bncc:EF08GE03 COMPILES_TO tensor:bncc:EF08GE03"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "ae7fdcf94ffd7e6bd2b3bc983044a9d62f8c147ce6c08dca84f384368baa49d6"
+}

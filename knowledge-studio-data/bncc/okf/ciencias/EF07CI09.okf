@@ -1,0 +1,104 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07CI09",
+  "topic_key": "ciencias/EF07CI09",
+  "title": "EF07CI09 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 349
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF07CI09",
+    "year_block": "7º ano",
+    "statement": "Interpretar as condições de saúde da comunidade, cidade ou estado, com base na análise e comparação de indicadores de saúde (como taxa de mortalidade infantil, cobertura de saneamento básico e incidência de doenças de veiculação hídrica, atmosférica entre outras) e dos resultados de políticas públicas destinadas à saúde.",
+    "verbs": [
+      "interpretar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "C7-VID",
+      "axis_name": "Ecossistemas, biodiversidade e saúde coletiva",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "C7-CTS",
+      "axis_name": "Tecnologia, risco e ação socioambiental",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C7-VID",
+      "axis_name": "Ecossistemas, biodiversidade e saúde coletiva",
+      "academic_topics": "ecossistemas, impactos, biodiversidade, indicadores de saúde, vacinação e epidemias",
+      "formal_system": "equilíbrio ecológico, cadeia causal, prevenção, dados de saúde e ação coletiva",
+      "transfer_field": "analisar problema ambiental ou sanitário e propor medida pública",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "C7-CTS",
+      "axis_name": "Tecnologia, risco e ação socioambiental",
+      "academic_topics": "máquinas, energia, vacinação, saneamento, desastres, políticas de saúde e ambiente",
+      "formal_system": "benefício, risco, indicador, prevenção e responsabilidade pública",
+      "transfer_field": "argumentar e criar proposta de tecnologia ou política responsável",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF07CI09",
+    "topic_has_okf": "bncc:EF07CI09 HAS_OKF okf:bncc:EF07CI09",
+    "okf_compiles_tensor": "okf:bncc:EF07CI09 COMPILES_TO tensor:bncc:EF07CI09"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "13f2995825178d6acc4ab6cbc48349ce4fbd84ab1e5afec081d9783164fe5ab9"
+}

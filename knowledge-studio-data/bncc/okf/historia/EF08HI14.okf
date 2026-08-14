@@ -1,0 +1,108 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08HI14",
+  "topic_key": "historia/EF08HI14",
+  "title": "EF08HI14 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 427
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08HI14",
+    "year_block": "8º ano",
+    "statement": "Discutir a noção da tutela dos grupos indígenas e a participação dos negros na sociedade brasileira do final do período colonial, identificando permanências na forma de preconceitos, estereótipos e violências sobre as populações indígenas e negras no Brasil e nas Américas.",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Contextualizar",
+      "Comunicar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar | Comunicar",
+      "vertentes_sociais": "Colaboração | Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-CULT",
+      "axis_name": "Escravidão, raça, nação e identidades",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar | Comunicar",
+      "vertentes_sociais": "Colaboração | Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "academic_topics": "Iluminismo, revoluções, independências, formação de Estados, imperialismo e fontes",
+      "formal_system": "processo, ruptura, permanência, causalidade, projeto político e perspectiva",
+      "transfer_field": "comparar revoluções e explicar consequências de longa duração",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H8-CULT",
+      "axis_name": "Escravidão, raça, nação e identidades",
+      "academic_topics": "escravidão, abolição, racismo, povos indígenas, nacionalismos, culturas e resistências",
+      "formal_system": "racialização, identidade, memória, resistência e cidadania",
+      "transfer_field": "confrontar narrativas e argumentar sobre desigualdade histórica",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF08HI14",
+    "topic_has_okf": "bncc:EF08HI14 HAS_OKF okf:bncc:EF08HI14",
+    "okf_compiles_tensor": "okf:bncc:EF08HI14 COMPILES_TO tensor:bncc:EF08HI14"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "888b3e4d374aa4e1e083987a317c5a17f62e3988e1e27aad84d3452de10e44e8"
+}

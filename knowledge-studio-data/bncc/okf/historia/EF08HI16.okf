@@ -1,0 +1,84 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08HI16",
+  "topic_key": "historia/EF08HI16",
+  "title": "EF08HI16 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 429
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08HI16",
+    "year_block": "8º ano",
+    "statement": "Identificar, comparar e analisar a diversidade política, social e regional nas rebeliões e nos movimentos contestatórios ao poder centralizado.",
+    "verbs": [
+      "identificar",
+      "comparar",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Investigar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-POD",
+      "axis_name": "Estado, imperialismo e cidadania",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Investigar | Contextualizar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-POD",
+      "axis_name": "Estado, imperialismo e cidadania",
+      "academic_topics": "revoluções políticas, impérios, independências, conflitos, leis e direitos",
+      "formal_system": "soberania, cidadania, representação, dominação e resistência",
+      "transfer_field": "avaliar projeto político e suas exclusões",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF08HI16",
+    "topic_has_okf": "bncc:EF08HI16 HAS_OKF okf:bncc:EF08HI16",
+    "okf_compiles_tensor": "okf:bncc:EF08HI16 COMPILES_TO tensor:bncc:EF08HI16"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "d1d20c29d98e76cf46f8e1cc085d54096245db0657ad466c6b115b7b4259a7b3"
+}

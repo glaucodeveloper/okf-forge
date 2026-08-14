@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09LI11",
+  "topic_key": "lingua-inglesa/EF09LI11",
+  "title": "EF09LI11 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 265
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF09LI11",
+    "year_block": "9º ano",
+    "statement": "Utilizar recursos verbais e não verbais para construção da persuasão em textos da esfera publicitária, de forma adequada ao contexto de circulação (produção e compreensão).",
+    "verbs": [
+      "utilizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Aplicar",
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Criar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "academic_topics": "mídia, ciência, trabalho, cidadania, cultura, apresentação, argumento e produção digital",
+      "formal_system": "registro, estratégia discursiva, repertório, autoria, mediação e interculturalidade",
+      "transfer_field": "pesquisar, argumentar e publicar em inglês para audiência ampliada",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF09LI11",
+    "topic_has_okf": "bncc:EF09LI11 HAS_OKF okf:bncc:EF09LI11",
+    "okf_compiles_tensor": "okf:bncc:EF09LI11 COMPILES_TO tensor:bncc:EF09LI11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "efab47802b9de6348a4400e207664a467d8e1448ecde5e0d3148d2bece047413"
+}

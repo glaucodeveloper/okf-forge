@@ -1,0 +1,102 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06GE12",
+  "topic_key": "geografia/EF06GE12",
+  "title": "EF06GE12 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 387
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06GE12",
+    "year_block": "6º ano",
+    "statement": "Identificar o consumo dos recursos hídricos e o uso das principais bacias hidrográficas no Brasil e no mundo, enfatizando as transformações nos ambientes urbanos.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-NAT",
+      "axis_name": "Natureza, população e redes",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TRAB",
+      "axis_name": "Trabalho, economia e circulação",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-NAT",
+      "axis_name": "Natureza, população e redes",
+      "academic_topics": "água, atmosfera, clima, solo, vegetação, campo, cidade e interação sociedade-natureza",
+      "formal_system": "sistemas naturais, uso do território, risco, impacto e conexão entre lugares",
+      "transfer_field": "avaliar transformações ambientais e propor intervenção situada",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "H6-TRAB",
+      "axis_name": "Trabalho, economia e circulação",
+      "academic_topics": "agricultura, cidades, comércio, trabalho, técnicas, produção e circulação",
+      "formal_system": "divisão social do trabalho, urbanização, troca e transformação da natureza",
+      "transfer_field": "relacionar modos de produção a mudanças sociais e ambientais",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF06GE12",
+    "topic_has_okf": "bncc:EF06GE12 HAS_OKF okf:bncc:EF06GE12",
+    "okf_compiles_tensor": "okf:bncc:EF06GE12 COMPILES_TO tensor:bncc:EF06GE12"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "6700dd750cfb5acaf6959f1947f066c8029e591cdb25fccc768e85bf08ea2539"
+}

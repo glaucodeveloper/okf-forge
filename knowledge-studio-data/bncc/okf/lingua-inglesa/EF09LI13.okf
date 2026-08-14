@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09LI13",
+  "topic_key": "lingua-inglesa/EF09LI13",
+  "title": "EF09LI13 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 265
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF09LI13",
+    "year_block": "9º ano",
+    "statement": "Reconhecer, nos novos gêneros digitais (blogues, mensagens instantâneas, tweets, entre outros), novas formas de escrita (abreviação de palavras, palavras com combinação de letras e números, pictogramas, símbolos gráficos, entre outros) na constituição das mensagens.",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Calcular"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Calcular",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "academic_topics": "mídia, ciência, trabalho, cidadania, cultura, apresentação, argumento e produção digital",
+      "formal_system": "registro, estratégia discursiva, repertório, autoria, mediação e interculturalidade",
+      "transfer_field": "pesquisar, argumentar e publicar em inglês para audiência ampliada",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF09LI13",
+    "topic_has_okf": "bncc:EF09LI13 HAS_OKF okf:bncc:EF09LI13",
+    "okf_compiles_tensor": "okf:bncc:EF09LI13 COMPILES_TO tensor:bncc:EF09LI13"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7d054c0eaa768fabf433d9c50abbf17dba953a71bd7f78d672d1b3ffa16edae7"
+}

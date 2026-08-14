@@ -1,0 +1,86 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07CI06",
+  "topic_key": "ciencias/EF07CI06",
+  "title": "EF07CI06 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 349
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF07CI06",
+    "year_block": "7º ano",
+    "statement": "Discutir e avaliar mudanças econômicas, culturais e sociais, tanto na vida cotidiana quanto no mundo do trabalho, decorrentes do desenvolvimento de novos materiais e tecnologias (como automação e informatização).",
+    "verbs": [
+      "discutir",
+      "avaliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Contextualizar",
+      "Criar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "C7-CTS",
+      "axis_name": "Tecnologia, risco e ação socioambiental",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar | Criar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C7-CTS",
+      "axis_name": "Tecnologia, risco e ação socioambiental",
+      "academic_topics": "máquinas, energia, vacinação, saneamento, desastres, políticas de saúde e ambiente",
+      "formal_system": "benefício, risco, indicador, prevenção e responsabilidade pública",
+      "transfer_field": "argumentar e criar proposta de tecnologia ou política responsável",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF07CI06",
+    "topic_has_okf": "bncc:EF07CI06 HAS_OKF okf:bncc:EF07CI06",
+    "okf_compiles_tensor": "okf:bncc:EF07CI06 COMPILES_TO tensor:bncc:EF07CI06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "9a35169b461a8e87c0529db2e01bdd2c2b2281cdc4f3d850b97d0cc34a04eea0"
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA09",
+  "topic_key": "matematica/EF09MA09",
+  "title": "EF09MA09 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 319
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA09",
+    "year_block": "9º ano",
+    "statement": "Compreender os processos de fatoração de expressões algébricas, com base em suas relações com os produtos notáveis, para resolver e elaborar problemas que possam ser representados por equações polinomiais do 2º grau.",
+    "verbs": [
+      "compreender",
+      "resolver",
+      "elaborar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-ALG",
+      "axis_name": "Funções, equações e fatoração",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Organizar | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-ALG",
+      "axis_name": "Funções, equações e fatoração",
+      "academic_topics": "funções, gráficos, equações de segundo grau, fatoração, produtos notáveis, sistemas e sequências",
+      "formal_system": "dependência entre variáveis, raízes, equivalência algébrica e comportamento gráfico",
+      "transfer_field": "modelar fenômeno e comparar representações e soluções",
+      "supported_competences": [
+        "Calcular",
+        "Organizar",
+        "Interpretar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA09",
+    "topic_has_okf": "bncc:EF09MA09 HAS_OKF okf:bncc:EF09MA09",
+    "okf_compiles_tensor": "okf:bncc:EF09MA09 COMPILES_TO tensor:bncc:EF09MA09"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "c979ff5d77a323d62e51b2343b03a6836a559c2613e122cc09197224ddb1124b"
+}

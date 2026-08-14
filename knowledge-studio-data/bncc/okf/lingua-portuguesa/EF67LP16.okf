@@ -1,0 +1,204 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF67LP16",
+  "topic_key": "lingua-portuguesa/EF67LP16",
+  "title": "EF67LP16 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 169
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF67LP16",
+    "year_block": "6º e 7º anos",
+    "statement": "Explorar e analisar espaços de reclamação de direitos e de envio de solicitações (tais como ouvidorias, SAC, canais ligados a órgãos públicos, plataformas do consumidor, plataformas de reclamação), bem como de textos pertencentes a gêneros que circulam nesses espaços, reclamação ou carta de reclamação, solicitação ou carta de solicitação, como forma de ampliar as possibilidades de produção desses textos em casos que remetam a reivindicações que envolvam a escola, a comunidade ou algum de seus membros como forma de se engajar na busca de solução de problemas pessoais, dos outros e coletivos.",
+    "verbs": [
+      "explorar",
+      "analisar",
+      "ampliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Organizar",
+      "Textualizar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Autoria pública",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ARG",
+      "axis_name": "Argumentação e participação pública",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ALIS",
+      "axis_name": "Análise linguística e semiótica",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-LEIT",
+      "axis_name": "Gêneros, leitura, escuta e multissemiose",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ARG",
+      "axis_name": "Argumentação, publicidade e participação",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ALIS",
+      "axis_name": "Análise linguística, variação e efeitos de sentido",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-LEIT",
+      "axis_name": "Leitura crítica, gêneros jornalísticos e navegação digital",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Textualizar",
+      "vertentes_sociais": "Colaboração | Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-ARG",
+      "axis_name": "Argumentação e participação pública",
+      "academic_topics": "opinião, comentário, discussão, evidência, liberdade de expressão e discurso discriminatório",
+      "formal_system": "tese, justificativa, argumento, contraexemplo, modalização e confiabilidade da informação",
+      "transfer_field": "defender posição responsável em situação pública e responder a posições contrárias",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L6-ALIS",
+      "axis_name": "Análise linguística e semiótica",
+      "academic_topics": "frase, oração, classes de palavras, concordância, pontuação, relações lexicais, imagem, som e diagramação",
+      "formal_system": "estrutura sintática básica, escolhas lexicais, norma, variação e articulação entre modos semióticos",
+      "transfer_field": "editar textos para clareza, intenção, estilo e acessibilidade",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L6-LEIT",
+      "axis_name": "Gêneros, leitura, escuta e multissemiose",
+      "academic_topics": "conto, crônica, notícia, reportagem, anúncio, meme, charge, textos orais e leitura de imagens",
+      "formal_system": "tema, fato central, ponto de vista, inferência, contexto de circulação e efeitos de sentido",
+      "transfer_field": "comparar fontes, reconhecer persuasão e construir leitura crítica de situações novas",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "L7-ARG",
+      "axis_name": "Argumentação, publicidade e participação",
+      "academic_topics": "comentário, carta, campanha, anúncio, debate, proposta e opinião",
+      "formal_system": "tese, justificativa, recurso persuasivo, modalização, evidência e resposta ao outro",
+      "transfer_field": "intervir em questão pública com argumento e produto de comunicação",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L7-ALIS",
+      "axis_name": "Análise linguística, variação e efeitos de sentido",
+      "academic_topics": "estrutura da oração, verbos, nomes, concordância, conectivos, pontuação, figuras e variedades linguísticas",
+      "formal_system": "sintaxe, coesão, modalização, norma e adequação sociocomunicativa",
+      "transfer_field": "revisar estilo e explicar como escolhas linguísticas alteram sentidos",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L7-LEIT",
+      "axis_name": "Leitura crítica, gêneros jornalísticos e navegação digital",
+      "academic_topics": "notícia, reportagem, entrevista, artigo, resenha, hipertexto, links, fontes e literatura juvenil",
+      "formal_system": "fato e opinião, hierarquia da informação, confiabilidade, intertextualidade e percurso de leitura",
+      "transfer_field": "comparar coberturas, verificar informação e construir leitura autônoma",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF67LP16",
+    "topic_has_okf": "bncc:EF67LP16 HAS_OKF okf:bncc:EF67LP16",
+    "okf_compiles_tensor": "okf:bncc:EF67LP16 COMPILES_TO tensor:bncc:EF67LP16"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8895d77f1d71163a32e64118b5da8ec805235ef04e65c7cdfeb0dc2c8b0c2bda"
+}

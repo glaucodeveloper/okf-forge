@@ -1,0 +1,108 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09GE09",
+  "topic_key": "geografia/EF09GE09",
+  "title": "EF09GE09 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 395
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09GE09",
+    "year_block": "9º ano",
+    "statement": "Analisar características de países e grupos de países europeus, asiáticos e da Oceania em seus aspectos populacionais, urbanos, políticos e econômicos, e discutir suas desigualdades sociais e econômicas e pressões sobre seus ambientes físico-naturais.",
+    "verbs": [
+      "analisar",
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-NAT",
+      "axis_name": "Urbanização, ambiente e redes globais",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar",
+      "vertentes_sociais": "Colaboração | Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Contextualizar",
+      "vertentes_sociais": "Colaboração | Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-NAT",
+      "axis_name": "Urbanização, ambiente e redes globais",
+      "academic_topics": "megacidades, migrações, produção, energia, clima, recursos, redes e sustentabilidade",
+      "formal_system": "interdependência, risco, pegada ambiental, governança e justiça territorial",
+      "transfer_field": "avaliar problema global-local e propor intervenção responsável",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "academic_topics": "industrialização, crises, globalização, trabalho, consumo, tecnologia, finanças e desigualdade",
+      "formal_system": "sistema econômico, crise, divisão internacional do trabalho, precarização e rede",
+      "transfer_field": "relacionar mudança tecnológica a trabalho e desigualdade",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF09GE09",
+    "topic_has_okf": "bncc:EF09GE09 HAS_OKF okf:bncc:EF09GE09",
+    "okf_compiles_tensor": "okf:bncc:EF09GE09 COMPILES_TO tensor:bncc:EF09GE09"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "deddf1b91240219c6166ad960d8c6bc0f61876a3a89d5f1e968e2070bc353824"
+}

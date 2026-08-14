@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06HI03",
+  "topic_key": "historia/EF06HI03",
+  "title": "EF06HI03 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 423
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06HI03",
+    "year_block": "6º ano",
+    "statement": "Identificar as hipóteses científicas sobre o surgimento da espécie humana e sua historicidade e analisar os significados dos mitos de fundação.",
+    "verbs": [
+      "identificar",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Investigar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Investigar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "academic_topics": "fontes históricas, memória, tempo, periodização, origens humanas, Antiguidade e diferentes sociedades",
+      "formal_system": "evidência histórica, cronologia, permanência, mudança, causalidade e ponto de vista",
+      "transfer_field": "reconstruir explicações históricas comparando fontes e temporalidades",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF06HI03",
+    "topic_has_okf": "bncc:EF06HI03 HAS_OKF okf:bncc:EF06HI03",
+    "okf_compiles_tensor": "okf:bncc:EF06HI03 COMPILES_TO tensor:bncc:EF06HI03"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4f2e62d5ec66f76a04f40a236fb6f5e1a8875be5bd84d1c91c51e7ee074a9ee6"
+}

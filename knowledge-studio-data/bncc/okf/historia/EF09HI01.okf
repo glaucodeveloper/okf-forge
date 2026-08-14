@@ -1,0 +1,131 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI01",
+  "topic_key": "historia/EF09HI01",
+  "title": "EF09HI01 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 431
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI01",
+    "year_block": "9º ano",
+    "statement": "Descrever e contextualizar os principais aspectos sociais, culturais, econômicos e políticos da emergência da República no Brasil.",
+    "verbs": [
+      "descrever",
+      "contextualizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Textualizar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Autoria pública",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar",
+      "vertentes_sociais": "Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar",
+      "vertentes_sociais": "Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar",
+      "vertentes_sociais": "Autoria pública | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "academic_topics": "República brasileira, guerras, revoluções, totalitarismos, Guerra Fria, ditaduras, redemocratização e fontes",
+      "formal_system": "periodização, causalidade, memória, trauma, continuidade, ruptura e disputa narrativa",
+      "transfer_field": "comparar memórias e construir explicação histórica multicausal",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "academic_topics": "racismo, gênero, povos indígenas, juventudes, cultura, direitos humanos e movimentos sociais",
+      "formal_system": "identidade, reconhecimento, representação, desigualdade e resistência",
+      "transfer_field": "argumentar sobre direitos com base histórica e múltiplas vozes",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-TRAB",
+      "axis_name": "Capitalismo, tecnologia e desigualdade",
+      "academic_topics": "industrialização, crises, globalização, trabalho, consumo, tecnologia, finanças e desigualdade",
+      "formal_system": "sistema econômico, crise, divisão internacional do trabalho, precarização e rede",
+      "transfer_field": "relacionar mudança tecnológica a trabalho e desigualdade",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI01",
+    "topic_has_okf": "bncc:EF09HI01 HAS_OKF okf:bncc:EF09HI01",
+    "okf_compiles_tensor": "okf:bncc:EF09HI01 COMPILES_TO tensor:bncc:EF09HI01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "93d5c57d8239b62b16e9d8ac91ef4e1e6d52f1e9933bca24db23ade6b71fefd4"
+}

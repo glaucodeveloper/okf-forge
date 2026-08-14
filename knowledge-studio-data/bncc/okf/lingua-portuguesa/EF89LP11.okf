@@ -1,0 +1,155 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP11",
+  "topic_key": "lingua-portuguesa/EF89LP11",
+  "title": "EF89LP11 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 181
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP11",
+    "year_block": "8º e 9º anos",
+    "statement": "Produzir, revisar e editar peças e campanhas publicitárias, envolvendo o uso articulado e complementar de diferentes peças publicitárias: cartaz, banner, indoor, folheto, panfleto, anúncio de jornal/revista, para internet, spot, propaganda de rádio, TV, a partir da escolha da questão/problema/causa significativa para a escola e/ou a comunidade escolar, da definição do público-alvo, das peças que serão produzidas, das estratégias de persuasão e convencimento que serão utilizadas.",
+    "verbs": [
+      "produzir",
+      "revisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Aplicar",
+      "Textualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-TEXT",
+      "axis_name": "Textualização argumentativa e multimídia",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-TEXT",
+      "axis_name": "Autoria, pesquisa e publicação",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-TEXT",
+      "axis_name": "Textualização argumentativa e multimídia",
+      "academic_topics": "artigo, resenha, relatório, roteiro, podcast, vídeo, infográfico e narrativa autoral",
+      "formal_system": "planejamento, progressão, coesão, citação, estilo, revisão, edição e integração semiótica",
+      "transfer_field": "publicar produto autoral adequado ao público e à mídia",
+      "supported_competences": [
+        "Textualizar",
+        "Organizar",
+        "Criar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L8-ARG",
+      "axis_name": "Tese, contra-argumento e intervenção",
+      "academic_topics": "debate, proposta, reivindicação, campanha, comentário, posicionamento e negociação",
+      "formal_system": "tese, argumento, contra-argumento, refutação, modalização, dados e ética",
+      "transfer_field": "deliberar sobre problema real e responder criticamente ao contraditório",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L9-TEXT",
+      "axis_name": "Autoria, pesquisa e publicação",
+      "academic_topics": "ensaio, manifesto, editorial, artigo, relatório, portfólio, roteiro, podcast e produção literária",
+      "formal_system": "projeto de texto, curadoria, citação, coesão global, edição, design e ética autoral",
+      "transfer_field": "publicar produto complexo, multimodal e socialmente situado",
+      "supported_competences": [
+        "Textualizar",
+        "Organizar",
+        "Criar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARG",
+      "axis_name": "Deliberação, contra-argumentação e ética pública",
+      "academic_topics": "problema público, política, direitos, mídia, ciência, debate e proposta de intervenção",
+      "formal_system": "tese, cadeia argumentativa, contra-argumento, refutação, evidência e princípio ético",
+      "transfer_field": "deliberar, negociar e defender decisão em contexto novo",
+      "supported_competences": [
+        "Argumentar",
+        "Interpretar",
+        "Comunicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP11",
+    "topic_has_okf": "bncc:EF89LP11 HAS_OKF okf:bncc:EF89LP11",
+    "okf_compiles_tensor": "okf:bncc:EF89LP11 COMPILES_TO tensor:bncc:EF89LP11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "f77d5623c9b4b57fe5392c1c1272d7153b042158fdf2709f7a4370b2b09f7507"
+}

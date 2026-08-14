@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08HI17",
+  "topic_key": "historia/EF08HI17",
+  "title": "EF08HI17 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 429
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08HI17",
+    "year_block": "8º ano",
+    "statement": "Relacionar as transformações territoriais, em razão de questões de fronteiras, com as tensões e conflitos durante o Império.",
+    "verbs": [
+      "relacionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Calcular"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-POD",
+      "axis_name": "Estado, imperialismo e cidadania",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-POD",
+      "axis_name": "Estado, imperialismo e cidadania",
+      "academic_topics": "revoluções políticas, impérios, independências, conflitos, leis e direitos",
+      "formal_system": "soberania, cidadania, representação, dominação e resistência",
+      "transfer_field": "avaliar projeto político e suas exclusões",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF08HI17",
+    "topic_has_okf": "bncc:EF08HI17 HAS_OKF okf:bncc:EF08HI17",
+    "okf_compiles_tensor": "okf:bncc:EF08HI17 COMPILES_TO tensor:bncc:EF08HI17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7335c4fa165d7065b2b7a0d425df608513e9d4772d5379f6dd0cb9f5c86a831a"
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA15",
+  "topic_key": "matematica/EF09MA15",
+  "title": "EF09MA15 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 321
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA15",
+    "year_block": "9º ano",
+    "statement": "Descrever, por escrito e por meio de um fluxograma, um algoritmo para a construção de um polígono regular cuja medida do lado é conhecida, utilizando régua e compasso, como também softwares.",
+    "verbs": [
+      "descrever"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Textualizar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "academic_topics": "semelhança, teorema de Pitágoras, relações em triângulos, polígonos, circunferência e coordenadas",
+      "formal_system": "demonstração, proporcionalidade geométrica, propriedades e construção",
+      "transfer_field": "resolver projeto espacial e justificar formalmente o método",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "academic_topics": "áreas, volumes, capacidade, densidade, velocidade, escalas e unidades compostas",
+      "formal_system": "fórmulas, dimensionalidade, conversão, precisão e estimativa",
+      "transfer_field": "dimensionar projeto real e avaliar viabilidade e erro",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA15",
+    "topic_has_okf": "bncc:EF09MA15 HAS_OKF okf:bncc:EF09MA15",
+    "okf_compiles_tensor": "okf:bncc:EF09MA15 COMPILES_TO tensor:bncc:EF09MA15"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "05a32025a073c88cb2c66b3735aa2b8711e7aa973362955759ec524ca8fc4f13"
+}

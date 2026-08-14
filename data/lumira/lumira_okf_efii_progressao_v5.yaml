@@ -1,0 +1,118 @@
+schema: lumira.okf.efii.progression.v5
+title: Lumira EF II — Cronograma contínuo, S5, material integrado e escala educacional
+scope:
+  stage: Ensino Fundamental II
+  years: [6, 7, 8, 9]
+sources:
+  crosswalk: lumira_bncc_efii_habilidades_competencias_eixos_v3.json
+  progression: lumira_progressao_cronograma_continuo_s5_v5.json
+  integrated_material_schema: lumira_material_integrado_eixo_v1.schema.json
+
+level_scale:
+  1:
+    title: Iniciação
+    legacy_alias: Novato no assunto
+  2:
+    title: Apropriação
+    legacy_alias: Capacidade intuitiva
+  3:
+    title: Consolidação
+    legacy_alias: Capacidade plena
+  4:
+    title: Proficiência
+    legacy_alias: Já aprendeu na escola
+  5:
+    title: Domínio
+    legacy_alias: Dominante
+  migration_rule: preserve_numeric_level_replace_visible_title
+
+invariants:
+  - competence_is_cognitive_infinitive
+  - bncc_area_is_navigation_group
+  - source_component_is_locator_only
+  - bncc_code_and_source_text_are_immutable
+  - calendar_complexity_advances_without_activity
+  - absence_is_not_failure
+  - absence_does_not_change_hidden_progression
+  - raw_meter_is_never_visible_to_student
+  - student_sees_level_bar_and_estimated_percentage_only
+  - level_5_is_domain_and_has_no_level_6
+  - inline_study_gaps_are_formative_not_progression_events
+  - formal_progression_requires_s5_or_validated_evidence
+  - popularity_never_updates_cognitive_mastery
+
+nodes:
+  competence_state:
+    required:
+      - competence_id
+      - series_age_id
+      - level
+      - hidden_meter
+      - estimated_percent
+      - axis_coverage
+      - cycle_started_at
+      - cycle_ends_at
+  calendar_position:
+    required:
+      - cycle_id
+      - timestamp
+      - normalized_position
+      - scheduled_axes
+      - complexity_band
+  daily_s5:
+    required:
+      - competence_state_id
+      - calendar_date
+      - question_ids
+      - completion_status
+      - outcome
+  integrated_axis_material:
+    required:
+      - competence_id
+      - series_age_id
+      - level
+      - axis_id
+      - calendar_position
+      - opening_text
+      - blocks
+  study_gap:
+    required:
+      - kind
+      - expected_action
+      - validation_rules
+      - feedback_policy
+  progression_event:
+    required:
+      - competence_state_id
+      - source
+      - hidden_delta
+      - evidence_id
+      - created_at
+
+relations:
+  - calendar_position SELECTS axis
+  - axis GROUNDS integrated_axis_material
+  - integrated_axis_material CONTAINS study_gap
+  - study_gap PRODUCES diagnostic_signal
+  - daily_s5 REFERENCES calendar_position
+  - daily_s5 MAY_OPEN bonus_chain
+  - validated_evidence UPDATES competence_state
+  - competence_state PROJECTS visible_progress_bar
+
+tests:
+  - id: schedule_advances_on_absence
+    assertion: calendar_position changes with elapsed time even when no quiz was completed
+  - id: absence_has_no_delta
+    assertion: not_completed daily_s5 produces no hidden progression event
+  - id: no_raw_points_ui
+    assertion: student payload excludes hidden_meter, thresholds and raw deltas
+  - id: level_bar_contract
+    assertion: student payload includes level_title and estimated_percent_to_next
+  - id: domain_ceiling
+    assertion: level 5 never creates level 6
+  - id: one_lauda_minimum
+    assertion: integrated_axis_material.opening_text has at least 450 words
+  - id: inline_feedback
+    assertion: every study gap has accessible valid/refute/partial feedback
+  - id: inline_gap_not_mastery
+    assertion: study gap response cannot directly promote or regress competence

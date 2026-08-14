@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07MA02",
+  "topic_key": "matematica/EF07MA02",
+  "title": "EF07MA02 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 309
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF07MA02",
+    "year_block": "7º ano",
+    "statement": "Resolver e elaborar problemas que envolvam porcentagens, como os que lidam com acréscimos e decréscimos simples, utilizando estratégias pessoais, cálculo mental e calculadora, no contexto de educação financeira, entre outros.",
+    "verbs": [
+      "resolver",
+      "elaborar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Aplicar",
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "M7-PROP",
+      "axis_name": "Razões, proporções e porcentagens",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Textualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M7-PROP",
+      "axis_name": "Razões, proporções e porcentagens",
+      "academic_topics": "razão, proporcionalidade direta e inversa, regra de três, porcentagem, acréscimo e desconto",
+      "formal_system": "constante de proporcionalidade, representação algébrica e comparação de taxas",
+      "transfer_field": "avaliar ofertas, escalas, receitas e mudanças percentuais",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF07MA02",
+    "topic_has_okf": "bncc:EF07MA02 HAS_OKF okf:bncc:EF07MA02",
+    "okf_compiles_tensor": "okf:bncc:EF07MA02 COMPILES_TO tensor:bncc:EF07MA02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4fd25fa274578cf2493c7d65511f069205aadf07cebeac5dfa34668255a46406"
+}

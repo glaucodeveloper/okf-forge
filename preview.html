@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OKF Forge — Layout conceitual</title>
+<style>
+:root{
+  --bg:#f5f6f8;--paper:#ffffff;--ink:#17191e;--muted:#6f7480;--line:#e5e7eb;
+  --sidebar:#111318;--side-2:#191c22;--green:#1fa36d;--green-2:#0d7b50;--mint:#eaf8f2;
+  --blue:#4a76e8;--blue-soft:#edf2ff;--amber:#c88a14;--amber-soft:#fff7de;
+  --violet:#7c5ce5;--violet-soft:#f1edff;--red:#b74a52;--shadow:0 14px 44px rgba(22,26,34,.08);
+}
+*{box-sizing:border-box} html,body{margin:0;height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+button,input,textarea{font:inherit} button{cursor:pointer}
+.app{height:100vh;min-height:760px;display:grid;grid-template-columns:240px minmax(0,1fr);overflow:hidden}
+.sidebar{background:linear-gradient(180deg,#101216 0%,#15181d 100%);color:#f7f7f8;padding:18px 14px 14px;display:flex;flex-direction:column;border-right:1px solid #23262c}
+.brand{height:46px;display:flex;align-items:center;gap:10px;padding:0 8px 15px;border-bottom:1px solid #292d34;margin-bottom:12px}
+.brand-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#29c98a,#0a7f53);display:grid;place-items:center;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset}
+.brand-mark svg{width:18px;height:18px}.brand-name{font-weight:750;font-size:14px;line-height:1.05}.brand-sub{font-size:10px;color:#8f96a3;margin-top:3px;letter-spacing:.02em}
+.new{height:38px;border-radius:9px;border:1px solid #363b44;background:#1b1f25;color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;font-weight:650;margin:4px 4px 12px}
+.nav-label{font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:#707783;margin:13px 11px 7px}
+.nav{display:flex;flex-direction:column;gap:3px}.nav-item{height:37px;border:0;border-radius:8px;background:transparent;color:#aeb4bf;padding:0 10px;display:flex;align-items:center;gap:10px;text-align:left;font-size:12px;transition:.15s}.nav-item:hover{background:#1d2127;color:#fff}.nav-item.active{background:#242931;color:#fff;box-shadow:0 0 0 1px #303640 inset}.nav-item svg{width:16px;height:16px;opacity:.9}.count{margin-left:auto;background:#2d333c;color:#bdc4cf;min-width:20px;height:18px;border-radius:10px;display:grid;place-items:center;font-size:9px;padding:0 5px}
+.sidebar-bottom{margin-top:auto;border-top:1px solid #292d34;padding-top:12px}.repo-card{background:#191d23;border:1px solid #292f38;border-radius:10px;padding:10px 11px;margin:0 4px 8px}.repo-kicker{font-size:9px;color:#6f7784;text-transform:uppercase;letter-spacing:.08em}.repo-name{font-size:11px;font-weight:650;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.repo-meta{display:flex;gap:6px;align-items:center;margin-top:7px;font-size:9px;color:#89919d}.dot{width:6px;height:6px;background:#39c58a;border-radius:50%}.user{display:flex;align-items:center;gap:9px;padding:8px}.avatar{width:28px;height:28px;border-radius:8px;background:#2a3038;color:#d6d9df;display:grid;place-items:center;font-size:10px;font-weight:800}.user-txt strong{font-size:11px;display:block}.user-txt span{font-size:9px;color:#747b87}
+.main{min-width:0;display:grid;grid-template-rows:56px minmax(0,1fr)}
+.topbar{background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 18px 0 22px;gap:12px}.crumb{display:flex;align-items:center;gap:7px;font-size:11px;color:#747985}.crumb strong{color:#25282f;font-weight:700}.spacer{flex:1}.status-pill{height:28px;border:1px solid #dfe5e2;background:#fafcfb;border-radius:8px;padding:0 9px;display:flex;align-items:center;gap:7px;font-size:10px;color:#4f5954}.status-pill .dot{width:7px;height:7px}.key-pill{height:28px;border:1px solid #e4e2da;background:#fffdfa;border-radius:8px;padding:0 9px;display:flex;align-items:center;gap:7px;font-size:10px;color:#665f4b}.icon-btn{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:#686e79}.icon-btn svg{width:15px;height:15px}
+.content{min-height:0;padding:14px;display:grid;grid-template-columns:minmax(520px,1.38fr) minmax(320px,.62fr);gap:14px;background:#f4f5f7;overflow:hidden}
+.panel{background:var(--paper);border:1px solid #e1e4e8;border-radius:12px;box-shadow:0 1px 0 rgba(15,20,28,.02);overflow:hidden}
+.chat-panel{display:grid;grid-template-rows:58px minmax(0,1fr) 92px;min-width:0}.panel-head{display:flex;align-items:center;padding:0 17px;border-bottom:1px solid var(--line);gap:10px}.session-icon{width:29px;height:29px;border-radius:8px;background:var(--mint);display:grid;place-items:center;color:var(--green-2)}.session-icon svg{width:16px;height:16px}.head-title{font-size:12px;font-weight:750}.head-sub{font-size:9px;color:#808691;margin-top:2px}.head-actions{margin-left:auto;display:flex;gap:7px}.btn{height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;padding:0 10px;font-size:10px;font-weight:650;color:#4b5059;display:flex;align-items:center;gap:7px}.btn svg{width:13px;height:13px}.btn.primary{background:#15191e;color:#fff;border-color:#15191e}.btn.green{background:var(--green);border-color:var(--green);color:white}.btn.soft{background:#f7f8fa}
+.messages{overflow:auto;padding:22px 28px 34px;background:linear-gradient(#fff,#fff) padding-box}.msg{max-width:82%;margin-bottom:19px}.msg.user{margin-left:auto;display:block;padding:0}.bubble{font-size:12px;line-height:1.58;border-radius:12px;padding:12px 14px}.user .bubble{background:#f1f2f4;border:1px solid #e7e8eb}.assistant .bubble{padding:0;background:transparent;border:0}.role{font-size:9px;text-transform:uppercase;letter-spacing:.07em;font-weight:750;color:#8a909a;margin-bottom:7px}.assistant .role{color:#26785a}.assistant strong{font-weight:750}.process-block{margin-top:12px;border:1px solid #e2e6e8;background:#fbfcfc;border-radius:10px;padding:11px 12px}.process-line{display:flex;align-items:center;gap:8px;font-size:10px;color:#59616a}.process-line + .process-line{margin-top:7px}.step-dot{width:18px;height:18px;border-radius:50%;background:#e9f7f1;color:#217756;display:grid;place-items:center;font-size:8px;font-weight:800}.arrow{color:#a1a7b0;margin-left:2px}
+.composer{border-top:1px solid var(--line);padding:12px 16px;background:#fff}.composer-box{height:66px;border:1px solid #dcdfe4;border-radius:11px;background:#fafbfc;display:grid;grid-template-columns:1fr auto;align-items:end;padding:9px 9px 8px 12px;box-shadow:0 2px 8px rgba(14,20,30,.03) inset}.composer-box textarea{resize:none;border:0;outline:0;background:transparent;height:46px;color:#383d45;font-size:11px}.send{width:34px;height:34px;border-radius:9px;border:0;background:#15191e;color:white;display:grid;place-items:center}.send svg{width:15px;height:15px}
+.right{min-height:0;display:grid;grid-template-rows:auto minmax(330px,1fr);gap:14px;overflow:hidden}.properties{padding:14px 15px}.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}.section-title h3{font-size:11px;margin:0;font-weight:800}.tiny{font-size:9px;color:#8d939d}.field-label{font-size:9px;color:#7b818c;margin-bottom:5px}.title-field{width:100%;height:34px;border:1px solid #dfe2e6;border-radius:8px;padding:0 10px;font-size:11px;font-weight:650;outline:0}.meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}.meta{background:#f8f9fa;border:1px solid #eaecf0;border-radius:8px;padding:8px}.meta span{display:block;font-size:8px;color:#8d939d;margin-bottom:4px}.meta strong{font-size:9.5px;font-weight:680;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.output{margin-top:10px;border-top:1px solid #eceef1;padding-top:10px;display:flex;justify-content:space-between;gap:10px}.badge{height:23px;border-radius:6px;padding:0 7px;display:flex;align-items:center;gap:5px;background:var(--violet-soft);color:#6549bf;font-size:8px;font-weight:750}.badge.green{background:var(--mint);color:#1c7754}.progress-text{font-size:8px;color:#8b919b;text-align:right}.progress-text strong{display:block;font-size:9.5px;color:#545a64;margin-bottom:2px}
+.miniview{display:grid;grid-template-rows:42px minmax(0,1fr);min-height:0}.mini-head{border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 12px}.mini-head h3{font-size:10px;margin:0;font-weight:800}.mini-actions{margin-left:auto;display:flex;gap:4px}.mini-actions button{width:25px;height:25px;border:0;background:#f5f6f7;border-radius:6px;display:grid;place-items:center;color:#6c727c}.mini-actions svg{width:12px;height:12px}.canvas{position:relative;overflow:hidden;background-color:#fbfbfc;background-image:radial-gradient(#d7dbe1 1px,transparent 1px);background-size:20px 20px}.canvas::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.2),transparent 20%,transparent 80%,rgba(255,255,255,.2));pointer-events:none}.canvas-stage{position:absolute;inset:0;transform:scale(.75);transform-origin:center center}.node{position:absolute;width:174px;background:white;border:1px solid #dfe2e7;border-radius:10px;box-shadow:0 7px 24px rgba(22,26,34,.07);z-index:3}.node.selected{border-color:#2a9f72;box-shadow:0 0 0 2px rgba(42,159,114,.12),0 7px 24px rgba(22,26,34,.08)}.node .nhead{height:29px;border-bottom:1px solid #edf0f2;padding:0 9px;display:flex;align-items:center;gap:6px}.kind{width:17px;height:17px;border-radius:5px;display:grid;place-items:center}.kind svg{width:10px;height:10px}.kind.k{background:#eaf7f2;color:#20845e}.kind.p{background:#edf2ff;color:#4d6fcf}.kind.d{background:#fff4df;color:#aa7615}.nhead strong{font-size:8.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.node .body{padding:8px 9px 9px;font-size:7.7px;color:#6c727c;line-height:1.4}.node .foot{display:flex;gap:4px;padding:0 9px 8px}.chip{height:17px;border-radius:5px;background:#f2f3f5;padding:0 5px;display:flex;align-items:center;font-size:6.8px;color:#777e88}.port{position:absolute;width:8px;height:8px;border-radius:50%;border:2px solid #fff;background:#58a886;top:50%;margin-top:-4px;z-index:4}.port.left{left:-5px}.port.right{right:-5px}.edge-layer{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:1;pointer-events:none}.edge{fill:none;stroke:#aeb8c5;stroke-width:1.5}.edge.process{stroke:#718bd3}.edge.relation{stroke:#77a990;stroke-dasharray:4 3}.edge-label{position:absolute;z-index:2;background:#fff;border:1px solid #e0e3e7;border-radius:5px;padding:3px 5px;font-size:6.8px;color:#7f858f;box-shadow:0 2px 6px rgba(0,0,0,.03)}
+.canvas-legend{position:absolute;left:9px;bottom:9px;z-index:6;display:flex;gap:6px}.legend{height:21px;border:1px solid #e2e5e8;background:rgba(255,255,255,.92);border-radius:6px;padding:0 6px;display:flex;align-items:center;gap:4px;font-size:6.8px;color:#727984}.legend i{width:5px;height:5px;border-radius:50%;background:#2a9f72}.legend:nth-child(2) i{background:#5b78d2}.legend:nth-child(3) i{background:#c98f25}
+.detected{position:absolute;right:24px;bottom:110px;width:318px;background:#171b20;color:#fff;border:1px solid #282e35;border-radius:12px;box-shadow:0 18px 55px rgba(0,0,0,.25);z-index:40;padding:13px 13px 12px;display:none}.detected.show{display:block;animation:rise .18s ease-out}.detect-head{display:flex;gap:9px}.detect-icon{width:28px;height:28px;border-radius:8px;background:#153a2d;color:#56d7a3;display:grid;place-items:center;flex:none}.detect-icon svg{width:14px;height:14px}.detect-head strong{font-size:10.5px;display:block}.detect-head span{font-size:8.5px;color:#98a0ab;display:block;margin-top:3px;line-height:1.35}.detect-actions{display:flex;justify-content:flex-end;gap:6px;margin-top:11px}.detect-actions button{height:27px;border-radius:7px;border:1px solid #343a43;background:#22272e;color:#b8bec7;padding:0 9px;font-size:8.5px;font-weight:650}.detect-actions .yes{background:#24a46e;border-color:#24a46e;color:#fff}
+.modal-shade{position:absolute;inset:56px 0 0 240px;background:rgba(13,16,20,.24);backdrop-filter:blur(1px);z-index:50;display:none}.modal-shade.show{display:grid;place-items:center}.modal{width:560px;border-radius:14px;background:#fff;border:1px solid #e0e3e7;box-shadow:0 25px 75px rgba(11,14,18,.22);overflow:hidden}.modal-top{height:55px;border-bottom:1px solid #eceef1;display:flex;align-items:center;padding:0 16px}.modal-top strong{font-size:12px}.modal-top span{font-size:9px;color:#838995;display:block;margin-top:2px}.modal-body{padding:15px 16px}.confirm-card{border:1px solid #dfe4e1;background:#fbfdfc;border-radius:10px;padding:12px}.confirm-title{font-size:10px;font-weight:760}.flow{display:flex;align-items:center;gap:5px;margin-top:10px;flex-wrap:wrap}.flow span{font-size:8px;border:1px solid #e2e6e5;border-radius:6px;background:#fff;padding:5px 7px}.flow b{font-size:9px;color:#adb3ba}.confirm-options{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.option{border:1px solid #e5e7eb;border-radius:8px;padding:9px}.option span{display:block;font-size:8px;color:#8a909b;margin-bottom:4px}.option strong{font-size:9px}.modal-foot{border-top:1px solid #eceef1;padding:11px 16px;display:flex;justify-content:flex-end;gap:7px}.modal-foot button{height:30px;border-radius:8px;padding:0 11px;border:1px solid #dfe2e6;background:white;font-size:9px;font-weight:650}.modal-foot .confirm{background:#1d9b68;border-color:#1d9b68;color:white}
+.drawer{position:absolute;top:56px;right:0;bottom:0;width:380px;background:#fff;border-left:1px solid #dedfe4;box-shadow:-16px 0 42px rgba(18,22,28,.09);z-index:45;display:none;grid-template-rows:54px minmax(0,1fr) 190px}.drawer.show{display:grid}.drawer-head{display:flex;align-items:center;padding:0 13px;border-bottom:1px solid #e7e9ed}.drawer-head .kind{width:24px;height:24px}.drawer-head strong{font-size:10.5px;margin-left:8px}.drawer-head span{display:block;font-size:8px;color:#858b95;margin-top:2px}.drawer-close{margin-left:auto;width:28px;height:28px;border:0;border-radius:7px;background:#f4f5f7}.okf-doc{padding:15px 16px;overflow:auto}.okf-doc h2{font-size:14px;margin:0 0 6px}.okf-doc .doc-meta{font-size:8px;color:#9298a1;margin-bottom:15px}.okf-doc h4{font-size:9.5px;margin:14px 0 6px}.okf-doc p,.okf-doc li{font-size:9px;line-height:1.5;color:#5d646e}.okf-doc ul{padding-left:16px}.doc-chat{border-top:1px solid #e7e9ed;display:grid;grid-template-rows:1fr 48px;background:#fafbfc;padding:10px}.doc-chat .mini-msg{font-size:8.5px;color:#646b75;line-height:1.45}.doc-chat .mini-msg strong{color:#26785a}.doc-chat-input{align-self:end;background:#fff;border:1px solid #dde1e6;border-radius:8px;height:36px;display:flex;align-items:center;padding:0 5px 0 9px}.doc-chat-input input{border:0;outline:0;flex:1;font-size:8.5px}.doc-chat-input button{width:27px;height:27px;border:0;border-radius:6px;background:#171b20;color:white}
+.canvas-full{position:absolute;inset:56px 0 0 240px;background:#f4f5f7;padding:14px;z-index:35;display:none}.canvas-full.show{display:grid;grid-template-rows:50px minmax(0,1fr)}.canvas-toolbar{background:white;border:1px solid #e1e4e8;border-radius:12px 12px 0 0;display:flex;align-items:center;padding:0 12px;gap:7px}.canvas-toolbar h2{font-size:12px;margin:0 12px 0 3px}.canvas-toolbar .btn{height:29px}.canvas-wrap{position:relative;border:1px solid #e1e4e8;border-top:0;border-radius:0 0 12px 12px;overflow:hidden;background:white}.canvas-wrap .canvas{position:absolute;inset:0}.full-stage{position:absolute;inset:0;min-width:1100px;min-height:720px}.full-stage .node{width:210px}.full-stage .node .nhead{height:34px}.full-stage .node .nhead strong{font-size:10px}.full-stage .node .body{font-size:8.5px;padding:10px 11px}.full-stage .chip{font-size:7.5px;height:19px}.canvas-controls{position:absolute;right:13px;bottom:13px;display:flex;gap:5px;z-index:8}.canvas-controls button{width:31px;height:31px;border:1px solid #dfe3e7;background:#fff;border-radius:8px;color:#5f6670}.canvas-title{position:absolute;left:17px;top:15px;z-index:8;background:rgba(255,255,255,.93);border:1px solid #e1e4e7;border-radius:8px;padding:7px 9px;font-size:8px;color:#7a818a}.canvas-title strong{color:#252a31;font-size:9.5px;display:block;margin-bottom:2px}
+.settings{position:absolute;inset:56px 0 0 240px;background:#f4f5f7;padding:14px;z-index:35;display:none}.settings.show{display:grid;grid-template-columns:240px minmax(0,1fr);gap:14px}.settings-nav,.settings-main{background:#fff;border:1px solid #e1e4e8;border-radius:12px}.settings-nav{padding:12px}.settings-nav h3{font-size:11px;margin:4px 8px 10px}.set-item{height:36px;border-radius:8px;padding:0 9px;display:flex;align-items:center;font-size:10px;color:#606772}.set-item.active{background:#f0f6f3;color:#1d7755;font-weight:700}.settings-main{padding:20px;overflow:auto}.settings-main h2{font-size:14px;margin:0 0 4px}.settings-main>p{font-size:9px;color:#8a909a;margin:0 0 19px}.set-section{border-top:1px solid #eceef1;padding-top:16px;margin-top:16px}.set-section:first-of-type{border-top:0;padding-top:0}.set-section h4{font-size:10px;margin:0 0 10px}.set-row{display:grid;grid-template-columns:180px 1fr;gap:14px;align-items:center;margin:9px 0}.set-row label{font-size:9px;color:#656c76}.set-control{height:34px;border:1px solid #dde1e6;border-radius:8px;background:#fafbfc;padding:0 10px;display:flex;align-items:center;font-size:9px;color:#4d545e}.set-control code{font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.set-control .browse{margin-left:auto;color:#247658;font-weight:700}.secret{letter-spacing:.14em}
+@keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+
+/* Interactive knowledge graph — Macroobras-style node/edge behavior */
+.full-stage{transform-origin:0 0;will-change:transform}
+.canvas-wrap .canvas{overflow:auto;touch-action:pan-x pan-y}
+.full-stage .node{user-select:none;touch-action:none;cursor:grab;transition:border-color .12s,box-shadow .12s}
+.full-stage .node.dragging{cursor:grabbing;z-index:12;box-shadow:0 18px 42px rgba(22,26,34,.16)}
+.full-stage .node.connect-source{border-color:#4a76e8;box-shadow:0 0 0 3px rgba(74,118,232,.12),0 10px 30px rgba(22,26,34,.11)}
+.full-stage .node .nhead{cursor:grab}
+.full-stage .node.dragging .nhead{cursor:grabbing}
+.full-stage .port.link-port{left:auto;right:-7px;top:auto;bottom:-7px;margin:0;width:15px;height:15px;border:3px solid #fff;background:#28a873;cursor:crosshair;box-shadow:0 1px 4px rgba(0,0,0,.18);touch-action:none}
+.full-stage .port.link-port::after{content:"";position:absolute;inset:-8px;border-radius:50%}
+.full-stage .node:hover .port.link-port,.full-stage .node.selected .port.link-port{transform:scale(1.08)}
+.kind.s{background:#f1edff;color:#6c50c9}
+.graph-edge-label{pointer-events:none;transform:translate(-50%,-50%);font-size:8px;z-index:2}
+.edge.preview{stroke:#27a575;stroke-width:2;stroke-dasharray:6 5}
+.node-type-picker{position:absolute;display:none;z-index:30;width:224px;background:#fff;border:1px solid #dfe3e8;border-radius:12px;box-shadow:0 18px 50px rgba(19,25,34,.19);padding:8px}
+.node-type-picker.show{display:block;animation:rise .14s ease-out}
+.node-type-picker .picker-title{font-size:9px;font-weight:800;color:#5a616b;padding:4px 6px 7px}
+.node-type-picker .picker-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.node-type-picker button{border:1px solid #e6e8ec;background:#fafbfc;border-radius:8px;min-height:54px;padding:7px;text-align:left;color:#3f454e}
+.node-type-picker button:hover,.node-type-picker button:focus-visible{border-color:#bfc8d3;background:#f5f7f9;outline:none}
+.node-type-picker button strong{display:block;font-size:9px;margin-bottom:3px}
+.node-type-picker button span{display:block;font-size:7.5px;color:#858c96;line-height:1.25}
+.node-type-picker .picker-kind{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;margin-bottom:5px;font-size:10px;font-weight:800}
+.node-type-picker .picker-kind.k{background:#eaf7f2;color:#20845e}.node-type-picker .picker-kind.p{background:#edf2ff;color:#4d6fcf}.node-type-picker .picker-kind.d{background:#fff4df;color:#aa7615}.node-type-picker .picker-kind.s{background:#f1edff;color:#6c50c9}
+.canvas-toolbar .btn.active{background:#edf2ff;border-color:#aebeea;color:#3d5fb4}
+.graph-help{position:absolute;right:13px;top:13px;z-index:8;max-width:255px;background:rgba(255,255,255,.94);border:1px solid #e1e4e7;border-radius:8px;padding:7px 9px;font-size:8px;line-height:1.35;color:#747b85;box-shadow:0 4px 18px rgba(20,25,34,.04)}
+.graph-help strong{color:#30353c}
+
+
+.mini-process-canvas{overflow:auto;position:relative}
+.mini-process-title{position:absolute;left:10px;top:10px;z-index:8;background:rgba(255,255,255,.94);border:1px solid #e1e4e7;border-radius:8px;padding:7px 9px;font-size:7.5px;color:#7a818a;max-width:260px}.mini-process-title strong{display:block;font-size:9px;color:#252a31;margin-bottom:2px}
+.mini-process-stage{position:absolute;inset:0;min-width:720px;min-height:340px}.mini-process-canvas .edge-layer{pointer-events:none}.mini-process-canvas .edge{stroke:#1d2430;stroke-width:2.4;fill:none}.mini-process-canvas .edge.loop{stroke:#2b3039}.mini-process-canvas .edge.preview{stroke:#7b6fc9;stroke-dasharray:6 5}
+.mini-process-canvas .edge-label{display:none}
+.flow-node{position:absolute;z-index:3;user-select:none}.flow-node.selected .flow-shape{outline:2px solid rgba(123,111,201,.28)}.flow-node.dragging{z-index:5}.flow-node.connect-source .flow-shape{box-shadow:0 0 0 2px rgba(90,190,145,.22),0 8px 20px rgba(0,0,0,.12)}
+.flow-shape{position:relative;display:flex;align-items:center;justify-content:center;min-height:30px;padding:0 18px;background:#7c72c7;color:#fff;font-weight:800;font-size:11px;letter-spacing:-.01em;box-shadow:0 5px 0 #0d0f13,0 8px 18px rgba(11,14,19,.12)}
+.flow-node.start .flow-shape,.flow-node.end .flow-shape{min-width:86px;height:30px;border-radius:999px}
+.flow-node.task .flow-shape{min-width:126px;height:36px;border-radius:0;padding:0 16px}
+.flow-node.decision{width:118px;height:82px}.flow-node.decision .flow-shape{position:absolute;left:21px;top:10px;width:76px;height:76px;min-width:0;padding:0;border-radius:0;transform:rotate(45deg)}
+.flow-node.decision .flow-shape span{display:block;transform:rotate(-45deg);max-width:68px;text-align:center;line-height:1.08}
+.flow-port{position:absolute;right:-8px;bottom:-8px;width:15px;height:15px;border-radius:50%;background:#58a886;border:3px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.14);cursor:crosshair;z-index:6}
+.flow-node.decision .flow-port{right:6px;bottom:6px}
+.process-type-picker .picker-kind.e{background:#efeaff;color:#5c4db2}
+.mini-process-legend .legend:nth-child(1) i{background:#7c72c7}.mini-process-legend .legend:nth-child(2) i{background:#171b20}.mini-process-legend .legend:nth-child(3) i{background:#9b7b1f}
+
+@media(max-width:1100px){.app{grid-template-columns:205px 1fr}.content{grid-template-columns:1fr 330px}.modal-shade,.canvas-full,.settings{left:205px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M6 7.5 12 4l6 3.5v7L12 18l-6-3.5z"/><path d="m6 7.5 6 3.5 6-3.5M12 11v7"/></svg></div>
+      <div><div class="brand-name">OKF Forge</div><div class="brand-sub">knowledge → safetensors</div></div>
+    </div>
+    <button class="new" id="newSession">＋ Nova sessão</button>
+    <div class="nav-label">Workspace</div>
+    <nav class="nav">
+      <button class="nav-item active" data-view="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 11 12 4l8 7v9H4z"/><path d="M9 20v-6h6v6"/></svg>Início</button>
+      <button class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 5h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H9l-5 3v-5a3 3 0 0 1-1-2V8a3 3 0 0 1 3-3Z"/></svg>Conversas <span class="count">12</span></button>
+      <button class="nav-item" data-view="canvas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="7" height="6" rx="1"/><rect x="14" y="14" width="7" height="6" rx="1"/><path d="M10 7h4a3 3 0 0 1 3 3v4"/></svg>Canvas</button>
+      <button class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></svg>Documentos OKF <span class="count">28</span></button>
+      <button class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 18h16M6 15l3-4 3 2 4-6 2 3"/></svg>Produções</button>
+    </nav>
+    <div class="nav-label">Aplicação</div>
+    <nav class="nav">
+      <button class="nav-item" data-view="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M19 13.5v-3l-2-.7-.7-1.7.9-1.9-2.1-2.1-1.9.9-1.7-.7L10.5 2h-3l-.7 2-1.7.7-1.9-.9-2.1 2.1.9 1.9-.7 1.7L0 10.5v3l2 .7.7 1.7-.9 1.9 2.1 2.1 1.9-.9 1.7.7.7 2.3h3l.7-2.3 1.7-.7 1.9.9 2.1-2.1-.9-1.9.7-1.7z" transform="scale(.9) translate(1.3 1.3)"/></svg>Configurações</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="repo-card"><div class="repo-kicker">Destino Git</div><div class="repo-name">glaucodeveloper/conhecimentos-proto</div><div class="repo-meta"><span class="dot"></span> conectado · main</div></div>
+      <div class="user"><div class="avatar">IG</div><div class="user-txt"><strong>Ícaro</strong><span>workspace local</span></div></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="crumb"><span>Conversas</span><span>/</span><strong>Mapear fluxo de contratação</strong></div>
+      <div class="spacer"></div>
+      <div class="status-pill"><span class="dot"></span>Runtime local ativo</div>
+      <div class="key-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8 2 2-2 2 1 1-2 2-1-1-3 3"/></svg>Chave •••• 72K9</div>
+      <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></button>
+    </header>
+
+    <section class="content" id="homeView">
+      <div class="panel chat-panel">
+        <div class="panel-head">
+          <div class="session-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 6h14v10H9l-4 3z"/><path d="M8 10h8M8 13h5"/></svg></div>
+          <div><div class="head-title">Mapear fluxo de contratação</div><div class="head-sub">Sessão 12 · 18 min · 4 pontos de conhecimento</div></div>
+          <div class="head-actions"><button class="btn soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M12 4v16"/></svg>Anexar</button><button class="btn primary" id="produceBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v5M12 17v5M4.9 4.9l3.5 3.5M15.6 15.6l3.5 3.5M2 12h5M17 12h5M4.9 19.1l3.5-3.5M15.6 8.4l3.5-3.5"/></svg>Produzir OKF deste ponto</button></div>
+        </div>
+        <div class="messages">
+          <div class="msg user"><div class="role">Você</div><div class="bubble">Quero registrar o processo completo de contratação: começa na abertura da necessidade pelo gestor, passa por triagem e entrevistas e termina quando a pessoa é admitida e os acessos são liberados.</div></div>
+          <div class="msg assistant"><div class="role">Agente da sessão</div><div class="bubble">Vou fechar isso como um processo ponta a ponta. Para o conhecimento ficar operacional, preciso amarrar os responsáveis e as saídas de cada etapa.<br><br><strong>Até aqui, o fluxo está assim:</strong>
+            <div class="process-block">
+              <div class="process-line"><span class="step-dot">1</span>Gestor abre requisição <span class="arrow">→</span> RH valida escopo e faixa</div>
+              <div class="process-line"><span class="step-dot">2</span>RH tria candidatos <span class="arrow">→</span> Gestor entrevista finalistas</div>
+              <div class="process-line"><span class="step-dot">3</span>Proposta aprovada <span class="arrow">→</span> Admissão + criação de acessos</div>
+            </div><br>Quem confirma a liberação final dos acessos: RH, TI ou o gestor?</div></div>
+          <div class="msg user"><div class="role">Você</div><div class="bubble">TI libera depois que o RH confirma a admissão. O gestor só valida os sistemas que a pessoa precisa.</div></div>
+          <div class="msg assistant"><div class="role">Agente da sessão</div><div class="bubble">Fechado. Agora o fluxo tem início, responsáveis, decisões e condição de término definidos. Posso transformar este ponto da conversa em um conhecimento reutilizável e ligar o processo ao grafo.</div></div>
+        </div>
+        <div class="composer"><div class="composer-box"><textarea placeholder="Continue descrevendo o trabalho, decisões ou exceções…"></textarea><button class="send" id="sendBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m4 4 17 8-17 8 4-8z"/><path d="M8 12h13"/></svg></button></div></div>
+      </div>
+
+      <div class="right">
+        <div class="panel properties">
+          <div class="section-title"><h3>Propriedades da sessão</h3><span class="tiny">salvo agora</span></div>
+          <div class="field-label">Título</div><input class="title-field" value="Mapear fluxo de contratação" />
+          <div class="meta-grid">
+            <div class="meta"><span>Autoria</span><strong>Ícaro Glauco</strong></div>
+            <div class="meta"><span>Criada em</span><strong>13 ago · 17:54</strong></div>
+            <div class="meta"><span>Conhecimentos</span><strong>4 conectados</strong></div>
+            <div class="meta"><span>Processos</span><strong>1 em confirmação</strong></div>
+          </div>
+          <div class="output"><div style="display:flex;gap:5px"><div class="badge">OKF</div><div class="badge green">SAFETENSORS</div></div><div class="progress-text"><strong>checkpoint 18:12</strong>produção manual disponível</div></div>
+        </div>
+        <div class="panel miniview">
+          <div class="mini-head"><h3>Mini canvas · processo de trabalho</h3><div class="mini-actions"><button title="Centralizar processo" id="centerMiniProcess"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg></button><button title="Abrir grafo" id="openCanvas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3h7v7M10 21H3v-7M21 3l-8 8M3 21l8-8"/></svg></button></div></div>
+          <div class="canvas mini-process-canvas" id="miniProcessCanvas">
+            <div class="mini-process-title"><strong>Fluxo principal · contratação</strong>Arraste as formas, puxe do canto para conectar e solte no vazio para criar outra etapa.</div>
+            <div class="mini-process-stage" id="miniProcessStage">
+              <svg class="edge-layer mini-process-edges" id="miniProcessEdges" viewBox="0 0 720 340" preserveAspectRatio="none" aria-hidden="true"></svg>
+            </div>
+            <div class="node-type-picker process-type-picker" id="miniProcessPicker">
+              <span>Novo elemento do processo</span>
+              <button type="button" data-mini-shape="start"><span class="picker-kind s">S</span><strong>Início</strong><span>Marco de partida do processo</span></button>
+              <button type="button" data-mini-shape="task"><span class="picker-kind p">T</span><strong>Atividade</strong><span>Etapa operacional ou documental</span></button>
+              <button type="button" data-mini-shape="decision"><span class="picker-kind d">D</span><strong>Decisão</strong><span>Condição que bifurca o fluxo</span></button>
+              <button type="button" data-mini-shape="end"><span class="picker-kind e">F</span><strong>Fim</strong><span>Marco de encerramento</span></button>
+            </div>
+            <div class="canvas-legend mini-process-legend"><div class="legend"><i></i>início / fim</div><div class="legend"><i></i>atividade</div><div class="legend"><i></i>decisão</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="detected show" id="detected">
+    <div class="detect-head"><div class="detect-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 4 4L19 6"/></svg></div><div><strong>Processo ponta a ponta detectado</strong><span>O agente encontrou início, atores, decisões, saída e condição de término suficientes para registrar conhecimento.</span></div></div>
+    <div class="detect-actions"><button id="dismissDetect">Depois</button><button class="yes" id="confirmDetect">Confirmar no grafo</button></div>
+  </div>
+
+  <div class="modal-shade" id="modalShade">
+    <div class="modal">
+      <div class="modal-top"><div><strong>Confirmar conhecimento produzido</strong><span>O ponto atual da conversa será congelado como origem do artefato.</span></div></div>
+      <div class="modal-body">
+        <div class="confirm-card"><div class="confirm-title">Processo de contratação de colaborador</div><div class="flow"><span>Requisição</span><b>→</b><span>Triagem</span><b>→</b><span>Entrevistas</span><b>→</b><span>Proposta</span><b>→</b><span>Admissão</span><b>→</b><span>Acessos</span></div></div>
+        <div class="confirm-options"><div class="option"><span>Documento</span><strong>processo-contratacao.okf</strong></div><div class="option"><span>Produção</span><strong>knowledge-contratacao.safetensors</strong></div><div class="option"><span>Destino</span><strong>conhecimentos-proto / conhecimentos</strong></div><div class="option"><span>Relação no canvas</span><strong>Sessão → descreve → Processo</strong></div></div>
+      </div>
+      <div class="modal-foot"><button id="cancelModal">Cancelar</button><button class="confirm" id="finishModal">Produzir e adicionar ao canvas</button></div>
+    </div>
+  </div>
+
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head"><div class="kind k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5h14v14H5zM9 9h6M9 13h6"/></svg></div><div><strong>Critérios de triagem</strong><span>documento OKF · v3</span></div><button class="drawer-close" id="drawerClose">×</button></div>
+    <div class="okf-doc"><h2>Critérios de triagem de candidatos</h2><div class="doc-meta">OKF · produção 13 ago 2026 · autoria: Ícaro Glauco</div><h4>Finalidade</h4><p>Estruturar a triagem inicial para reduzir variação entre vagas e preservar critérios verificáveis antes da entrevista.</p><h4>Entradas</h4><ul><li>Descrição da vaga aprovada.</li><li>Faixa e senioridade.</li><li>Requisitos eliminatórios.</li></ul><h4>Decisões</h4><p>O RH classifica aderência e encaminha apenas candidatos que atendem aos requisitos eliminatórios, registrando exceções justificadas.</p><h4>Relações</h4><p>Conecta-se ao processo de contratação e à decisão de aprovação de finalistas.</p></div>
+    <div class="doc-chat"><div class="mini-msg"><strong>Chat do OKF</strong><br>Você pode pedir alterações no documento; o contexto fica restrito a este conhecimento e suas relações.</div><div class="doc-chat-input"><input placeholder="Editar ou perguntar sobre este OKF…"><button>↑</button></div></div>
+  </aside>
+
+  <section class="canvas-full" id="canvasFull">
+    <div class="canvas-toolbar"><button class="icon-btn" id="closeCanvas">←</button><h2>Grafo de conhecimentos</h2><button class="btn green" id="addKnowledgeBtn">＋ Conhecimento</button><button class="btn" id="addProcessBtn">◇ Processo BPMN</button><button class="btn" id="relationModeBtn" aria-pressed="false">↗ Relação</button><div class="spacer"></div><button class="btn" id="fitGraphBtn">Ajustar</button><button class="btn" id="zoomValueBtn">100%</button></div>
+    <div class="canvas-wrap"><div class="canvas"><div class="canvas-title"><strong>Workspace · contratação</strong>Arraste cards, conecte portas e abra um OKF para editar.</div>
+      <div class="full-stage" id="graphStage">
+        <svg class="edge-layer" id="graphEdges" viewBox="0 0 1180 720" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="node selected" data-node-id="session-hiring" data-node-type="session" style="left:95px;top:145px" data-open-okf><span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind s">S</div><strong>Sessão · contratação</strong></div><div class="body">Ponto de origem da conversa. Centralização da mini-view e do histórico associado.</div><div class="foot"><span class="chip">sessão 12</span><span class="chip">origem</span></div></div>
+        <div class="node" data-node-id="screening-criteria" data-node-type="knowledge" style="left:500px;top:60px" data-open-okf><span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind k">K</div><strong>Critérios de triagem</strong></div><div class="body">Conhecimento operacional sobre requisitos, evidências e exceções de triagem.</div><div class="foot"><span class="chip">OKF v3</span><span class="chip">safetensors</span></div></div>
+        <div class="node" data-node-id="hiring-process" data-node-type="process" style="left:535px;top:325px"><span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind p">P</div><strong>Processo · contratação</strong></div><div class="body">Requisição → triagem → entrevistas → proposta → admissão → acessos.</div><div class="foot"><span class="chip">BPMN</span><span class="chip">6 etapas</span></div></div>
+        <div class="node" data-node-id="finalists-decision" data-node-type="decision" style="left:940px;top:155px" data-open-okf><span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind d">D</div><strong>Decisão · finalistas</strong></div><div class="body">Gestor seleciona finalistas após evidências de triagem e entrevistas.</div><div class="foot"><span class="chip">decisão</span></div></div>
+        <div class="node" data-node-id="access-release" data-node-type="knowledge" style="left:970px;top:420px" data-open-okf><span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind k">K</div><strong>Liberação de acessos</strong></div><div class="body">TI executa a liberação após RH confirmar admissão e gestor definir sistemas.</div><div class="foot"><span class="chip">OKF</span><span class="chip">TI</span></div></div>
+      </div>
+      <div class="graph-help"><strong>Conectar:</strong> puxe o ponto verde no canto de um card. Solte sobre outro card para ligar ou no vazio para criar uma nova forma.</div>
+      <div class="node-type-picker" id="nodeTypePicker" role="dialog" aria-label="Escolher tipo da nova forma">
+        <div class="picker-title">Criar forma ligada a este card</div>
+        <div class="picker-grid">
+          <button type="button" data-create-type="knowledge"><span class="picker-kind k">K</span><strong>Conhecimento</strong><span>Documento OKF / safetensors</span></button>
+          <button type="button" data-create-type="process"><span class="picker-kind p">P</span><strong>Processo BPMN</strong><span>Fluxo de trabalho ponta a ponta</span></button>
+          <button type="button" data-create-type="decision"><span class="picker-kind d">D</span><strong>Decisão</strong><span>Regra, condição ou escolha</span></button>
+          <button type="button" data-create-type="session"><span class="picker-kind s">S</span><strong>Sessão</strong><span>Outro ponto de conversa</span></button>
+        </div>
+      </div>
+      <div class="canvas-controls"><button type="button" id="zoomOutBtn" title="Reduzir zoom">−</button><button type="button" id="centerGraphBtn" title="Ajustar ao conteúdo">⌖</button><button type="button" id="zoomInBtn" title="Aumentar zoom">＋</button></div>
+    </div></div>
+  </section>
+
+  <section class="settings" id="settingsView">
+    <aside class="settings-nav"><h3>Configurações</h3><div class="set-item active">Sessão e agente</div><div class="set-item">Armazenamento OKF</div><div class="set-item">Produção safetensors</div><div class="set-item">Git / sincronização</div><div class="set-item">Chave da aplicação</div></aside>
+    <div class="settings-main"><h2>Sessão e armazenamento</h2><p>Parâmetros técnicos da sessão, do agente e dos documentos produzidos.</p>
+      <div class="set-section"><h4>Sessão</h4><div class="set-row"><label>Prompt do agente</label><div class="set-control">Determinar processos de trabalho ponta a ponta com o usuário…</div></div><div class="set-row"><label>Detecção RLM</label><div class="set-control">Ativa · confirmar processo completo na interface</div></div><div class="set-row"><label>Snapshot de conversa</label><div class="set-control">Manual por botão + sugestão do agente</div></div></div>
+      <div class="set-section"><h4>Documentos OKF</h4><div class="set-row"><label>Diretório local</label><div class="set-control"><code>~/Conhecimentos/okf</code><span class="browse">Escolher</span></div></div><div class="set-row"><label>Destino do repositório</label><div class="set-control"><code>glaucodeveloper/conhecimentos-proto</code></div></div><div class="set-row"><label>Pasta no repositório</label><div class="set-control"><code>conhecimentos/</code></div></div></div>
+      <div class="set-section"><h4>Chave</h4><div class="set-row"><label>Chave da aplicação</label><div class="set-control secret">sk-okf-••••••••••••72K9</div></div><div class="set-row"><label>Escopo</label><div class="set-control">produção · escrita local · commit no repositório</div></div></div>
+    </div>
+  </section>
+</div>
+<script>
+const detected=document.getElementById('detected'),shade=document.getElementById('modalShade'),drawer=document.getElementById('drawer'),canvasFull=document.getElementById('canvasFull'),settings=document.getElementById('settingsView');
+function modal(on){shade.classList.toggle('show',on)}
+function showCanvas(on){canvasFull.classList.toggle('show',on);settings.classList.remove('show');if(on)requestAnimationFrame(()=>graph.render())}
+function showSettings(on){settings.classList.toggle('show',on);canvasFull.classList.remove('show')}
+document.getElementById('produceBtn').onclick=()=>modal(true);document.getElementById('confirmDetect').onclick=()=>modal(true);document.getElementById('dismissDetect').onclick=()=>detected.classList.remove('show');document.getElementById('cancelModal').onclick=()=>modal(false);document.getElementById('finishModal').onclick=()=>{modal(false);detected.classList.remove('show');showCanvas(true)};
+document.getElementById('openCanvas').onclick=()=>showCanvas(true);document.getElementById('closeCanvas').onclick=()=>showCanvas(false);document.getElementById('drawerClose').onclick=()=>drawer.classList.remove('show');
+document.querySelectorAll('.nav-item[data-view]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.nav-item').forEach(x=>x.classList.remove('active'));btn.classList.add('active');const v=btn.dataset.view;if(v==='canvas')showCanvas(true);else if(v==='settings')showSettings(true);else{showCanvas(false);showSettings(false)}}));
+document.getElementById('newSession').onclick=()=>alert('Nova sessão: abre uma conversa limpa com o card de propriedades e a mini-view vazia.');
+
+
+const miniProcess=(()=>{
+  const canvas=document.getElementById('miniProcessCanvas');
+  const stage=document.getElementById('miniProcessStage');
+  const svg=document.getElementById('miniProcessEdges');
+  const picker=document.getElementById('miniProcessPicker');
+  const centerButton=document.getElementById('centerMiniProcess');
+  if(!canvas||!stage||!svg||!picker)return {fit(){},render(){}};
+  const nodes=new Map();
+  const edges=[];
+  let drag=null,connect=null,previewPath=null,pendingCreate=null,nodeSeq=1;
+  const defs=document.createElementNS('http://www.w3.org/2000/svg','defs');
+  defs.innerHTML='<marker id="miniArrow" markerWidth="10" markerHeight="10" refX="8.2" refY="3.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3.5 L0,7 z" fill="#1d2430"></path></marker>';
+  svg.appendChild(defs);
+  const templates={
+    start:{type:'start',label:'Início',w:86,h:30},
+    task:{type:'task',label:'Fazer Orçamento',w:126,h:36},
+    decision:{type:'decision',label:'Cliente Aprovou?',w:118,h:82},
+    end:{type:'end',label:'Fim',w:86,h:30}
+  };
+  const initial=[
+    {id:'flow-start',shape:'start',label:'Início',x:28,y:118},
+    {id:'flow-budget',shape:'task',label:'Fazer Orçamento',x:160,y:108},
+    {id:'flow-budget',shape:'task',label:'Fazer Orçamento',x:160,y:108},
+    {id:'flow-approval',shape:'decision',label:'Cliente Aprovou?',x:355,y:78},
+    {id:'flow-approval',shape:'decision',label:'Cliente Aprovou?',x:355,y:78},
+    {id:'flow-invoice',shape:'task',label:'Emitir Nota Fiscal',x:515,y:208},
+    {id:'flow-invoice',shape:'task',label:'Emitir Nota Fiscal',x:515,y:208},
+    {id:'flow-end',shape:'end',label:'Fim',x:660,y:215}
+  ];
+  const initialEdges=[
+    {id:'f1',from:'flow-start',to:'flow-budget'},
+    {id:'f2',from:'flow-budget',to:'flow-approval'},
+    {id:'f3',from:'flow-approval',to:'flow-invoice'},
+    {id:'f4',from:'flow-invoice',to:'flow-end'},
+    {id:'f5',from:'flow-approval',to:'flow-budget',loop:true}
+  ];
+
+  function normalizeLabel(label){return String(label||'')}
+  function shapeDims(shape){return templates[shape]||templates.task}
+  function registerNode(el){nodes.set(el.dataset.nodeId,{el});}
+  function createNodeElement(node){
+    const meta=shapeDims(node.shape);
+    const el=document.createElement('div');
+    el.className=`flow-node ${meta.type}`;
+    el.dataset.nodeId=node.id;el.dataset.shape=node.shape;
+    el.style.left=`${node.x}px`;el.style.top=`${node.y}px`;
+    el.innerHTML=`<div class="flow-shape"><span>${normalizeLabel(node.label)}</span></div><span class="flow-port" title="Puxar para conectar ou criar forma"></span>`;
+    stage.appendChild(el);registerNode(el);bindNode(el);return el;
+  }
+  initial.forEach(createNodeElement);initialEdges.forEach(edge=>edges.push(edge));
+
+  function nodeBox(id){
+    const el=nodes.get(id)?.el;if(!el)return null;
+    return {x:parseFloat(el.style.left)||0,y:parseFloat(el.style.top)||0,w:el.offsetWidth||shapeDims(el.dataset.shape).w,h:el.offsetHeight||shapeDims(el.dataset.shape).h};
+  }
+  function stagePoint(clientX,clientY){
+    const rect=canvas.getBoundingClientRect();
+    return {x:clientX-rect.left+canvas.scrollLeft,y:clientY-rect.top+canvas.scrollTop};
+  }
+  function anchor(box,kind,target){
+    const cx=box.x+box.w/2,cy=box.y+box.h/2;
+    const dx=(target?.x||cx)-cx,dy=(target?.y||cy)-cy;
+    if(Math.abs(dx)>=Math.abs(dy)) return dx>=0?{x:box.x+box.w,y:cy}:{x:box.x,y:cy};
+    return dy>=0?{x:cx,y:box.y+box.h}:{x:cx,y:box.y};
+  }
+  function orthPath(a,b){
+    const dx=Math.abs(b.x-a.x),dy=Math.abs(b.y-a.y);
+    if(dx>=dy){
+      const mid=(a.x+b.x)/2;
+      return `M ${a.x} ${a.y} L ${mid} ${a.y} L ${mid} ${b.y} L ${b.x} ${b.y}`;
+    }
+    const mid=(a.y+b.y)/2;
+    return `M ${a.x} ${a.y} L ${a.x} ${mid} L ${b.x} ${mid} L ${b.x} ${b.y}`;
+  }
+  function renderEdges(){
+    [...svg.querySelectorAll('path.edge')].forEach(n=>n.remove());
+    if(stage.querySelector('.graph-edge-label')) stage.querySelectorAll('.graph-edge-label').forEach(n=>n.remove());
+    const stageW=Math.max(stage.scrollWidth,720),stageH=Math.max(stage.scrollHeight,340);
+    svg.setAttribute('viewBox',`0 0 ${stageW} ${stageH}`);
+    edges.forEach(edge=>{
+      const from=nodeBox(edge.from),to=nodeBox(edge.to);if(!from||!to)return;
+      const start=anchor(from,{x:to.x+to.w/2,y:to.y+to.h/2}),end=anchor(to,{x:from.x+from.w/2,y:from.y+from.h/2});
+      let d=orthPath(start,end);
+      if(edge.loop){
+        const outX=start.x,up=Math.min(start.y,end.y)-40;
+        d=`M ${start.x} ${start.y} L ${outX} ${up} L ${end.x} ${up} L ${end.x} ${end.y}`;
+      }
+      const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+      p.setAttribute('class',`edge${edge.loop?' loop':''}`);p.setAttribute('d',d);p.setAttribute('marker-end','url(#miniArrow)');svg.appendChild(p);
+    });
+    if(previewPath)svg.appendChild(previewPath);
+  }
+  function render(){renderEdges();}
+  function ensureBounds(el){
+    const w=(parseFloat(el.style.left)||0)+el.offsetWidth+80,h=(parseFloat(el.style.top)||0)+el.offsetHeight+80;
+    stage.style.width=`${Math.max(720,w)}px`;stage.style.height=`${Math.max(340,h)}px`;
+  }
+  function selectNode(id){stage.querySelectorAll('.flow-node').forEach(n=>n.classList.toggle('selected',n.dataset.nodeId===id));}
+  function targetNodeAt(clientX,clientY,exclude){
+    return document.elementsFromPoint(clientX,clientY).map(el=>el.closest?.('.flow-node[data-node-id]')).find(el=>el&&canvas.contains(el)&&el.dataset.nodeId!==exclude)||null;
+  }
+  function addEdge(from,to){if(!from||!to||from===to||edges.some(e=>e.from===from&&e.to===to))return false;edges.push({id:`mf-${Date.now()}-${Math.random().toString(36).slice(2,6)}`,from,to});render();return true}
+  function newNode(shape,x,y){
+    const meta=shapeDims(shape),id=`mini-${shape}-${Date.now().toString(36)}-${nodeSeq++}`;
+    const labels={start:'Início',task:'Nova Atividade',decision:'Nova Decisão?',end:'Fim'};
+    const el=createNodeElement({id,shape,label:labels[shape],x:Math.max(12,Math.round(x-meta.w/2)),y:Math.max(12,Math.round(y-meta.h/2))});
+    ensureBounds(el);render();selectNode(id);return id;
+  }
+  function hidePicker(){picker.classList.remove('show');pendingCreate=null;}
+  function showPicker(clientX,clientY,world,sourceId){
+    const r=canvas.getBoundingClientRect(),pw=picker.offsetWidth||224,ph=picker.offsetHeight||190;
+    pendingCreate={sourceId,world};picker.classList.add('show');
+    picker.style.left=`${Math.max(8,Math.min(r.width-pw-8,clientX-r.left+6))}px`;
+    picker.style.top=`${Math.max(8,Math.min(r.height-ph-8,clientY-r.top+6))}px`;
+  }
+  picker.querySelectorAll('[data-mini-shape]').forEach(btn=>btn.addEventListener('click',()=>{
+    if(!pendingCreate)return;const {sourceId,world}=pendingCreate;const shape=btn.dataset.miniShape;hidePicker();const id=newNode(shape,world.x,world.y);addEdge(sourceId,id);
+  }));
+
+  function beginConnect(ev,el){
+    ev.preventDefault();ev.stopPropagation();hidePicker();const box=nodeBox(el.dataset.nodeId);if(!box)return;
+    const start={x:box.x+box.w,y:box.y+box.h};connect={sourceId:el.dataset.nodeId,start,pointerId:ev.pointerId};el.classList.add('connect-source');
+    previewPath=document.createElementNS('http://www.w3.org/2000/svg','path');previewPath.setAttribute('class','edge preview');previewPath.setAttribute('marker-end','url(#miniArrow)');updateConnect(ev);ev.currentTarget.setPointerCapture?.(ev.pointerId);
+  }
+  function updateConnect(ev){if(!connect)return;const now=stagePoint(ev.clientX,ev.clientY);previewPath?.setAttribute('d',orthPath(connect.start,now));renderEdges();}
+  function finishConnect(ev){
+    if(!connect)return;const sourceId=connect.sourceId,target=targetNodeAt(ev.clientX,ev.clientY,sourceId),point=stagePoint(ev.clientX,ev.clientY);
+    nodes.get(sourceId)?.el.classList.remove('connect-source');connect=null;previewPath=null;renderEdges();
+    if(target){addEdge(sourceId,target.dataset.nodeId);selectNode(target.dataset.nodeId)} else showPicker(ev.clientX,ev.clientY,point,sourceId);
+  }
+  function beginDrag(ev,el){if(ev.button!==0||ev.target.closest('.flow-port,button,input,textarea'))return;const pt=stagePoint(ev.clientX,ev.clientY);const box=nodeBox(el.dataset.nodeId);drag={el,id:el.dataset.nodeId,pointerId:ev.pointerId,dx:pt.x-box.x,dy:pt.y-box.y,startX:ev.clientX,startY:ev.clientY,moved:false};el.setPointerCapture?.(ev.pointerId);}
+  function updateDrag(ev){if(!drag||ev.pointerId!==drag.pointerId)return;const dist=Math.hypot(ev.clientX-drag.startX,ev.clientY-drag.startY);if(dist>3)drag.moved=true;if(!drag.moved)return;const pt=stagePoint(ev.clientX,ev.clientY);drag.el.classList.add('dragging');drag.el.style.left=`${Math.max(0,pt.x-drag.dx)}px`;drag.el.style.top=`${Math.max(0,pt.y-drag.dy)}px`;ensureBounds(drag.el);renderEdges();}
+  function finishDrag(ev){if(!drag||ev.pointerId!==drag.pointerId)return;const d=drag;drag=null;d.el.classList.remove('dragging');selectNode(d.id);renderEdges();}
+  function bindNode(el){
+    ensureBounds(el);
+    el.addEventListener('pointerdown',ev=>beginDrag(ev,el));el.addEventListener('pointermove',updateDrag);el.addEventListener('pointerup',finishDrag);el.addEventListener('pointercancel',finishDrag);
+    const port=el.querySelector('.flow-port');port?.addEventListener('pointerdown',ev=>beginConnect(ev,el));port?.addEventListener('pointermove',updateConnect);port?.addEventListener('pointerup',finishConnect);port?.addEventListener('pointercancel',finishConnect);
+    el.addEventListener('click',ev=>{if(ev.target.closest('.flow-port'))return;selectNode(el.dataset.nodeId)});
+  }
+  centerButton?.addEventListener('click',()=>fit());
+  canvas.addEventListener('pointerdown',ev=>{if(!ev.target.closest('.process-type-picker')&&!ev.target.closest('.flow-port'))hidePicker()});
+  function fit(){
+    const list=[...nodes.keys()].map(nodeBox).filter(Boolean);if(!list.length)return;
+    const minX=Math.min(...list.map(b=>b.x)),minY=Math.min(...list.map(b=>b.y));
+    const maxX=Math.max(...list.map(b=>b.x+b.w)),maxY=Math.max(...list.map(b=>b.y+b.h));
+    canvas.scrollLeft=Math.max(0,minX-32);canvas.scrollTop=Math.max(0,minY-32);
+  }
+  window.addEventListener('resize',render);
+  render();fit();
+  return {fit,render};
+})();
+
+const graph=(()=>{
+  const canvas=document.querySelector('#canvasFull .canvas');
+  const wrap=document.querySelector('#canvasFull .canvas-wrap');
+  const stage=document.getElementById('graphStage');
+  const svg=document.getElementById('graphEdges');
+  const picker=document.getElementById('nodeTypePicker');
+  const zoomLabel=document.getElementById('zoomValueBtn');
+  const relationButton=document.getElementById('relationModeBtn');
+  let zoom=1;
+  let drag=null;
+  let connect=null;
+  let previewPath=null;
+  let pendingCreate=null;
+  let relationMode=false;
+  let relationSource=null;
+  let nodeSequence=1;
+  const nodes=new Map();
+  const edges=[
+    {id:'e1',from:'session-hiring',to:'screening-criteria',label:'origina',kind:'relation'},
+    {id:'e2',from:'session-hiring',to:'hiring-process',label:'descreve',kind:'process'},
+    {id:'e3',from:'screening-criteria',to:'finalists-decision',label:'depende de',kind:'relation'},
+    {id:'e4',from:'hiring-process',to:'access-release',label:'termina em',kind:'process'}
+  ];
+
+  const templates={
+    knowledge:{kind:'k',symbol:'K',title:'Novo conhecimento',body:'Conhecimento produzido ou consolidado a partir da sessão.',chips:['OKF','rascunho'],open:true},
+    process:{kind:'p',symbol:'P',title:'Novo processo',body:'Fluxo de trabalho para estruturar etapas, atores, entradas e saídas.',chips:['BPMN','processo'],open:false},
+    decision:{kind:'d',symbol:'D',title:'Nova decisão',body:'Condição, regra ou escolha que altera o percurso do processo.',chips:['decisão'],open:true},
+    session:{kind:'s',symbol:'S',title:'Nova sessão',body:'Ponto de conversa relacionado ao conhecimento ou processo atual.',chips:['sessão'],open:true}
+  };
+
+  function registerNode(el){
+    const id=el.dataset.nodeId;
+    if(!id)return;
+    nodes.set(id,{id,el,type:el.dataset.nodeType||'knowledge'});
+  }
+  stage.querySelectorAll('.node[data-node-id]').forEach(registerNode);
+
+  function worldPoint(clientX,clientY){
+    const rect=canvas.getBoundingClientRect();
+    return {
+      x:(clientX-rect.left+canvas.scrollLeft)/zoom,
+      y:(clientY-rect.top+canvas.scrollTop)/zoom
+    };
+  }
+  function nodeBox(id){
+    const entry=nodes.get(id);if(!entry)return null;
+    const el=entry.el;
+    return {x:parseFloat(el.style.left)||0,y:parseFloat(el.style.top)||0,w:el.offsetWidth||210,h:el.offsetHeight||110};
+  }
+  function endpoint(box,other,isSource){
+    const fromLeft=other.x+other.w/2 < box.x+box.w/2;
+    return {x:box.x+(fromLeft?0:box.w),y:box.y+box.h/2};
+  }
+  function pathD(a,b){
+    const dx=b.x-a.x;
+    const bend=Math.max(70,Math.abs(dx)*.45);
+    const dir=dx>=0?1:-1;
+    return `M ${a.x} ${a.y} C ${a.x+bend*dir} ${a.y}, ${b.x-bend*dir} ${b.y}, ${b.x} ${b.y}`;
+  }
+  function clearEdgeLabels(){stage.querySelectorAll('.graph-edge-label').forEach(x=>x.remove())}
+  function renderEdges(){
+    svg.innerHTML='';clearEdgeLabels();
+    const stageW=Math.max(stage.scrollWidth,1180),stageH=Math.max(stage.scrollHeight,720);
+    svg.setAttribute('viewBox',`0 0 ${stageW} ${stageH}`);
+    edges.forEach(edge=>{
+      const aBox=nodeBox(edge.from),bBox=nodeBox(edge.to);if(!aBox||!bBox)return;
+      const a=endpoint(aBox,bBox,true),b=endpoint(bBox,aBox,false);
+      const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+      p.setAttribute('class',`edge ${edge.kind||'relation'}`);p.setAttribute('d',pathD(a,b));p.dataset.edgeId=edge.id;svg.appendChild(p);
+      const label=document.createElement('div');label.className='edge-label graph-edge-label';label.textContent=edge.label||'relaciona';label.style.left=`${(a.x+b.x)/2}px`;label.style.top=`${(a.y+b.y)/2}px`;stage.appendChild(label);
+    });
+    if(previewPath)svg.appendChild(previewPath);
+  }
+  function render(){renderEdges();zoomLabel.textContent=`${Math.round(zoom*100)}%`}
+  function addEdge(from,to,label='relaciona',kind='relation'){
+    if(!from||!to||from===to)return false;
+    if(edges.some(e=>e.from===from&&e.to===to))return false;
+    edges.push({id:`edge-${Date.now()}-${Math.random().toString(36).slice(2,6)}`,from,to,label,kind});renderEdges();return true;
+  }
+  function createNode(type,x,y){
+    const t=templates[type]||templates.knowledge;
+    const id=`${type}-${Date.now().toString(36)}-${nodeSequence++}`;
+    const el=document.createElement('div');
+    el.className='node';el.dataset.nodeId=id;el.dataset.nodeType=type;el.style.left=`${Math.max(16,Math.round(x))}px`;el.style.top=`${Math.max(16,Math.round(y))}px`;
+    if(t.open)el.dataset.openOkf='';
+    const chips=t.chips.map(ch=>`<span class="chip">${ch}</span>`).join('');
+    el.innerHTML=`<span class="port link-port" title="Puxar relação"></span><div class="nhead"><div class="kind ${t.kind}">${t.symbol}</div><strong>${t.title}</strong></div><div class="body">${t.body}</div><div class="foot">${chips}</div>`;
+    stage.appendChild(el);registerNode(el);bindNode(el);ensureStageBounds(el);renderEdges();selectNode(id);return id;
+  }
+  function ensureStageBounds(el){
+    const x=(parseFloat(el.style.left)||0)+el.offsetWidth+180,y=(parseFloat(el.style.top)||0)+el.offsetHeight+150;
+    stage.style.width=`${Math.max(1180,x,parseFloat(stage.style.width)||0)}px`;
+    stage.style.height=`${Math.max(720,y,parseFloat(stage.style.height)||0)}px`;
+  }
+  function selectNode(id){stage.querySelectorAll('.node').forEach(n=>n.classList.toggle('selected',n.dataset.nodeId===id))}
+  function targetNodeAt(clientX,clientY,exclude){
+    return document.elementsFromPoint(clientX,clientY).map(el=>el.closest?.('.full-stage .node[data-node-id]')).find(el=>el&&el.dataset.nodeId!==exclude)||null;
+  }
+  function showPicker(clientX,clientY,world,sourceId){
+    const r=wrap.getBoundingClientRect();
+    pendingCreate={sourceId,world};picker.classList.add('show');
+    picker.style.left='8px';picker.style.top='8px';
+    const pw=picker.offsetWidth||224,ph=picker.offsetHeight||154;
+    picker.style.left=`${Math.max(8,Math.min(r.width-pw-8,clientX-r.left+8))}px`;
+    picker.style.top=`${Math.max(8,Math.min(r.height-ph-8,clientY-r.top+8))}px`;
+    picker.querySelector('button')?.focus();
+  }
+  function hidePicker(){picker.classList.remove('show');pendingCreate=null}
+  picker.querySelectorAll('[data-create-type]').forEach(btn=>btn.addEventListener('click',()=>{
+    if(!pendingCreate)return;
+    const {sourceId,world}=pendingCreate;const type=btn.dataset.createType;hidePicker();
+    const id=createNode(type,world.x-105,world.y-55);addEdge(sourceId,id,type==='process'?'descreve':'relaciona',type==='process'?'process':'relation');
+  }));
+
+  function beginConnect(ev,el){
+    ev.preventDefault();ev.stopPropagation();hidePicker();
+    const sourceId=el.dataset.nodeId;const box=nodeBox(sourceId);if(!box)return;
+    const start={x:box.x+box.w,y:box.y+box.h};
+    connect={sourceId,start,pointerId:ev.pointerId};
+    el.classList.add('connect-source');
+    const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('class','edge preview');previewPath=p;
+    ev.currentTarget.setPointerCapture?.(ev.pointerId);updateConnect(ev);
+  }
+  function updateConnect(ev){
+    if(!connect)return;const now=worldPoint(ev.clientX,ev.clientY);previewPath?.setAttribute('d',pathD(connect.start,now));renderEdges();
+  }
+  function finishConnect(ev){
+    if(!connect)return;
+    const sourceId=connect.sourceId;const target=targetNodeAt(ev.clientX,ev.clientY,sourceId);const world=worldPoint(ev.clientX,ev.clientY);
+    nodes.get(sourceId)?.el.classList.remove('connect-source');connect=null;previewPath=null;renderEdges();
+    if(target){addEdge(sourceId,target.dataset.nodeId,'relaciona','relation');selectNode(target.dataset.nodeId)}else{showPicker(ev.clientX,ev.clientY,world,sourceId)}
+  }
+
+  function beginDrag(ev,el){
+    if(ev.button!==0||ev.target.closest('.link-port,button,input,textarea'))return;
+    const point=worldPoint(ev.clientX,ev.clientY);const box=nodeBox(el.dataset.nodeId);if(!box)return;
+    drag={el,id:el.dataset.nodeId,pointerId:ev.pointerId,dx:point.x-box.x,dy:point.y-box.y,startX:ev.clientX,startY:ev.clientY,moved:false};
+    el.setPointerCapture?.(ev.pointerId);
+  }
+  function updateDrag(ev){
+    if(!drag||ev.pointerId!==drag.pointerId)return;
+    const distance=Math.hypot(ev.clientX-drag.startX,ev.clientY-drag.startY);if(distance>3)drag.moved=true;
+    if(!drag.moved)return;
+    ev.preventDefault();drag.el.classList.add('dragging');const p=worldPoint(ev.clientX,ev.clientY);
+    drag.el.style.left=`${Math.max(0,p.x-drag.dx)}px`;drag.el.style.top=`${Math.max(0,p.y-drag.dy)}px`;ensureStageBounds(drag.el);renderEdges();
+  }
+  function finishDrag(ev){
+    if(!drag||ev.pointerId!==drag.pointerId)return;
+    const d=drag;drag=null;d.el.classList.remove('dragging');
+    if(d.moved)d.el.dataset.draggedAt=String(Date.now());selectNode(d.id);renderEdges();
+  }
+
+  function openNode(el){
+    if(Date.now()-Number(el.dataset.draggedAt||0)<250)return;
+    const title=el.querySelector('.nhead strong')?.textContent||'Conhecimento';
+    drawer.querySelector('.drawer-head strong').textContent=title;
+    drawer.querySelector('.drawer-head span').textContent=el.dataset.nodeType==='process'?'processo de trabalho · BPMN':'documento OKF · grafo';
+    drawer.classList.add('show');
+  }
+  function relationClick(el){
+    if(!relationMode)return false;
+    const id=el.dataset.nodeId;
+    if(!relationSource){relationSource=id;el.classList.add('connect-source');return true}
+    if(relationSource===id){nodes.get(relationSource)?.el.classList.remove('connect-source');relationSource=null;return true}
+    addEdge(relationSource,id,'relaciona','relation');nodes.get(relationSource)?.el.classList.remove('connect-source');relationSource=null;return true;
+  }
+  function bindNode(el){
+    el.addEventListener('pointerdown',ev=>beginDrag(ev,el));
+    el.addEventListener('pointermove',updateDrag);el.addEventListener('pointerup',finishDrag);el.addEventListener('pointercancel',finishDrag);
+    const port=el.querySelector('.link-port');
+    port?.addEventListener('pointerdown',ev=>beginConnect(ev,el));port?.addEventListener('pointermove',updateConnect);port?.addEventListener('pointerup',finishConnect);port?.addEventListener('pointercancel',finishConnect);
+    el.addEventListener('click',ev=>{if(ev.target.closest('.link-port'))return;if(relationClick(el)){ev.preventDefault();ev.stopPropagation();return}selectNode(el.dataset.nodeId);if('openOkf'in el.dataset)openNode(el)});
+  }
+  stage.querySelectorAll('.node[data-node-id]').forEach(bindNode);
+
+  function setZoom(next){zoom=Math.max(.55,Math.min(1.6,next));stage.style.transform=`scale(${zoom})`;render();}
+  function fit(){
+    const list=[...nodes.values()].map(n=>nodeBox(n.id)).filter(Boolean);if(!list.length)return;
+    const minX=Math.min(...list.map(b=>b.x)),minY=Math.min(...list.map(b=>b.y));
+    const maxX=Math.max(...list.map(b=>b.x+b.w)),maxY=Math.max(...list.map(b=>b.y+b.h));
+    const rect=canvas.getBoundingClientRect(),contentW=maxX-minX+100,contentH=maxY-minY+100;
+    setZoom(Math.min(1,(rect.width-30)/contentW,(rect.height-30)/contentH));
+    canvas.scrollLeft=Math.max(0,(minX-50)*zoom);canvas.scrollTop=Math.max(0,(minY-50)*zoom);
+  }
+
+  document.getElementById('zoomInBtn').addEventListener('click',()=>setZoom(zoom+.1));
+  document.getElementById('zoomOutBtn').addEventListener('click',()=>setZoom(zoom-.1));
+  document.getElementById('centerGraphBtn').addEventListener('click',fit);document.getElementById('fitGraphBtn').addEventListener('click',fit);
+  zoomLabel.addEventListener('click',()=>setZoom(1));
+  document.getElementById('addKnowledgeBtn').addEventListener('click',()=>{const p=worldPoint(canvas.getBoundingClientRect().left+canvas.clientWidth/2,canvas.getBoundingClientRect().top+canvas.clientHeight/2);createNode('knowledge',p.x-105,p.y-60)});
+  document.getElementById('addProcessBtn').addEventListener('click',()=>{const p=worldPoint(canvas.getBoundingClientRect().left+canvas.clientWidth/2,canvas.getBoundingClientRect().top+canvas.clientHeight/2);createNode('process',p.x-105,p.y-60)});
+  relationButton.addEventListener('click',()=>{
+    relationMode=!relationMode;relationButton.classList.toggle('active',relationMode);relationButton.setAttribute('aria-pressed',String(relationMode));
+    if(!relationMode&&relationSource){nodes.get(relationSource)?.el.classList.remove('connect-source');relationSource=null}
+  });
+  canvas.addEventListener('pointerdown',ev=>{if(!ev.target.closest('.node-type-picker')&&!ev.target.closest('.link-port'))hidePicker()});
+  document.addEventListener('keydown',ev=>{if(ev.key==='Escape'){hidePicker();if(relationSource)nodes.get(relationSource)?.el.classList.remove('connect-source');relationSource=null;relationMode=false;relationButton.classList.remove('active');relationButton.setAttribute('aria-pressed','false')}});
+  window.addEventListener('resize',render);
+  render();
+  return {render,fit,addEdge,createNode};
+})();
+</script>
+</body>
+</html>

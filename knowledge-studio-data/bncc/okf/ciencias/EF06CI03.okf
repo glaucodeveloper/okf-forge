@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI03",
+  "topic_key": "ciencias/EF06CI03",
+  "title": "EF06CI03 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI03",
+    "year_block": "6º ano",
+    "statement": "Selecionar métodos mais adequados para a separação de diferentes sistemas heterogêneos a partir da identificação de processos de separação de materiais (como a produção de sal de cozinha, a destilação de petróleo, entre outros).",
+    "verbs": [
+      "selecionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Interpretar",
+      "Organizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "academic_topics": "célula, níveis de organização, sistemas nervoso, sensorial e locomotor, visão e interação organismo-meio",
+      "formal_system": "estrutura e função, coordenação, integração de sistemas e modelos do corpo",
+      "transfer_field": "explicar casos de saúde, analisar modelos e justificar cuidados",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI03",
+    "topic_has_okf": "bncc:EF06CI03 HAS_OKF okf:bncc:EF06CI03",
+    "okf_compiles_tensor": "okf:bncc:EF06CI03 COMPILES_TO tensor:bncc:EF06CI03"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3abe7a56de10597244210be47fbf6a2bfd5fe5d3adaa80ca69e4e6ba011e19f9"
+}

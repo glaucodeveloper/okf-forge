@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA31",
+  "topic_key": "matematica/EF06MA31",
+  "title": "EF06MA31 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 307
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA31",
+    "year_block": "6º ano",
+    "statement": "Identificar as variáveis e suas frequências e os elementos constitutivos (título, eixos, legendas, fontes e datas) em diferentes tipos de gráfico.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Organizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-EST",
+      "axis_name": "Probabilidade, estatística e representação de dados",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Organizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-EST",
+      "axis_name": "Probabilidade, estatística e representação de dados",
+      "academic_topics": "eventos aleatórios, fração de possibilidade, tabelas, gráficos, frequências, pesquisas e fluxogramas",
+      "formal_system": "elementos de gráficos, coleta, organização, interpretação e comunicação de dados",
+      "transfer_field": "avaliar informação pública, comparar resultados e comunicar conclusões",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA31",
+    "topic_has_okf": "bncc:EF06MA31 HAS_OKF okf:bncc:EF06MA31",
+    "okf_compiles_tensor": "okf:bncc:EF06MA31 COMPILES_TO tensor:bncc:EF06MA31"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "56c73e612de60fc71d60f887adcd262fe3e48e2766083510d089722e9a03bc06"
+}

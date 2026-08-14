@@ -1,0 +1,103 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA24",
+  "topic_key": "matematica/EF08MA24",
+  "title": "EF08MA24 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 317
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA24",
+    "year_block": "8º ano",
+    "statement": "Classificar as frequências de uma variável contínua de uma pesquisa em classes, de modo que resumam os dados de maneira adequada para a tomada de decisões.",
+    "verbs": [
+      "classificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Organizar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "academic_topics": "população, amostra, tipos de gráfico, média, mediana, moda, dispersão e eventos aleatórios",
+      "formal_system": "planejamento de pesquisa, representatividade, medidas e probabilidade",
+      "transfer_field": "avaliar pesquisa e argumentar a partir de dados",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "academic_topics": "expressões algébricas, produtos notáveis introdutórios, equações, sistemas, sequências e padrões",
+      "formal_system": "equivalência, variável, sistema linear, generalização e representação",
+      "transfer_field": "modelar relações e comparar métodos de solução",
+      "supported_competences": [
+        "Calcular",
+        "Organizar",
+        "Interpretar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA24",
+    "topic_has_okf": "bncc:EF08MA24 HAS_OKF okf:bncc:EF08MA24",
+    "okf_compiles_tensor": "okf:bncc:EF08MA24 COMPILES_TO tensor:bncc:EF08MA24"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7bae9507cbb9765ee69781eabed949b569af85af04c3d12103b768c508510d6b"
+}

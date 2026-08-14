@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07HI13",
+  "topic_key": "historia/EF07HI13",
+  "title": "EF07HI13 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 425
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07HI13",
+    "year_block": "7º ano",
+    "statement": "Caracterizar a ação dos europeus e suas lógicas mercantis visando ao domínio no mundo atlântico.",
+    "verbs": [
+      "caracterizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-POD",
+      "axis_name": "Colonização, poder e resistência",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-POD",
+      "axis_name": "Colonização, poder e resistência",
+      "academic_topics": "administração colonial, conquista, escravidão, resistências, conflitos e legislação",
+      "formal_system": "dominação, negociação, agência histórica, poder e cidadania limitada",
+      "transfer_field": "avaliar relações coloniais e conectar resistência a direitos atuais",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF07HI13",
+    "topic_has_okf": "bncc:EF07HI13 HAS_OKF okf:bncc:EF07HI13",
+    "okf_compiles_tensor": "okf:bncc:EF07HI13 COMPILES_TO tensor:bncc:EF07HI13"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "b57e564a35167f8fb4b1bbf3efb0a7f624276980637315920497f803322c91a6"
+}

@@ -1,0 +1,161 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF69AR01",
+  "topic_key": "arte/EF69AR01",
+  "title": "EF69AR01 — Arte",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 209
+  },
+  "matter": {
+    "id": 8,
+    "name": "Arte",
+    "slug": "arte",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF69AR01",
+    "year_block": "6º ao 9º ano",
+    "statement": "Pesquisar, apreciar e analisar formas distintas das artes visuais tradicionais e contemporâneas, em obras de artistas brasileiros e estrangeiros de diferentes épocas e em diferentes matrizes estéticas e culturais, de modo a ampliar a experiência com diferentes contextos e práticas artístico-visuais e cultivar a percepção, o imaginário, a capacidade de simbolizar e o repertório imagético.",
+    "verbs": [
+      "pesquisar",
+      "apreciar",
+      "analisar",
+      "ampliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Aplicar",
+      "Textualizar",
+      "Investigar",
+      "Contextualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ARTE",
+      "axis_name": "Literatura, artes e criação estética",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Investigar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ARTE",
+      "axis_name": "Literatura, repertórios artísticos e autoria",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Investigar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Investigar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Investigar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-ARTE",
+      "axis_name": "Literatura, artes e criação estética",
+      "academic_topics": "conto, poema, quadrinhos, artes visuais, música, dança, teatro e produção multimodal",
+      "formal_system": "elementos narrativos, recursos poéticos, composição, apreciação e processos de criação",
+      "transfer_field": "recriar repertórios e produzir obra autoral multimodal",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L7-ARTE",
+      "axis_name": "Literatura, repertórios artísticos e autoria",
+      "academic_topics": "narrativas mais longas, poesia, artes visuais, música, teatro, dança e cultura digital",
+      "formal_system": "estrutura narrativa, voz, ritmo, composição, contexto artístico e apreciação crítica",
+      "transfer_field": "criar obra que dialogue com repertórios e contextos culturais",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "academic_topics": "literatura, fotografia, vídeo, música, teatro, dança, artes visuais e cultura digital",
+      "formal_system": "linguagem, processo criativo, contexto, autoria, apropriação e curadoria",
+      "transfer_field": "criar obra crítica que combine linguagens e repertórios",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "academic_topics": "literatura, audiovisual, música, teatro, dança, artes visuais, cultura digital e intervenção",
+      "formal_system": "curadoria, poética, processo, repertório, contexto, autoria e crítica",
+      "transfer_field": "conceber obra ou mostra interdisciplinar com posicionamento",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:arte HAS_TOPIC bncc:EF69AR01",
+    "topic_has_okf": "bncc:EF69AR01 HAS_OKF okf:bncc:EF69AR01",
+    "okf_compiles_tensor": "okf:bncc:EF69AR01 COMPILES_TO tensor:bncc:EF69AR01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "1b28bc788174f07cb0ab88ecd941b1768c7845715e4b148eeca26daf37529300"
+}

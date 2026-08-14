@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09GE01",
+  "topic_key": "geografia/EF09GE01",
+  "title": "EF09GE01 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 395
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09GE01",
+    "year_block": "9º ano",
+    "statement": "Analisar criticamente de que forma a hegemonia europeia foi exercida em várias regiões do planeta, notadamente em situações de conflito, intervenções militares e/ou influência cultural em diferentes tempos e lugares.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TERR",
+      "axis_name": "Globalização, blocos e cartografias geopolíticas",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TERR",
+      "axis_name": "Globalização, blocos e cartografias geopolíticas",
+      "academic_topics": "Europa, Ásia, Oceania, blocos, fronteiras, conflitos, mapas e redes globais",
+      "formal_system": "geopolítica, escala, fluxo, território, regionalização e representação",
+      "transfer_field": "mapear conflito ou rede e justificar leitura geopolítica",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF09GE01",
+    "topic_has_okf": "bncc:EF09GE01 HAS_OKF okf:bncc:EF09GE01",
+    "okf_compiles_tensor": "okf:bncc:EF09GE01 COMPILES_TO tensor:bncc:EF09GE01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "1682b833c9fb3d3a84faccc9e3b397ab35c0180fd02b6667ab57611210c03041"
+}

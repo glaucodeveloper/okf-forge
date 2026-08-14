@@ -1,0 +1,107 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA26",
+  "topic_key": "matematica/EF08MA26",
+  "title": "EF08MA26 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 317
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA26",
+    "year_block": "8º ano",
+    "statement": "Selecionar razões, de diferentes naturezas (física, ética ou econômica), que justificam a realização de pesquisas amostrais e não censitárias, e reconhecer que a seleção da amostra pode ser feita de diferentes maneiras (amostra casual simples, sistemática e estratificada).",
+    "verbs": [
+      "selecionar",
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Organizar",
+      "Aplicar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Aplicar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar | Aplicar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "academic_topics": "população, amostra, tipos de gráfico, média, mediana, moda, dispersão e eventos aleatórios",
+      "formal_system": "planejamento de pesquisa, representatividade, medidas e probabilidade",
+      "transfer_field": "avaliar pesquisa e argumentar a partir de dados",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M8-ALG",
+      "axis_name": "Expressões, equações, sistemas e sequências",
+      "academic_topics": "expressões algébricas, produtos notáveis introdutórios, equações, sistemas, sequências e padrões",
+      "formal_system": "equivalência, variável, sistema linear, generalização e representação",
+      "transfer_field": "modelar relações e comparar métodos de solução",
+      "supported_competences": [
+        "Calcular",
+        "Organizar",
+        "Interpretar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA26",
+    "topic_has_okf": "bncc:EF08MA26 HAS_OKF okf:bncc:EF08MA26",
+    "okf_compiles_tensor": "okf:bncc:EF08MA26 COMPILES_TO tensor:bncc:EF08MA26"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "2254e4b1df566f6d4fea8943670ebdf6c1176bc921f1b56a697d77547255c111"
+}

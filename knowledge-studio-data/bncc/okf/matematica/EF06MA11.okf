@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA11",
+  "topic_key": "matematica/EF06MA11",
+  "title": "EF06MA11 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 303
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA11",
+    "year_block": "6º ano",
+    "statement": "Resolver e elaborar problemas com números racionais positivos na representação decimal, envolvendo as quatro operações fundamentais e a potenciação, por meio de estratégias diversas, utilizando estimativas e arredondamentos para verificar a razoabilidade de respostas, com e sem uso de calculadora.",
+    "verbs": [
+      "resolver",
+      "elaborar",
+      "verificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Investigar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-RAC",
+      "axis_name": "Frações, decimais e porcentagens",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Investigar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Investigar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-RAC",
+      "axis_name": "Frações, decimais e porcentagens",
+      "academic_topics": "frações equivalentes, comparação, operações, representação decimal, reta numérica e porcentagens iniciais",
+      "formal_system": "relações parte-todo, quociente, equivalência e conversões entre representações",
+      "transfer_field": "resolver situações financeiras, medidas e proporções com justificativa",
+      "supported_competences": [
+        "Calcular",
+        "Interpretar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "academic_topics": "sistema decimal, adição, subtração, multiplicação, divisão, múltiplos, divisores, primos, cálculo mental e algoritmos",
+      "formal_system": "valor posicional, propriedades das operações, critérios de divisibilidade e comparação de estratégias",
+      "transfer_field": "modelar compras, repartições, contagens e decisões numéricas com eficiência",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA11",
+    "topic_has_okf": "bncc:EF06MA11 HAS_OKF okf:bncc:EF06MA11",
+    "okf_compiles_tensor": "okf:bncc:EF06MA11 COMPILES_TO tensor:bncc:EF06MA11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "e5ef245894fd67bac3998918351d25f2f707f872d4b1f98874533e2ad14723e8"
+}

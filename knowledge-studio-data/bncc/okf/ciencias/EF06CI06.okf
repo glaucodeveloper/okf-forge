@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI06",
+  "topic_key": "ciencias/EF06CI06",
+  "title": "EF06CI06 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI06",
+    "year_block": "6º ano",
+    "statement": "Concluir, com base na análise de ilustrações e/ou modelos (físicos ou digitais), que os organismos são um complexo arranjo de sistemas com diferentes níveis de organização.",
+    "verbs": [
+      "concluir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Investigar",
+    "competences": [
+      "Interpretar",
+      "Organizar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-VID",
+      "axis_name": "Célula, corpo e sistemas",
+      "academic_topics": "célula, níveis de organização, sistemas nervoso, sensorial e locomotor, visão e interação organismo-meio",
+      "formal_system": "estrutura e função, coordenação, integração de sistemas e modelos do corpo",
+      "transfer_field": "explicar casos de saúde, analisar modelos e justificar cuidados",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI06",
+    "topic_has_okf": "bncc:EF06CI06 HAS_OKF okf:bncc:EF06CI06",
+    "okf_compiles_tensor": "okf:bncc:EF06CI06 COMPILES_TO tensor:bncc:EF06CI06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "705e3e744d7b2b2dd28ab295b31400e6e7fe957740d082688f2dc198256523d4"
+}

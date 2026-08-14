@@ -1,0 +1,107 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI13",
+  "topic_key": "ciencias/EF09CI13",
+  "title": "EF09CI13 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI13",
+    "year_block": "9º ano",
+    "statement": "Propor iniciativas individuais e coletivas para a solução de problemas ambientais da cidade ou da comunidade, com base na análise de ações de consumo consciente e de sustentabilidade bem-sucedidas.",
+    "verbs": [
+      "propor"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Interpretar",
+      "Organizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Criar",
+      "vertentes_sociais": "Colaboração | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-CTS",
+      "axis_name": "Ciência, ética, tecnologia e sustentabilidade",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Criar",
+      "vertentes_sociais": "Colaboração | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "academic_topics": "Sistema Solar, estrelas, galáxias, escalas, evolução estelar, condições de vida e exploração espacial",
+      "formal_system": "modelos cosmológicos, escala, gravidade, evidência e tecnologia de observação",
+      "transfer_field": "comparar modelos, interpretar dados e avaliar exploração espacial",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Contextualizar",
+        "Mapear"
+      ]
+    },
+    {
+      "axis_id": "C9-CTS",
+      "axis_name": "Ciência, ética, tecnologia e sustentabilidade",
+      "academic_topics": "genética, radiação, biodiversidade, espaço, energia, saúde e inovação",
+      "formal_system": "evidência, incerteza, risco, ética, regulação e impacto socioambiental",
+      "transfer_field": "deliberar sobre tecnologia e produzir recomendação baseada em ciência",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI13",
+    "topic_has_okf": "bncc:EF09CI13 HAS_OKF okf:bncc:EF09CI13",
+    "okf_compiles_tensor": "okf:bncc:EF09CI13 COMPILES_TO tensor:bncc:EF09CI13"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "c9422b501c5878173e05f1711b5f34d26ce5d5523f664882c7390c0c8aa58521"
+}

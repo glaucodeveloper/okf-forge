@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06LI04",
+  "topic_key": "lingua-inglesa/EF06LI04",
+  "title": "EF06LI04 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 251
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF06LI04",
+    "year_block": "6º ano",
+    "statement": "Reconhecer, com o apoio de palavras cognatas e pistas do contexto discursivo, o assunto e as informações principais em textos orais sobre temas familiares.",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Textualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ING",
+      "axis_name": "Inglês e interculturalidade",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-ING",
+      "axis_name": "Inglês e interculturalidade",
+      "academic_topics": "família, amigos, escola, comunidade, cognatos, interação oral, rotinas e leitura de textos curtos",
+      "formal_system": "finalidade comunicativa, repertório lexical, organização textual, pronomes e verbos de uso frequente",
+      "transfer_field": "apresentar a si, a comunidade e interagir em situação intercultural familiar",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF06LI04",
+    "topic_has_okf": "bncc:EF06LI04 HAS_OKF okf:bncc:EF06LI04",
+    "okf_compiles_tensor": "okf:bncc:EF06LI04 COMPILES_TO tensor:bncc:EF06LI04"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3eee5cd437bb91f1fe77d08e35b308c62400adc214f5fff9cb90e0a19d10fc67"
+}

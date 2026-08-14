@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06HI19",
+  "topic_key": "historia/EF06HI19",
+  "title": "EF06HI19 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 423
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06HI19",
+    "year_block": "6º ano",
+    "statement": "Descrever e analisar os diferentes papéis sociais das mulheres no mundo antigo e nas sociedades medievais.",
+    "verbs": [
+      "descrever",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Textualizar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar | Contextualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "academic_topics": "fontes históricas, memória, tempo, periodização, origens humanas, Antiguidade e diferentes sociedades",
+      "formal_system": "evidência histórica, cronologia, permanência, mudança, causalidade e ponto de vista",
+      "transfer_field": "reconstruir explicações históricas comparando fontes e temporalidades",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF06HI19",
+    "topic_has_okf": "bncc:EF06HI19 HAS_OKF okf:bncc:EF06HI19",
+    "okf_compiles_tensor": "okf:bncc:EF06HI19 COMPILES_TO tensor:bncc:EF06HI19"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "69393506454de362328b087fc3825239980c18d392f53131b08722ab6aac65f9"
+}

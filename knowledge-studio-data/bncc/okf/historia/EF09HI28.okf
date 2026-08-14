@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI28",
+  "topic_key": "historia/EF09HI28",
+  "title": "EF09HI28 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 435
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI28",
+    "year_block": "9º ano",
+    "statement": "Identificar e analisar aspectos da Guerra Fria, seus principais conflitos e as tensões geopolíticas no interior dos blocos liderados por soviéticos e estadunidenses.",
+    "verbs": [
+      "identificar",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "academic_topics": "República brasileira, guerras, revoluções, totalitarismos, Guerra Fria, ditaduras, redemocratização e fontes",
+      "formal_system": "periodização, causalidade, memória, trauma, continuidade, ruptura e disputa narrativa",
+      "transfer_field": "comparar memórias e construir explicação histórica multicausal",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "academic_topics": "República, fascismo, nazismo, ditaduras, democracia, instituições, conflitos e ordem mundial",
+      "formal_system": "Estado, ideologia, autoritarismo, participação, direitos e relações internacionais",
+      "transfer_field": "avaliar instituições e deliberar sobre ameaça democrática",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI28",
+    "topic_has_okf": "bncc:EF09HI28 HAS_OKF okf:bncc:EF09HI28",
+    "okf_compiles_tensor": "okf:bncc:EF09HI28 COMPILES_TO tensor:bncc:EF09HI28"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "6afe8631e5b48b6aeec804482668d26ad90c00d4ea59061f8cd826bcc580520b"
+}

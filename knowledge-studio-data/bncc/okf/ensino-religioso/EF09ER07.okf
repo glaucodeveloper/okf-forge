@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09ER07",
+  "topic_key": "ensino-religioso/EF09ER07",
+  "title": "EF09ER07 — Ensino Religioso",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 461
+  },
+  "matter": {
+    "id": 9,
+    "name": "Ensino Religioso",
+    "slug": "ensino-religioso",
+    "bncc_area": "Ensino Religioso"
+  },
+  "skill": {
+    "code": "EF09ER07",
+    "year_block": "9º ano",
+    "statement": "Identificar princípios éticos (familiares, religiosos e culturais) que possam alicerçar a construção de projetos de vida.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "E9-CRE",
+      "axis_name": "Sentido, ética e filosofias de vida",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Criar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "E9-CRE",
+      "axis_name": "Sentido, ética e filosofias de vida",
+      "academic_topics": "sentido da vida, sofrimento, felicidade, liberdade, bioética, justiça, solidariedade e filosofias de vida",
+      "formal_system": "princípio ético, consequência, autonomia, alteridade e responsabilidade",
+      "transfer_field": "deliberar sobre dilema complexo com argumentos e respeito",
+      "supported_competences": [
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ensino-religioso HAS_TOPIC bncc:EF09ER07",
+    "topic_has_okf": "bncc:EF09ER07 HAS_OKF okf:bncc:EF09ER07",
+    "okf_compiles_tensor": "okf:bncc:EF09ER07 COMPILES_TO tensor:bncc:EF09ER07"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "bce4d2f26aec2c0f72b6f1fbedcb7a8f3f9093c33358d6d8814061a6298be91c"
+}

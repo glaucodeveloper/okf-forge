@@ -1,0 +1,131 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08HI03",
+  "topic_key": "historia/EF08HI03",
+  "title": "EF08HI03 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 427
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08HI03",
+    "year_block": "8º ano",
+    "statement": "Analisar os impactos da Revolução Industrial na produção e circulação de povos, produtos e culturas.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Cuidado e responsabilidade",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Cuidado e responsabilidade | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-CULT",
+      "axis_name": "Escravidão, raça, nação e identidades",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Cuidado e responsabilidade | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TRAB",
+      "axis_name": "Industrialização, capitalismo e trabalho",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Avaliar",
+      "vertentes_sociais": "Cuidado e responsabilidade | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "academic_topics": "Iluminismo, revoluções, independências, formação de Estados, imperialismo e fontes",
+      "formal_system": "processo, ruptura, permanência, causalidade, projeto político e perspectiva",
+      "transfer_field": "comparar revoluções e explicar consequências de longa duração",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H8-CULT",
+      "axis_name": "Escravidão, raça, nação e identidades",
+      "academic_topics": "escravidão, abolição, racismo, povos indígenas, nacionalismos, culturas e resistências",
+      "formal_system": "racialização, identidade, memória, resistência e cidadania",
+      "transfer_field": "confrontar narrativas e argumentar sobre desigualdade histórica",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H8-TRAB",
+      "axis_name": "Industrialização, capitalismo e trabalho",
+      "academic_topics": "revolução industrial, capitalismo, trabalho livre e compulsório, urbanização e mercados",
+      "formal_system": "modo de produção, classe, divisão do trabalho, tecnologia e desigualdade",
+      "transfer_field": "relacionar inovação econômica a condições sociais e ambientais",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF08HI03",
+    "topic_has_okf": "bncc:EF08HI03 HAS_OKF okf:bncc:EF08HI03",
+    "okf_compiles_tensor": "okf:bncc:EF08HI03 COMPILES_TO tensor:bncc:EF08HI03"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "a3a41746daf9958c6031c5d4dee515ce9a1f3ec321cf0b8b6c3cebb599b18da9"
+}

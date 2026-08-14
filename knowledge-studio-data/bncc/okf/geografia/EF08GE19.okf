@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08GE19",
+  "topic_key": "geografia/EF08GE19",
+  "title": "EF08GE19 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 393
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08GE19",
+    "year_block": "8º ano",
+    "statement": "Interpretar cartogramas, mapas esquemáticos (croquis) e anamorfoses geográficas com informações geográficas acerca da África e América.",
+    "verbs": [
+      "interpretar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Mapear",
+    "competences": [
+      "Interpretar",
+      "Mapear"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Interpretar | Mapear",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "academic_topics": "territórios, fronteiras, redes, regionalizações, mapas temáticos e geopolítica",
+      "formal_system": "território, escala, projeção, fluxo, regionalização e poder",
+      "transfer_field": "mapear conflito ou desigualdade em diferentes escalas",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF08GE19",
+    "topic_has_okf": "bncc:EF08GE19 HAS_OKF okf:bncc:EF08GE19",
+    "okf_compiles_tensor": "okf:bncc:EF08GE19 COMPILES_TO tensor:bncc:EF08GE19"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "b6f5f5284e2b9024d503a955081aa2bbbc91e636dfb0e3e95050fd913d10657d"
+}

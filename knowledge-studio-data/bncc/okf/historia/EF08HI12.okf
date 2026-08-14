@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08HI12",
+  "topic_key": "historia/EF08HI12",
+  "title": "EF08HI12 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 427
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08HI12",
+    "year_block": "8º ano",
+    "statement": "Caracterizar a organização política e social no Brasil desde a chegada da Corte portuguesa, em 1808, até 1822 e seus desdobramentos para a história política brasileira.",
+    "verbs": [
+      "caracterizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Organizar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TEM",
+      "axis_name": "Revoluções, independências e século XIX",
+      "academic_topics": "Iluminismo, revoluções, independências, formação de Estados, imperialismo e fontes",
+      "formal_system": "processo, ruptura, permanência, causalidade, projeto político e perspectiva",
+      "transfer_field": "comparar revoluções e explicar consequências de longa duração",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF08HI12",
+    "topic_has_okf": "bncc:EF08HI12 HAS_OKF okf:bncc:EF08HI12",
+    "okf_compiles_tensor": "okf:bncc:EF08HI12 COMPILES_TO tensor:bncc:EF08HI12"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "2e5e7bce38c7f80c2ec3ec7514d011401232cdfc316d16c66e6024e345166bb0"
+}

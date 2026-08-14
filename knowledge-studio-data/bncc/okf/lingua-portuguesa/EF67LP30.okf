@@ -1,0 +1,107 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF67LP30",
+  "topic_key": "lingua-portuguesa/EF67LP30",
+  "title": "EF67LP30 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 173
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF67LP30",
+    "year_block": "6º e 7º anos",
+    "statement": "Criar narrativas ficcionais, tais como contos populares, contos de suspense, mistério, terror, humor, narrativas de enigma, crônicas, histórias em quadrinhos, dentre outros, que utilizem cenários e personagens realistas ou de fantasia, observando os elementos da estrutura narrativa próprios ao gênero pretendido, tais como enredo, personagens, tempo, espaço e narrador, utilizando tempos verbais adequados à narração de fatos passados, empregando conhecimentos sobre diferentes modos de se iniciar uma história e de inserir os discursos direto e indireto.",
+    "verbs": [
+      "criar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Organizar",
+      "Aplicar",
+      "Textualizar",
+      "Investigar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ARTE",
+      "axis_name": "Literatura, artes e criação estética",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Organizar | Aplicar | Textualizar | Investigar | Contextualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ARTE",
+      "axis_name": "Literatura, repertórios artísticos e autoria",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Organizar | Aplicar | Textualizar | Investigar | Contextualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-ARTE",
+      "axis_name": "Literatura, artes e criação estética",
+      "academic_topics": "conto, poema, quadrinhos, artes visuais, música, dança, teatro e produção multimodal",
+      "formal_system": "elementos narrativos, recursos poéticos, composição, apreciação e processos de criação",
+      "transfer_field": "recriar repertórios e produzir obra autoral multimodal",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L7-ARTE",
+      "axis_name": "Literatura, repertórios artísticos e autoria",
+      "academic_topics": "narrativas mais longas, poesia, artes visuais, música, teatro, dança e cultura digital",
+      "formal_system": "estrutura narrativa, voz, ritmo, composição, contexto artístico e apreciação crítica",
+      "transfer_field": "criar obra que dialogue com repertórios e contextos culturais",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF67LP30",
+    "topic_has_okf": "bncc:EF67LP30 HAS_OKF okf:bncc:EF67LP30",
+    "okf_compiles_tensor": "okf:bncc:EF67LP30 COMPILES_TO tensor:bncc:EF67LP30"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7c6b806180ef3b321d808b47511891d3b247c8475f8241689e76ebda659e1925"
+}

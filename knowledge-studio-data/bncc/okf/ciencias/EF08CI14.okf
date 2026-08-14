@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08CI14",
+  "topic_key": "ciencias/EF08CI14",
+  "title": "EF08CI14 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 351
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF08CI14",
+    "year_block": "8º ano",
+    "statement": "Relacionar climas regionais aos padrões de circulação atmosférica e oceânica e ao aquecimento desigual causado pela forma e pelos movimentos da Terra.",
+    "verbs": [
+      "relacionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "C8-TERRA",
+      "axis_name": "Sistema Sol-Terra-Lua, estações e clima",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C8-TERRA",
+      "axis_name": "Sistema Sol-Terra-Lua, estações e clima",
+      "academic_topics": "fases, eclipses, rotação, translação, estações, clima e circulação atmosférica",
+      "formal_system": "modelos astronômicos, incidência solar, previsão, tempo e clima",
+      "transfer_field": "usar modelo para explicar fenômeno e avaliar informação climática",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Contextualizar",
+        "Mapear"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF08CI14",
+    "topic_has_okf": "bncc:EF08CI14 HAS_OKF okf:bncc:EF08CI14",
+    "okf_compiles_tensor": "okf:bncc:EF08CI14 COMPILES_TO tensor:bncc:EF08CI14"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "f0cee307face29308efe3f72b067c55a9d367ee5f9106bee862c7771caa6b686"
+}

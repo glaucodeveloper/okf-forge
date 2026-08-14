@@ -1,0 +1,110 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA22",
+  "topic_key": "matematica/EF09MA22",
+  "title": "EF09MA22 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 321
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA22",
+    "year_block": "9º ano",
+    "statement": "Escolher e construir o gráfico mais adequado (colunas, setores, linhas), com ou sem uso de planilhas eletrônicas, para apresentar um determinado conjunto de dados, destacando aspectos como as medidas de tendência central.",
+    "verbs": [
+      "escolher",
+      "construir",
+      "apresentar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Criar",
+      "Comunicar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Criar | Comunicar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Criar | Comunicar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "academic_topics": "amostragem, gráficos, distribuição, média, mediana, dispersão, probabilidade e pesquisas públicas",
+      "formal_system": "viés, representatividade, associação, interpretação e comunicação de incerteza",
+      "transfer_field": "criticar alegação baseada em dados e produzir análise própria",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "academic_topics": "áreas, volumes, capacidade, densidade, velocidade, escalas e unidades compostas",
+      "formal_system": "fórmulas, dimensionalidade, conversão, precisão e estimativa",
+      "transfer_field": "dimensionar projeto real e avaliar viabilidade e erro",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA22",
+    "topic_has_okf": "bncc:EF09MA22 HAS_OKF okf:bncc:EF09MA22",
+    "okf_compiles_tensor": "okf:bncc:EF09MA22 COMPILES_TO tensor:bncc:EF09MA22"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "1af38a4695192c817c1726043cbdd3f4f9a1381fe8c31c16079ae6d506122985"
+}

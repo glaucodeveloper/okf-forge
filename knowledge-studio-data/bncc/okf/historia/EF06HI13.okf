@@ -1,0 +1,102 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06HI13",
+  "topic_key": "historia/EF06HI13",
+  "title": "EF06HI13 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 423
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06HI13",
+    "year_block": "6º ano",
+    "statement": "Conceituar “império” no mundo antigo, com vistas à análise das diferentes formas de equilíbrio e desequilíbrio entre as partes envolvidas.",
+    "verbs": [
+      "conceituar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-POD",
+      "axis_name": "Poder, cidadania e conflito",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-TEM",
+      "axis_name": "Tempo, fontes e formação histórica",
+      "academic_topics": "fontes históricas, memória, tempo, periodização, origens humanas, Antiguidade e diferentes sociedades",
+      "formal_system": "evidência histórica, cronologia, permanência, mudança, causalidade e ponto de vista",
+      "transfer_field": "reconstruir explicações históricas comparando fontes e temporalidades",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H6-POD",
+      "axis_name": "Poder, cidadania e conflito",
+      "academic_topics": "Estado, democracia antiga, impérios, cidadania, escravidão, conflitos e direitos",
+      "formal_system": "poder, participação, exclusão, dominação e formas de governo",
+      "transfer_field": "argumentar sobre cidadania e analisar relações de poder em situações atuais",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF06HI13",
+    "topic_has_okf": "bncc:EF06HI13 HAS_OKF okf:bncc:EF06HI13",
+    "okf_compiles_tensor": "okf:bncc:EF06HI13 COMPILES_TO tensor:bncc:EF06HI13"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "e7c6709b8e1cc177aa39ee71864522fbc357d217e797dabe6bb215e2956d917e"
+}

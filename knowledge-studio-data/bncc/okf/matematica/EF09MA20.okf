@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA20",
+  "topic_key": "matematica/EF09MA20",
+  "title": "EF09MA20 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 321
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA20",
+    "year_block": "9º ano",
+    "statement": "Reconhecer, em experimentos aleatórios, eventos independentes e dependentes e calcular a probabilidade de sua ocorrência, nos dois casos.",
+    "verbs": [
+      "reconhecer",
+      "calcular"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "academic_topics": "amostragem, gráficos, distribuição, média, mediana, dispersão, probabilidade e pesquisas públicas",
+      "formal_system": "viés, representatividade, associação, interpretação e comunicação de incerteza",
+      "transfer_field": "criticar alegação baseada em dados e produzir análise própria",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA20",
+    "topic_has_okf": "bncc:EF09MA20 HAS_OKF okf:bncc:EF09MA20",
+    "okf_compiles_tensor": "okf:bncc:EF09MA20 COMPILES_TO tensor:bncc:EF09MA20"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "5444981fe92b361063d86e9b7c81eaed77609ddc2483cfab150b07486e628b54"
+}

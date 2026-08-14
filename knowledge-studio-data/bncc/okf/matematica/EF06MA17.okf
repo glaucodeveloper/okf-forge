@@ -1,0 +1,130 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA17",
+  "topic_key": "matematica/EF06MA17",
+  "title": "EF06MA17 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 305
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA17",
+    "year_block": "6º ano",
+    "statement": "Quantificar e estabelecer relações entre o número de vértices, faces e arestas de prismas e pirâmides, em função do seu polígono da base, para resolver problemas e desenvolver a percepção espacial.",
+    "verbs": [
+      "quantificar",
+      "estabelecer",
+      "resolver",
+      "desenvolver"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Aplicar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-ALG",
+      "axis_name": "Padrões, igualdades e pensamento algébrico",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "academic_topics": "plano cartesiano, prismas, pirâmides, polígonos, ângulos, retas, simetrias e construções",
+      "formal_system": "propriedades geométricas, coordenadas, classificação e instrumentos de desenho",
+      "transfer_field": "mapear, construir e justificar soluções espaciais",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M6-ALG",
+      "axis_name": "Padrões, igualdades e pensamento algébrico",
+      "academic_topics": "sequências, propriedades da igualdade, partilha, relações entre grandezas e linguagem algorítmica",
+      "formal_system": "generalização de padrões, equivalência, variável informal e fluxogramas",
+      "transfer_field": "criar regras, algoritmos e modelos para problemas novos",
+      "supported_competences": [
+        "Calcular",
+        "Organizar",
+        "Interpretar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "academic_topics": "sistema decimal, adição, subtração, multiplicação, divisão, múltiplos, divisores, primos, cálculo mental e algoritmos",
+      "formal_system": "valor posicional, propriedades das operações, critérios de divisibilidade e comparação de estratégias",
+      "transfer_field": "modelar compras, repartições, contagens e decisões numéricas com eficiência",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA17",
+    "topic_has_okf": "bncc:EF06MA17 HAS_OKF okf:bncc:EF06MA17",
+    "okf_compiles_tensor": "okf:bncc:EF06MA17 COMPILES_TO tensor:bncc:EF06MA17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "ae3f00490e54051dd5fd62bdbdb252dd50c8c0a5297ba7795f50de837544f333"
+}

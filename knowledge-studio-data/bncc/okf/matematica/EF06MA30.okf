@@ -1,0 +1,127 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA30",
+  "topic_key": "matematica/EF06MA30",
+  "title": "EF06MA30 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 307
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA30",
+    "year_block": "6º ano",
+    "statement": "Calcular a probabilidade de um evento aleatório, expressando-a por número racional (forma fracionária, decimal e percentual) e comparar esse número com a probabilidade obtida por meio de experimentos sucessivos.",
+    "verbs": [
+      "calcular",
+      "comparar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-EST",
+      "axis_name": "Probabilidade, estatística e representação de dados",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-RAC",
+      "axis_name": "Frações, decimais e porcentagens",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-EST",
+      "axis_name": "Probabilidade, estatística e representação de dados",
+      "academic_topics": "eventos aleatórios, fração de possibilidade, tabelas, gráficos, frequências, pesquisas e fluxogramas",
+      "formal_system": "elementos de gráficos, coleta, organização, interpretação e comunicação de dados",
+      "transfer_field": "avaliar informação pública, comparar resultados e comunicar conclusões",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M6-RAC",
+      "axis_name": "Frações, decimais e porcentagens",
+      "academic_topics": "frações equivalentes, comparação, operações, representação decimal, reta numérica e porcentagens iniciais",
+      "formal_system": "relações parte-todo, quociente, equivalência e conversões entre representações",
+      "transfer_field": "resolver situações financeiras, medidas e proporções com justificativa",
+      "supported_competences": [
+        "Calcular",
+        "Interpretar",
+        "Aplicar"
+      ]
+    },
+    {
+      "axis_id": "M6-NUM",
+      "axis_name": "Números naturais e operações",
+      "academic_topics": "sistema decimal, adição, subtração, multiplicação, divisão, múltiplos, divisores, primos, cálculo mental e algoritmos",
+      "formal_system": "valor posicional, propriedades das operações, critérios de divisibilidade e comparação de estratégias",
+      "transfer_field": "modelar compras, repartições, contagens e decisões numéricas com eficiência",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA30",
+    "topic_has_okf": "bncc:EF06MA30 HAS_OKF okf:bncc:EF06MA30",
+    "okf_compiles_tensor": "okf:bncc:EF06MA30 COMPILES_TO tensor:bncc:EF06MA30"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "79208bb781c01b97ff875b879cde0cdb21dac8a81782fd72a032899a83b23014"
+}

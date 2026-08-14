@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07GE05",
+  "topic_key": "geografia/EF07GE05",
+  "title": "EF07GE05 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 389
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07GE05",
+    "year_block": "7º ano",
+    "statement": "Analisar fatos e situações representativas das alterações ocorridas entre o período mercantilista e o advento do capitalismo.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Organizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TERR",
+      "axis_name": "Brasil: território, regiões e cartografia",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Organizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-TERR",
+      "axis_name": "Brasil: território, regiões e cartografia",
+      "academic_topics": "formação territorial, regiões, fronteiras, população, mapas temáticos e escalas",
+      "formal_system": "regionalização, território, rede, fluxo e representação cartográfica",
+      "transfer_field": "mapear desigualdades e justificar recortes regionais",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF07GE05",
+    "topic_has_okf": "bncc:EF07GE05 HAS_OKF okf:bncc:EF07GE05",
+    "okf_compiles_tensor": "okf:bncc:EF07GE05 COMPILES_TO tensor:bncc:EF07GE05"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "9af6591367c741e37ecd9151dbc319e6ffdf0226aca380f1552031ce51c472cb"
+}

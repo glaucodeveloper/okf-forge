@@ -1,0 +1,110 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA23",
+  "topic_key": "matematica/EF09MA23",
+  "title": "EF09MA23 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 321
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA23",
+    "year_block": "9º ano",
+    "statement": "Planejar e executar pesquisa amostral envolvendo tema da realidade social e comunicar os resultados por meio de relatório contendo avaliação de medidas de tendência central e da amplitude, tabelas e gráficos adequados, construídos com o apoio de planilhas eletrônicas.",
+    "verbs": [
+      "planejar",
+      "comunicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Organizar",
+      "Aplicar",
+      "Textualizar",
+      "Investigar",
+      "Criar",
+      "Comunicar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Aplicar | Textualizar | Investigar | Criar | Comunicar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Aplicar | Textualizar | Investigar | Criar | Comunicar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-EST",
+      "axis_name": "Estatística crítica e probabilidade",
+      "academic_topics": "amostragem, gráficos, distribuição, média, mediana, dispersão, probabilidade e pesquisas públicas",
+      "formal_system": "viés, representatividade, associação, interpretação e comunicação de incerteza",
+      "transfer_field": "criticar alegação baseada em dados e produzir análise própria",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "academic_topics": "áreas, volumes, capacidade, densidade, velocidade, escalas e unidades compostas",
+      "formal_system": "fórmulas, dimensionalidade, conversão, precisão e estimativa",
+      "transfer_field": "dimensionar projeto real e avaliar viabilidade e erro",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA23",
+    "topic_has_okf": "bncc:EF09MA23 HAS_OKF okf:bncc:EF09MA23",
+    "okf_compiles_tensor": "okf:bncc:EF09MA23 COMPILES_TO tensor:bncc:EF09MA23"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "be9835273f591709fb2c67044b9de66d5429454fdd9297c595d092c769bf39fa"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI12",
+  "topic_key": "ciencias/EF06CI12",
+  "title": "EF06CI12 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI12",
+    "year_block": "6º ano",
+    "statement": "Identificar diferentes tipos de rocha, relacionando a formação de fósseis a rochas sedimentares em diferentes períodos geológicos.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-CTS",
+      "axis_name": "Ciência, tecnologia, sociedade e saúde",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-CTS",
+      "axis_name": "Ciência, tecnologia, sociedade e saúde",
+      "academic_topics": "medicamentos, materiais sintéticos, lentes, acessibilidade, impactos socioambientais e segurança",
+      "formal_system": "benefício, risco, evidência, decisão informada e responsabilidade coletiva",
+      "transfer_field": "avaliar tecnologia e criar recomendação responsável para a comunidade",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI12",
+    "topic_has_okf": "bncc:EF06CI12 HAS_OKF okf:bncc:EF06CI12",
+    "okf_compiles_tensor": "okf:bncc:EF06CI12 COMPILES_TO tensor:bncc:EF06CI12"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7f04ea85872ae9fdd3f70dfe68832b3543b3f976e0d7682351e63074b7c74299"
+}

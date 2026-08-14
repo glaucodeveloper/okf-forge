@@ -1,0 +1,104 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07GE08",
+  "topic_key": "geografia/EF07GE08",
+  "title": "EF07GE08 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 389
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07GE08",
+    "year_block": "7º ano",
+    "statement": "Estabelecer relações entre os processos de industrialização e inovação tecnológica com as transformações socioeconômicas do território brasileiro.",
+    "verbs": [
+      "estabelecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Mapear",
+    "competences": [
+      "Aplicar",
+      "Contextualizar",
+      "Mapear"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TERR",
+      "axis_name": "Brasil: território, regiões e cartografia",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Aplicar | Contextualizar | Mapear",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Aplicar | Contextualizar | Mapear",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-TERR",
+      "axis_name": "Brasil: território, regiões e cartografia",
+      "academic_topics": "formação territorial, regiões, fronteiras, população, mapas temáticos e escalas",
+      "formal_system": "regionalização, território, rede, fluxo e representação cartográfica",
+      "transfer_field": "mapear desigualdades e justificar recortes regionais",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    },
+    {
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "academic_topics": "agropecuária, mineração, indústria, circulação, trabalho escravizado e livre e redes urbanas",
+      "formal_system": "produção, divisão territorial do trabalho, mercado e desigualdade",
+      "transfer_field": "relacionar economia, trabalho e organização do território",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF07GE08",
+    "topic_has_okf": "bncc:EF07GE08 HAS_OKF okf:bncc:EF07GE08",
+    "okf_compiles_tensor": "okf:bncc:EF07GE08 COMPILES_TO tensor:bncc:EF07GE08"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "b68197fdd83ca24e756a733d66e397c297342a28b9d9fcb5b18ed5d7f452496c"
+}

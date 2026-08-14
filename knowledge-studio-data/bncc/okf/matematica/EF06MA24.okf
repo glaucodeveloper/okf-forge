@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA24",
+  "topic_key": "matematica/EF06MA24",
+  "title": "EF06MA24 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 305
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA24",
+    "year_block": "6º ano",
+    "statement": "Resolver e elaborar problemas que envolvam as grandezas comprimento, massa, tempo, temperatura, área (triângulos e retângulos), capacidade e volume (sólidos formados por blocos retangulares), sem uso de fórmulas, inseridos, sempre que possível, em contextos oriundos de situações reais e/ou relacionadas às outras áreas do conhecimento.",
+    "verbs": [
+      "resolver",
+      "elaborar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Aplicar",
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-MED",
+      "axis_name": "Grandezas e medidas",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Textualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "academic_topics": "plano cartesiano, prismas, pirâmides, polígonos, ângulos, retas, simetrias e construções",
+      "formal_system": "propriedades geométricas, coordenadas, classificação e instrumentos de desenho",
+      "transfer_field": "mapear, construir e justificar soluções espaciais",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M6-MED",
+      "axis_name": "Grandezas e medidas",
+      "academic_topics": "comprimento, massa, tempo, temperatura, área, perímetro, capacidade, volume e conversões",
+      "formal_system": "unidades, estimativa, relações entre perímetro e área e cálculo de volume",
+      "transfer_field": "planejar medições e validar resultados em projetos concretos",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA24",
+    "topic_has_okf": "bncc:EF06MA24 HAS_OKF okf:bncc:EF06MA24",
+    "okf_compiles_tensor": "okf:bncc:EF06MA24 COMPILES_TO tensor:bncc:EF06MA24"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "622a318d8c58426ae2c4e385ad103bf5ae67cae79269fd8c6ddbff5a74327b39"
+}

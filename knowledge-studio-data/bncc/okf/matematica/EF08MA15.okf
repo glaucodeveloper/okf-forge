@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA15",
+  "topic_key": "matematica/EF08MA15",
+  "title": "EF08MA15 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 317
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA15",
+    "year_block": "8º ano",
+    "statement": "Construir, utilizando instrumentos de desenho ou softwares de geometria dinâmica, mediatriz, bissetriz, ângulos de 90°, 60°, 45° e 30° e polígonos regulares.",
+    "verbs": [
+      "construir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Aplicar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Criar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-EST",
+      "axis_name": "Pesquisa, amostragem e probabilidade",
+      "academic_topics": "população, amostra, tipos de gráfico, média, mediana, moda, dispersão e eventos aleatórios",
+      "formal_system": "planejamento de pesquisa, representatividade, medidas e probabilidade",
+      "transfer_field": "avaliar pesquisa e argumentar a partir de dados",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M8-GEO",
+      "axis_name": "Congruência, semelhança e relações geométricas",
+      "academic_topics": "triângulos, quadriláteros, mediatriz, bissetriz, transformações, congruência e semelhança",
+      "formal_system": "critérios, propriedades, demonstração informal e construção",
+      "transfer_field": "projetar, mapear e justificar solução geométrica complexa",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA15",
+    "topic_has_okf": "bncc:EF08MA15 HAS_OKF okf:bncc:EF08MA15",
+    "okf_compiles_tensor": "okf:bncc:EF08MA15 COMPILES_TO tensor:bncc:EF08MA15"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "bd36a63d0d3a2939f4bc41e2d32c99f7def19c01786ec3564aaa56eacf916327"
+}

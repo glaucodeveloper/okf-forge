@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08GE24",
+  "topic_key": "geografia/EF08GE24",
+  "title": "EF08GE24 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 393
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08GE24",
+    "year_block": "8º ano",
+    "statement": "Analisar as principais características produtivas dos países latino-americanos (como exploração mineral na Venezuela; agricultura de alta especialização e exploração mineira no Chile; circuito da carne nos pampas argentinos e no Brasil; circuito da cana-de-açúcar em Cuba; polígono industrial do sudeste brasileiro e plantações de soja no centro-oeste; maquiladoras mexicanas, entre outros).",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TRAB",
+      "axis_name": "Industrialização, capitalismo e trabalho",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Contextualizar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TRAB",
+      "axis_name": "Industrialização, capitalismo e trabalho",
+      "academic_topics": "revolução industrial, capitalismo, trabalho livre e compulsório, urbanização e mercados",
+      "formal_system": "modo de produção, classe, divisão do trabalho, tecnologia e desigualdade",
+      "transfer_field": "relacionar inovação econômica a condições sociais e ambientais",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF08GE24",
+    "topic_has_okf": "bncc:EF08GE24 HAS_OKF okf:bncc:EF08GE24",
+    "okf_compiles_tensor": "okf:bncc:EF08GE24 COMPILES_TO tensor:bncc:EF08GE24"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "c21f0102af0d51b174f202fc07730e5b8c95fe68d7fffb6828ecc5ea3c39f5a6"
+}

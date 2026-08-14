@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI02",
+  "topic_key": "ciencias/EF06CI02",
+  "title": "EF06CI02 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI02",
+    "year_block": "6º ano",
+    "statement": "Identificar evidências de transformações químicas a partir do resultado de misturas de materiais que originam produtos diferentes dos que foram misturados (mistura de ingredientes para fazer um bolo, mistura de vinagre com bicarbonato de sódio etc.).",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Investigar",
+    "competences": [
+      "Interpretar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "academic_topics": "misturas homogêneas e heterogêneas, separação de materiais, transformações químicas, materiais sintéticos e medicamentos",
+      "formal_system": "propriedades, evidências de transformação, métodos de separação e impactos tecnológicos",
+      "transfer_field": "investigar materiais cotidianos e propor uso ou descarte responsável",
+      "supported_competences": [
+        "Investigar",
+        "Organizar",
+        "Interpretar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI02",
+    "topic_has_okf": "bncc:EF06CI02 HAS_OKF okf:bncc:EF06CI02",
+    "okf_compiles_tensor": "okf:bncc:EF06CI02 COMPILES_TO tensor:bncc:EF06CI02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8e06daaa2d800e1057e78e063d5e4bd329420f959468c969f621bef239fe48ef"
+}

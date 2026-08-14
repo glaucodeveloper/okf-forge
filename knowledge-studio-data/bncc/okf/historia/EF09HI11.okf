@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI11",
+  "topic_key": "historia/EF09HI11",
+  "title": "EF09HI11 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 431
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI11",
+    "year_block": "9º ano",
+    "statement": "Identificar as especificidades e os desdobramentos mundiais da Revolução Russa e seu significado histórico.",
+    "verbs": [
+      "identificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "academic_topics": "República brasileira, guerras, revoluções, totalitarismos, Guerra Fria, ditaduras, redemocratização e fontes",
+      "formal_system": "periodização, causalidade, memória, trauma, continuidade, ruptura e disputa narrativa",
+      "transfer_field": "comparar memórias e construir explicação histórica multicausal",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI11",
+    "topic_has_okf": "bncc:EF09HI11 HAS_OKF okf:bncc:EF09HI11",
+    "okf_compiles_tensor": "okf:bncc:EF09HI11 COMPILES_TO tensor:bncc:EF09HI11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "2d1ae1d500f7e5358d455ba71dfd00a1414c582e452c4b8fefa929fc9b577843"
+}

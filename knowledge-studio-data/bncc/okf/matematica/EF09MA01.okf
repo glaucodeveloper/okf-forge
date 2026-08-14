@@ -1,0 +1,127 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA01",
+  "topic_key": "matematica/EF09MA01",
+  "title": "EF09MA01 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 319
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA01",
+    "year_block": "9º ano",
+    "statement": "Reconhecer que, uma vez fixada uma unidade de comprimento, existem segmentos de reta cujo comprimento não é expresso por número racional (como as medidas de diagonais de um polígono e alturas de um triângulo, quando se toma a medida de cada lado como unidade).",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "academic_topics": "semelhança, teorema de Pitágoras, relações em triângulos, polígonos, circunferência e coordenadas",
+      "formal_system": "demonstração, proporcionalidade geométrica, propriedades e construção",
+      "transfer_field": "resolver projeto espacial e justificar formalmente o método",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "academic_topics": "áreas, volumes, capacidade, densidade, velocidade, escalas e unidades compostas",
+      "formal_system": "fórmulas, dimensionalidade, conversão, precisão e estimativa",
+      "transfer_field": "dimensionar projeto real e avaliar viabilidade e erro",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "academic_topics": "números reais, irracionais, potências, raízes, notação científica e aproximações",
+      "formal_system": "propriedades, densidade, ordem de grandeza, erro e representação",
+      "transfer_field": "avaliar modelos, medidas e informação científica numericamente",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA01",
+    "topic_has_okf": "bncc:EF09MA01 HAS_OKF okf:bncc:EF09MA01",
+    "okf_compiles_tensor": "okf:bncc:EF09MA01 COMPILES_TO tensor:bncc:EF09MA01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "e16c64d7340621653ea3f653cb19bd8ae39b3a94dae3630d346cf8351ad2b19e"
+}

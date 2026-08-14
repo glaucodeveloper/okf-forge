@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF67EF15",
+  "topic_key": "educacao-fisica/EF67EF15",
+  "title": "EF67EF15 — Educação Física",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 237
+  },
+  "matter": {
+    "id": 7,
+    "name": "Educação Física",
+    "slug": "educacao-fisica",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF67EF15",
+    "year_block": "6º e 7º anos",
+    "statement": "Planejar e utilizar estratégias básicas das lutas do Brasil, respeitando o colega como oponente.",
+    "verbs": [
+      "planejar",
+      "utilizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Organizar",
+      "Aplicar"
+    ],
+    "social_axes": [
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-CORP",
+      "axis_name": "Corpo, jogo e práticas corporais",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Aplicar",
+      "vertentes_sociais": "Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-CORP",
+      "axis_name": "Estratégia, condicionamento e cultura corporal",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Organizar | Aplicar",
+      "vertentes_sociais": "Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-CORP",
+      "axis_name": "Corpo, jogo e práticas corporais",
+      "academic_topics": "jogos eletrônicos, esportes de marca, precisão, invasão e técnico-combinatórios, ginástica, danças urbanas, lutas brasileiras e aventura urbana",
+      "formal_system": "regras, estratégias, segurança, condicionamento, consciência corporal e inclusão",
+      "transfer_field": "planejar prática corporal segura, cooperativa e adequada ao contexto",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L7-CORP",
+      "axis_name": "Estratégia, condicionamento e cultura corporal",
+      "academic_topics": "jogos eletrônicos, esportes, ginástica, danças urbanas, lutas brasileiras e aventura urbana",
+      "formal_system": "regra, técnica, tática, treinamento, segurança, ética e inclusão",
+      "transfer_field": "adaptar regras e organizar prática corporal coletiva",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:educacao-fisica HAS_TOPIC bncc:EF67EF15",
+    "topic_has_okf": "bncc:EF67EF15 HAS_OKF okf:bncc:EF67EF15",
+    "okf_compiles_tensor": "okf:bncc:EF67EF15 COMPILES_TO tensor:bncc:EF67EF15"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3ff7dd068714ab44e9996a27e1953827b655f1ff11e2b5c2fd16fd05b37ef554"
+}

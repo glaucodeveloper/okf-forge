@@ -1,0 +1,107 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF67EF07",
+  "topic_key": "educacao-fisica/EF67EF07",
+  "title": "EF67EF07 — Educação Física",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 235
+  },
+  "matter": {
+    "id": 7,
+    "name": "Educação Física",
+    "slug": "educacao-fisica",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF67EF07",
+    "year_block": "6º e 7º anos",
+    "statement": "Propor e produzir alternativas para experimentação dos esportes não disponíveis e/ou acessíveis na comunidade e das demais práticas corporais tematizadas na escola.",
+    "verbs": [
+      "propor",
+      "produzir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Aplicar",
+      "Investigar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-CORP",
+      "axis_name": "Corpo, jogo e práticas corporais",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Aplicar | Investigar | Criar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-CORP",
+      "axis_name": "Estratégia, condicionamento e cultura corporal",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Aplicar | Investigar | Criar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-CORP",
+      "axis_name": "Corpo, jogo e práticas corporais",
+      "academic_topics": "jogos eletrônicos, esportes de marca, precisão, invasão e técnico-combinatórios, ginástica, danças urbanas, lutas brasileiras e aventura urbana",
+      "formal_system": "regras, estratégias, segurança, condicionamento, consciência corporal e inclusão",
+      "transfer_field": "planejar prática corporal segura, cooperativa e adequada ao contexto",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L7-CORP",
+      "axis_name": "Estratégia, condicionamento e cultura corporal",
+      "academic_topics": "jogos eletrônicos, esportes, ginástica, danças urbanas, lutas brasileiras e aventura urbana",
+      "formal_system": "regra, técnica, tática, treinamento, segurança, ética e inclusão",
+      "transfer_field": "adaptar regras e organizar prática corporal coletiva",
+      "supported_competences": [
+        "Aplicar",
+        "Organizar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:educacao-fisica HAS_TOPIC bncc:EF67EF07",
+    "topic_has_okf": "bncc:EF67EF07 HAS_OKF okf:bncc:EF67EF07",
+    "okf_compiles_tensor": "okf:bncc:EF67EF07 COMPILES_TO tensor:bncc:EF67EF07"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "001ffa7b30d3a14d28f257fba938771ea29017d5e3acb5cbf78fab076abb2d62"
+}

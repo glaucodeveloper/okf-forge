@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA10",
+  "topic_key": "matematica/EF09MA10",
+  "title": "EF09MA10 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 319
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA10",
+    "year_block": "9º ano",
+    "statement": "Demonstrar relações simples entre os ângulos formados por retas paralelas cortadas por uma transversal.",
+    "verbs": [
+      "demonstrar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Aplicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "academic_topics": "semelhança, teorema de Pitágoras, relações em triângulos, polígonos, circunferência e coordenadas",
+      "formal_system": "demonstração, proporcionalidade geométrica, propriedades e construção",
+      "transfer_field": "resolver projeto espacial e justificar formalmente o método",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA10",
+    "topic_has_okf": "bncc:EF09MA10 HAS_OKF okf:bncc:EF09MA10",
+    "okf_compiles_tensor": "okf:bncc:EF09MA10 COMPILES_TO tensor:bncc:EF09MA10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "1dd69e68a10eee8a5c7590cb79db4ad7af87ac8105c721ead70f5a9b85dadf6d"
+}

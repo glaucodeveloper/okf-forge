@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06LP06",
+  "topic_key": "lingua-portuguesa/EF06LP06",
+  "title": "EF06LP06 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 173
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF06LP06",
+    "year_block": "6º ano",
+    "statement": "Empregar, adequadamente, as regras de concordância nominal (relações entre os substantivos e seus determinantes) e as regras de concordância verbal (relações entre o verbo e o sujeito simples e composto).",
+    "verbs": [
+      "empregar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Aplicar",
+    "competences": [
+      "Calcular",
+      "Aplicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "L6-ALIS",
+      "axis_name": "Análise linguística e semiótica",
+      "competencia_primaria": "Aplicar",
+      "competencias_desenvolvimento": "Calcular | Aplicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L6-ALIS",
+      "axis_name": "Análise linguística e semiótica",
+      "academic_topics": "frase, oração, classes de palavras, concordância, pontuação, relações lexicais, imagem, som e diagramação",
+      "formal_system": "estrutura sintática básica, escolhas lexicais, norma, variação e articulação entre modos semióticos",
+      "transfer_field": "editar textos para clareza, intenção, estilo e acessibilidade",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF06LP06",
+    "topic_has_okf": "bncc:EF06LP06 HAS_OKF okf:bncc:EF06LP06",
+    "okf_compiles_tensor": "okf:bncc:EF06LP06 COMPILES_TO tensor:bncc:EF06LP06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8dcaf63e802d57510c3050f86c345cf6e79e1267e18b538b176f36bcb5c956aa"
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI07",
+  "topic_key": "historia/EF09HI07",
+  "title": "EF09HI07 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 431
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI07",
+    "year_block": "9º ano",
+    "statement": "Identificar e explicar, em meio a lógicas de inclusão e exclusão, as pautas dos povos indígenas, no contexto republicano (até 1964), e das populações afrodescendentes.",
+    "verbs": [
+      "identificar",
+      "explicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Textualizar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-TEM",
+      "axis_name": "Século XX, mundo contemporâneo e memória",
+      "academic_topics": "República brasileira, guerras, revoluções, totalitarismos, Guerra Fria, ditaduras, redemocratização e fontes",
+      "formal_system": "periodização, causalidade, memória, trauma, continuidade, ruptura e disputa narrativa",
+      "transfer_field": "comparar memórias e construir explicação histórica multicausal",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "academic_topics": "racismo, gênero, povos indígenas, juventudes, cultura, direitos humanos e movimentos sociais",
+      "formal_system": "identidade, reconhecimento, representação, desigualdade e resistência",
+      "transfer_field": "argumentar sobre direitos com base histórica e múltiplas vozes",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI07",
+    "topic_has_okf": "bncc:EF09HI07 HAS_OKF okf:bncc:EF09HI07",
+    "okf_compiles_tensor": "okf:bncc:EF09HI07 COMPILES_TO tensor:bncc:EF09HI07"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4e179f5cf86a5a4b8c358b0df6d640d4ba2cf3dfa44c0472227da09ac41e3e98"
+}

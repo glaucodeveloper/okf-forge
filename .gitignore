@@ -1,0 +1,10 @@
+*.exe
+*.log
+*.work
+*.nimcache
+knowledge_studio_app.nim.before-*
+knowledge-studio-data/repository/
+knowledge-studio-data/data/
+knowledge-studio-data/.glauco/
+data/bncc/safetensors/
+*.invalid-*

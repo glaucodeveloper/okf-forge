@@ -1,0 +1,6 @@
+# O Metis-4B usa código remoto do próprio checkpoint.
+# Use o build de torch compatível com sua CUDA antes de instalar o restante.
+transformers>=4.57
+accelerate>=1.0
+safetensors>=0.4.5
+bitsandbytes>=0.45

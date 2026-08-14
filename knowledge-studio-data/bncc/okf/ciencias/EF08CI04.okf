@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08CI04",
+  "topic_key": "ciencias/EF08CI04",
+  "title": "EF08CI04 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 351
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF08CI04",
+    "year_block": "8º ano",
+    "statement": "Calcular o consumo de eletrodomésticos a partir dos dados de potência (descritos no próprio equipamento) e tempo médio de uso para avaliar o impacto de cada equipamento no consumo doméstico mensal.",
+    "verbs": [
+      "calcular",
+      "avaliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "C8-CTS",
+      "axis_name": "Energia, saúde e decisão pública",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C8-CTS",
+      "axis_name": "Energia, saúde e decisão pública",
+      "academic_topics": "matriz energética, consumo, sexualidade, prevenção, clima e tecnologia",
+      "formal_system": "evidência, risco, direito, impacto e escolha coletiva",
+      "transfer_field": "produzir recomendação ou campanha baseada em evidências",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF08CI04",
+    "topic_has_okf": "bncc:EF08CI04 HAS_OKF okf:bncc:EF08CI04",
+    "okf_compiles_tensor": "okf:bncc:EF08CI04 COMPILES_TO tensor:bncc:EF08CI04"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "d420e90e2f9eda0f0699981c2ace3612932a4b05e5629b9a47ed26ab20a843b7"
+}

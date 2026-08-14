@@ -1,0 +1,153 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF89LP33",
+  "topic_key": "lingua-portuguesa/EF89LP33",
+  "title": "EF89LP33 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 189
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF89LP33",
+    "year_block": "8º e 9º anos",
+    "statement": "Ler, de forma autônoma, e compreender – selecionando procedimentos e estratégias de leitura adequados a diferentes objetivos e levando em conta características dos gêneros e suportes – romances, contos contemporâneos, minicontos, fábulas contemporâneas, romances juvenis, biografias romanceadas, novelas, crônicas visuais, narrativas de ficção científica, narrativas de suspense, poemas de forma livre e fixa (como haicai), poema concreto, ciberpoema, dentre outros, expressando avaliação sobre o texto lido e estabelecendo preferências por gêneros, temas, autores.",
+    "verbs": [
+      "ler",
+      "compreender"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Organizar",
+      "Aplicar",
+      "Textualizar",
+      "Avaliar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Organizar | Aplicar | Textualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ARTE",
+      "axis_name": "Arte contemporânea, audiovisual e remix cultural",
+      "academic_topics": "literatura, fotografia, vídeo, música, teatro, dança, artes visuais e cultura digital",
+      "formal_system": "linguagem, processo criativo, contexto, autoria, apropriação e curadoria",
+      "transfer_field": "criar obra crítica que combine linguagens e repertórios",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L8-LEIT",
+      "axis_name": "Leitura crítica de opinião, ciência e literatura",
+      "academic_topics": "artigo de opinião, editorial, resenha, reportagem, divulgação científica, literatura e textos multimodais",
+      "formal_system": "tese, argumentos, vozes, evidências, intertextualidade, ironia e confiabilidade",
+      "transfer_field": "comparar discursos complexos e formular leitura crítica própria",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    },
+    {
+      "axis_id": "L9-ARTE",
+      "axis_name": "Curadoria, autoria e integração das artes",
+      "academic_topics": "literatura, audiovisual, música, teatro, dança, artes visuais, cultura digital e intervenção",
+      "formal_system": "curadoria, poética, processo, repertório, contexto, autoria e crítica",
+      "transfer_field": "conceber obra ou mostra interdisciplinar com posicionamento",
+      "supported_competences": [
+        "Criar",
+        "Interpretar",
+        "Avaliar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L9-LEIT",
+      "axis_name": "Leitura crítica de discursos, mídias e literatura",
+      "academic_topics": "editorial, ensaio, manifesto, reportagem multimídia, crítica, pesquisa, literatura e redes",
+      "formal_system": "discurso, ideologia, tese, voz, evidência, enquadramento, intertextualidade e estilo",
+      "transfer_field": "avaliar discursos concorrentes e formular interpretação autoral",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF89LP33",
+    "topic_has_okf": "bncc:EF89LP33 HAS_OKF okf:bncc:EF89LP33",
+    "okf_compiles_tensor": "okf:bncc:EF89LP33 COMPILES_TO tensor:bncc:EF89LP33"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "15fe8d6137caa075db4414fd9c9f76302d0ad1d0f9210528e3c4adf902bf7a43"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08MA02",
+  "topic_key": "matematica/EF08MA02",
+  "title": "EF08MA02 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 315
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF08MA02",
+    "year_block": "8º ano",
+    "statement": "Resolver e elaborar problemas usando a relação entre potenciação e radiciação, para representar uma raiz como potência de expoente fracionário.",
+    "verbs": [
+      "resolver",
+      "elaborar",
+      "representar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "M8-NUM",
+      "axis_name": "Reais, potências e raízes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M8-NUM",
+      "axis_name": "Reais, potências e raízes",
+      "academic_topics": "notação científica, potências, raízes, números racionais e irracionais e aproximações",
+      "formal_system": "propriedades de expoentes, ordem de grandeza, radical e estimativa",
+      "transfer_field": "resolver e avaliar medidas científicas, escalas e aproximações",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF08MA02",
+    "topic_has_okf": "bncc:EF08MA02 HAS_OKF okf:bncc:EF08MA02",
+    "okf_compiles_tensor": "okf:bncc:EF08MA02 COMPILES_TO tensor:bncc:EF08MA02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "92ffd3466756482778d67b17fcc8c5b674be11d0921e61ef10881f6b54dba37f"
+}

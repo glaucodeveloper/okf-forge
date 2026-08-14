@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08CI02",
+  "topic_key": "ciencias/EF08CI02",
+  "title": "EF08CI02 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 351
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF08CI02",
+    "year_block": "8º ano",
+    "statement": "Construir circuitos elétricos com pilha/bateria, fios e lâmpada ou outros dispositivos e compará-los a circuitos elétricos residenciais.",
+    "verbs": [
+      "construir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Interpretar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "C8-MAT",
+      "axis_name": "Energia elétrica, circuitos e consumo",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Interpretar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C8-MAT",
+      "axis_name": "Energia elétrica, circuitos e consumo",
+      "academic_topics": "fontes de energia, circuitos, potência, consumo, transformação e eficiência",
+      "formal_system": "corrente, circuito, potência, cálculo de consumo e matriz energética",
+      "transfer_field": "investigar circuito e propor redução responsável de consumo",
+      "supported_competences": [
+        "Investigar",
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF08CI02",
+    "topic_has_okf": "bncc:EF08CI02 HAS_OKF okf:bncc:EF08CI02",
+    "okf_compiles_tensor": "okf:bncc:EF08CI02 COMPILES_TO tensor:bncc:EF08CI02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "ac71f4cc8272b127277f14ffd36c96f335028935e1e41f4e0483b3e32919a872"
+}

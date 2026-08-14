@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08LI17",
+  "topic_key": "lingua-inglesa/EF08LI17",
+  "title": "EF08LI17 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 261
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF08LI17",
+    "year_block": "8º ano",
+    "statement": "Empregar, de modo inteligível, os pronomes relativos (who, which, that, whose) para construir períodos compostos por subordinação.",
+    "verbs": [
+      "empregar",
+      "construir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Aplicar",
+    "competences": [
+      "Aplicar",
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ING",
+      "axis_name": "Mídias, circulação global e autoria em inglês",
+      "competencia_primaria": "Aplicar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ING",
+      "axis_name": "Mídias, circulação global e autoria em inglês",
+      "academic_topics": "notícias, campanhas, redes, interculturalidade, planos, hipóteses, leitura e produção digital",
+      "formal_system": "estratégias discursivas, repertório, tempos verbais, multimodalidade e posicionamento",
+      "transfer_field": "produzir intervenção ou mídia em inglês para audiência real",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF08LI17",
+    "topic_has_okf": "bncc:EF08LI17 HAS_OKF okf:bncc:EF08LI17",
+    "okf_compiles_tensor": "okf:bncc:EF08LI17 COMPILES_TO tensor:bncc:EF08LI17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "8089d93487e8c04f96abf4a28f3319fdc40c5cf6bbe12deae05b1586ad38df2d"
+}

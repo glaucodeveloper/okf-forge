@@ -1,0 +1,107 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI09",
+  "topic_key": "ciencias/EF09CI09",
+  "title": "EF09CI09 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI09",
+    "year_block": "9º ano",
+    "statement": "Discutir as ideias de Mendel sobre hereditariedade (fatores hereditários, segregação, gametas, fecundação), considerando-as para resolver problemas envolvendo a transmissão de características hereditárias em diferentes organismos.",
+    "verbs": [
+      "discutir",
+      "resolver"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Argumentar",
+      "Aplicar",
+      "Textualizar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Argumentar | Aplicar | Textualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Argumentar | Aplicar | Textualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "academic_topics": "genes, herança, Mendel, seleção natural, evolução, espécies, biodiversidade e conservação",
+      "formal_system": "probabilidade genética, variabilidade, ancestralidade, seleção e evidências evolutivas",
+      "transfer_field": "explicar caso biológico e argumentar sobre conservação",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "academic_topics": "Sistema Solar, estrelas, galáxias, escalas, evolução estelar, condições de vida e exploração espacial",
+      "formal_system": "modelos cosmológicos, escala, gravidade, evidência e tecnologia de observação",
+      "transfer_field": "comparar modelos, interpretar dados e avaliar exploração espacial",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Contextualizar",
+        "Mapear"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI09",
+    "topic_has_okf": "bncc:EF09CI09 HAS_OKF okf:bncc:EF09CI09",
+    "okf_compiles_tensor": "okf:bncc:EF09CI09 COMPILES_TO tensor:bncc:EF09CI09"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7e8e719e53c5b1b5e30d717e4f933d2ce44f7959533dec3150e9b906fcbf1b46"
+}

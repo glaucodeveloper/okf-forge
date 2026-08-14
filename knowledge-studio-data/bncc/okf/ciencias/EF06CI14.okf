@@ -1,0 +1,104 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06CI14",
+  "topic_key": "ciencias/EF06CI14",
+  "title": "EF06CI14 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 347
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF06CI14",
+    "year_block": "6º ano",
+    "statement": "Inferir que as mudanças na sombra de uma vara (gnômon) ao longo do dia em diferentes períodos do ano são uma evidência dos movimentos relativos entre a Terra e o Sol, que podem ser explicados por meio dos movimentos de rotação e translação da Terra e da inclinação de seu eixo de rotação em relação ao plano de sua órbita em torno do Sol.",
+    "verbs": [
+      "inferir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Investigar",
+    "competences": [
+      "Interpretar",
+      "Textualizar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-TERRA",
+      "axis_name": "Terra, rochas e movimentos",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "competencia_primaria": "Investigar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C6-TERRA",
+      "axis_name": "Terra, rochas e movimentos",
+      "academic_topics": "camadas da Terra, rochas, fósseis, forma e movimentos da Terra, sombra e orientação",
+      "formal_system": "modelos terrestres, evidências geológicas, escalas de tempo e relações Sol-Terra",
+      "transfer_field": "interpretar evidências e comparar modelos sobre a dinâmica do planeta",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Contextualizar",
+        "Mapear"
+      ]
+    },
+    {
+      "axis_id": "C6-MAT",
+      "axis_name": "Matéria, misturas e transformações",
+      "academic_topics": "misturas homogêneas e heterogêneas, separação de materiais, transformações químicas, materiais sintéticos e medicamentos",
+      "formal_system": "propriedades, evidências de transformação, métodos de separação e impactos tecnológicos",
+      "transfer_field": "investigar materiais cotidianos e propor uso ou descarte responsável",
+      "supported_competences": [
+        "Investigar",
+        "Organizar",
+        "Interpretar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF06CI14",
+    "topic_has_okf": "bncc:EF06CI14 HAS_OKF okf:bncc:EF06CI14",
+    "okf_compiles_tensor": "okf:bncc:EF06CI14 COMPILES_TO tensor:bncc:EF06CI14"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "811841e57b51f4d7a780da475bb0a2ecc4cf916cdd14f64e98458f4da399688d"
+}

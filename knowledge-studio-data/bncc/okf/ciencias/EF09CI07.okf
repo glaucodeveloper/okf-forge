@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI07",
+  "topic_key": "ciencias/EF09CI07",
+  "title": "EF09CI07 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI07",
+    "year_block": "9º ano",
+    "statement": "Discutir o papel do avanço tecnológico na aplicação das radiações na medicina diagnóstica (raio X, ultrassom, ressonância nuclear magnética) e no tratamento de doenças (radioterapia, cirurgia ótica a laser, infravermelho, ultravioleta etc.).",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Argumentar",
+      "Aplicar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-MAT",
+      "axis_name": "Estrutura da matéria, reações e radiações",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Argumentar | Aplicar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-CTS",
+      "axis_name": "Ciência, ética, tecnologia e sustentabilidade",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Argumentar | Aplicar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-MAT",
+      "axis_name": "Estrutura da matéria, reações e radiações",
+      "academic_topics": "átomos, elementos, substâncias, ligações introdutórias, reações, luz, som e radiações",
+      "formal_system": "modelo atômico, conservação, transformação, espectro, energia e evidência experimental",
+      "transfer_field": "investigar transformação e avaliar aplicação de radiação ou material",
+      "supported_competences": [
+        "Investigar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "C9-CTS",
+      "axis_name": "Ciência, ética, tecnologia e sustentabilidade",
+      "academic_topics": "genética, radiação, biodiversidade, espaço, energia, saúde e inovação",
+      "formal_system": "evidência, incerteza, risco, ética, regulação e impacto socioambiental",
+      "transfer_field": "deliberar sobre tecnologia e produzir recomendação baseada em ciência",
+      "supported_competences": [
+        "Avaliar",
+        "Argumentar",
+        "Criar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI07",
+    "topic_has_okf": "bncc:EF09CI07 HAS_OKF okf:bncc:EF09CI07",
+    "okf_compiles_tensor": "okf:bncc:EF09CI07 COMPILES_TO tensor:bncc:EF09CI07"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "773f1e71fbb02707d285a4da2c333c658d29d334b557b4f5c967755e84b5da08"
+}

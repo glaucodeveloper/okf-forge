@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07MA25",
+  "topic_key": "matematica/EF07MA25",
+  "title": "EF07MA25 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 311
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF07MA25",
+    "year_block": "7º ano",
+    "statement": "Reconhecer a rigidez geométrica dos triângulos e suas aplicações, como na construção de estruturas arquitetônicas (telhados, estruturas metálicas e outras) ou nas artes plásticas.",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Aplicar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "M7-GEO",
+      "axis_name": "Transformações, triângulos e plano cartesiano",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M7-GEO",
+      "axis_name": "Transformações, triângulos e plano cartesiano",
+      "academic_topics": "simetrias, translação, rotação, reflexão, triângulos, ângulos, polígonos e coordenadas",
+      "formal_system": "congruência, propriedades, construção geométrica e transformação",
+      "transfer_field": "projetar padrão, mapa ou solução geométrica e demonstrar propriedades",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF07MA25",
+    "topic_has_okf": "bncc:EF07MA25 HAS_OKF okf:bncc:EF07MA25",
+    "okf_compiles_tensor": "okf:bncc:EF07MA25 COMPILES_TO tensor:bncc:EF07MA25"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "56ab9b9bd1cb3b8a69193970cc7c467f81205355d40655840093242f4d09688a"
+}

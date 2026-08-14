@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07HI04",
+  "topic_key": "historia/EF07HI04",
+  "title": "EF07HI04 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 425
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07HI04",
+    "year_block": "7º ano",
+    "statement": "Identificar as principais características dos Humanismos e dos Renascimentos e analisar seus significados.",
+    "verbs": [
+      "identificar",
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TEM",
+      "axis_name": "Formação do mundo moderno e fontes",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-TEM",
+      "axis_name": "Formação do mundo moderno e fontes",
+      "academic_topics": "Renascimento, Reforma, expansão marítima, América, colonização e diferentes fontes",
+      "formal_system": "ruptura, continuidade, causalidade, eurocentrismo e perspectiva histórica",
+      "transfer_field": "comparar narrativas e explicar a formação do mundo moderno",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF07HI04",
+    "topic_has_okf": "bncc:EF07HI04 HAS_OKF okf:bncc:EF07HI04",
+    "okf_compiles_tensor": "okf:bncc:EF07HI04 COMPILES_TO tensor:bncc:EF07HI04"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "6da272b000fdc88ca8b53d676fc847332bd17ad9e1e7c95630bae61666089876"
+}

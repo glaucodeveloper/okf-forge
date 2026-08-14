@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08ER07",
+  "topic_key": "ensino-religioso/EF08ER07",
+  "title": "EF08ER07 — Ensino Religioso",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 459
+  },
+  "matter": {
+    "id": 9,
+    "name": "Ensino Religioso",
+    "slug": "ensino-religioso",
+    "bncc_area": "Ensino Religioso"
+  },
+  "skill": {
+    "code": "EF08ER07",
+    "year_block": "8º ano",
+    "statement": "Analisar as formas de uso das mídias e tecnologias pelas diferentes denominações religiosas.",
+    "verbs": [
+      "analisar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "E8-CRE",
+      "axis_name": "Vida, morte, transcendência e ética",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "E8-CRE",
+      "axis_name": "Vida, morte, transcendência e ética",
+      "academic_topics": "concepções de vida e morte, ancestralidade, transcendência, imortalidade e princípios éticos",
+      "formal_system": "visão de mundo, finitude, sentido, valor e responsabilidade",
+      "transfer_field": "argumentar sobre dilema existencial respeitando perspectivas",
+      "supported_competences": [
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ensino-religioso HAS_TOPIC bncc:EF08ER07",
+    "topic_has_okf": "bncc:EF08ER07 HAS_OKF okf:bncc:EF08ER07",
+    "okf_compiles_tensor": "okf:bncc:EF08ER07 COMPILES_TO tensor:bncc:EF08ER07"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "7717bb6afdf88fb4476d7e684fc60f71ae79fc9d2b94ec83dedae7dacb92179c"
+}

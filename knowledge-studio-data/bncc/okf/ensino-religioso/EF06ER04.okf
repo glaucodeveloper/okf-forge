@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06ER04",
+  "topic_key": "ensino-religioso/EF06ER04",
+  "title": "EF06ER04 — Ensino Religioso",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 455
+  },
+  "matter": {
+    "id": 9,
+    "name": "Ensino Religioso",
+    "slug": "ensino-religioso",
+    "bncc_area": "Ensino Religioso"
+  },
+  "skill": {
+    "code": "EF06ER04",
+    "year_block": "6º ano",
+    "statement": "Reconhecer que os textos escritos são utilizados pelas tradições religiosas de maneiras diversas.",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Aplicar",
+      "Textualizar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "E6-MAN",
+      "axis_name": "Textos, mitos, ritos e símbolos",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Aplicar | Textualizar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "E6-MAN",
+      "axis_name": "Textos, mitos, ritos e símbolos",
+      "academic_topics": "tradições escritas, textos religiosos, mitos, ritos, símbolos e práticas celebrativas",
+      "formal_system": "função da tradição escrita, linguagem simbólica e relação entre mito, rito e símbolo",
+      "transfer_field": "comparar usos e sentidos de símbolos em diferentes contextos",
+      "supported_competences": [
+        "Interpretar",
+        "Contextualizar",
+        "Comunicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ensino-religioso HAS_TOPIC bncc:EF06ER04",
+    "topic_has_okf": "bncc:EF06ER04 HAS_OKF okf:bncc:EF06ER04",
+    "okf_compiles_tensor": "okf:bncc:EF06ER04 COMPILES_TO tensor:bncc:EF06ER04"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "6eeebfb5b4d5baaabae969a3b2b6ebe0fe0c3951042a6e449e2338ba7aa5b89b"
+}

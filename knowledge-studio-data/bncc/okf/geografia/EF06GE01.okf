@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06GE01",
+  "topic_key": "geografia/EF06GE01",
+  "title": "EF06GE01 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 387
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06GE01",
+    "year_block": "6º ano",
+    "statement": "Comparar modificações das paisagens nos lugares de vivência e os usos desses lugares em diferentes tempos.",
+    "verbs": [
+      "comparar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Interpretar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-TERR",
+      "axis_name": "Território, paisagem e cartografia",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-TERR",
+      "axis_name": "Território, paisagem e cartografia",
+      "academic_topics": "paisagens, escalas, coordenadas, mapas, bacias, relevo, solo, clima e vegetação",
+      "formal_system": "escala cartográfica, localização, representação, paisagem e território",
+      "transfer_field": "produzir leitura espacial e mapa comentado de problema real",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF06GE01",
+    "topic_has_okf": "bncc:EF06GE01 HAS_OKF okf:bncc:EF06GE01",
+    "okf_compiles_tensor": "okf:bncc:EF06GE01 COMPILES_TO tensor:bncc:EF06GE01"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "94a3dec1767686fd850777e369ca18834906f81f13ff055b77b7219a855288c4"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06ER05",
+  "topic_key": "ensino-religioso/EF06ER05",
+  "title": "EF06ER05 — Ensino Religioso",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 455
+  },
+  "matter": {
+    "id": 9,
+    "name": "Ensino Religioso",
+    "slug": "ensino-religioso",
+    "bncc_area": "Ensino Religioso"
+  },
+  "skill": {
+    "code": "EF06ER05",
+    "year_block": "6º ano",
+    "statement": "Discutir como o estudo e a interpretação dos textos religiosos influenciam os adeptos a vivenciarem os ensinamentos das tradições religiosas.",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Textualizar",
+      "Contextualizar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "E6-CRE",
+      "axis_name": "Crenças e filosofias de vida",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Textualizar | Contextualizar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "E6-CRE",
+      "axis_name": "Crenças e filosofias de vida",
+      "academic_topics": "ensinamentos, crenças, preservação de memória e influência das tradições na vida",
+      "formal_system": "interpretação, pertencimento, coerência interna e diversidade de perspectivas",
+      "transfer_field": "avaliar efeitos sociais e éticos de crenças com respeito",
+      "supported_competences": [
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ensino-religioso HAS_TOPIC bncc:EF06ER05",
+    "topic_has_okf": "bncc:EF06ER05 HAS_OKF okf:bncc:EF06ER05",
+    "okf_compiles_tensor": "okf:bncc:EF06ER05 COMPILES_TO tensor:bncc:EF06ER05"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "e2e2a9ee23490c2d054297d762261fe9b3f88cacb316e9d9f8d93af87bddfcf5"
+}

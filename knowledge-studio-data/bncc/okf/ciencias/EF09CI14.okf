@@ -1,0 +1,104 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI14",
+  "topic_key": "ciencias/EF09CI14",
+  "title": "EF09CI14 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI14",
+    "year_block": "9º ano",
+    "statement": "Descrever a composição e a estrutura do Sistema Solar (Sol, planetas rochosos, planetas gigantes gasosos e corpos menores), assim como a localização do Sistema Solar na nossa Galáxia (a Via Láctea) e dela no Universo (apenas uma galáxia dentre bilhões).",
+    "verbs": [
+      "descrever"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Textualizar",
+      "Contextualizar",
+      "Mapear"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar | Mapear",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar | Mapear",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "academic_topics": "genes, herança, Mendel, seleção natural, evolução, espécies, biodiversidade e conservação",
+      "formal_system": "probabilidade genética, variabilidade, ancestralidade, seleção e evidências evolutivas",
+      "transfer_field": "explicar caso biológico e argumentar sobre conservação",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "C9-TERRA",
+      "axis_name": "Astronomia, Universo e evolução estelar",
+      "academic_topics": "Sistema Solar, estrelas, galáxias, escalas, evolução estelar, condições de vida e exploração espacial",
+      "formal_system": "modelos cosmológicos, escala, gravidade, evidência e tecnologia de observação",
+      "transfer_field": "comparar modelos, interpretar dados e avaliar exploração espacial",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Contextualizar",
+        "Mapear"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI14",
+    "topic_has_okf": "bncc:EF09CI14 HAS_OKF okf:bncc:EF09CI14",
+    "okf_compiles_tensor": "okf:bncc:EF09CI14 COMPILES_TO tensor:bncc:EF09CI14"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "a1dd82960bcbd61979dad76d149d263bbc7e7dd0ea290b2d2ad25ac39eb518a3"
+}

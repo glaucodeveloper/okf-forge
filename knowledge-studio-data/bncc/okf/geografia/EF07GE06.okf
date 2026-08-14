@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07GE06",
+  "topic_key": "geografia/EF07GE06",
+  "title": "EF07GE06 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 389
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07GE06",
+    "year_block": "7º ano",
+    "statement": "Discutir em que medida a produção, a circulação e o consumo de mercadorias provocam impactos ambientais, assim como influem na distribuição de riquezas, em diferentes lugares.",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Argumentar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Cuidado e responsabilidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Argumentar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação | Cuidado e responsabilidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-TRAB",
+      "axis_name": "Território brasileiro, trabalho e economia",
+      "academic_topics": "agropecuária, mineração, indústria, circulação, trabalho escravizado e livre e redes urbanas",
+      "formal_system": "produção, divisão territorial do trabalho, mercado e desigualdade",
+      "transfer_field": "relacionar economia, trabalho e organização do território",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Organizar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF07GE06",
+    "topic_has_okf": "bncc:EF07GE06 HAS_OKF okf:bncc:EF07GE06",
+    "okf_compiles_tensor": "okf:bncc:EF07GE06 COMPILES_TO tensor:bncc:EF07GE06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "421905e691062c7896b1eb19c4a6f2a66958de38b44649c41f38f7cb3cb0286e"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07MA34",
+  "topic_key": "matematica/EF07MA34",
+  "title": "EF07MA34 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 313
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF07MA34",
+    "year_block": "7º ano",
+    "statement": "Planejar e realizar experimentos aleatórios ou simulações que envolvem cálculo de probabilidades ou estimativas por meio de frequência de ocorrências.",
+    "verbs": [
+      "planejar",
+      "realizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Organizar",
+      "Aplicar",
+      "Investigar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "M7-EST",
+      "axis_name": "Estatística, amostragem e probabilidade",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Organizar | Aplicar | Investigar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M7-EST",
+      "axis_name": "Estatística, amostragem e probabilidade",
+      "academic_topics": "média, amplitude, gráficos, tabelas, pesquisa, amostra, frequência e experimentos aleatórios",
+      "formal_system": "medidas de tendência, representação, coleta e comparação de probabilidades",
+      "transfer_field": "criticar pesquisa e comunicar conclusão baseada em dados",
+      "supported_competences": [
+        "Organizar",
+        "Interpretar",
+        "Calcular",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF07MA34",
+    "topic_has_okf": "bncc:EF07MA34 HAS_OKF okf:bncc:EF07MA34",
+    "okf_compiles_tensor": "okf:bncc:EF07MA34 COMPILES_TO tensor:bncc:EF07MA34"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "9fb23ab4983b5a38d31db087c0d05294e195d6613b35b3d1ddb3de548026e9e3"
+}

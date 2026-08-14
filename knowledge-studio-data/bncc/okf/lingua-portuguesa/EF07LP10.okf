@@ -1,0 +1,129 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07LP10",
+  "topic_key": "lingua-portuguesa/EF07LP10",
+  "title": "EF07LP10 — Língua Portuguesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 175
+  },
+  "matter": {
+    "id": 1,
+    "name": "Língua Portuguesa",
+    "slug": "lingua-portuguesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF07LP10",
+    "year_block": "7º ano",
+    "statement": "Utilizar, ao produzir texto, conhecimentos linguísticos e gramaticais: modos e tempos verbais, concordância nominal e verbal, pontuação etc.",
+    "verbs": [
+      "utilizar",
+      "produzir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Aplicar",
+      "Textualizar"
+    ],
+    "social_axes": [
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-TEXT",
+      "axis_name": "Textualização jornalística, narrativa e de pesquisa",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ALIS",
+      "axis_name": "Análise linguística, variação e efeitos de sentido",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-LEIT",
+      "axis_name": "Leitura crítica, gêneros jornalísticos e navegação digital",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Aplicar | Textualizar",
+      "vertentes_sociais": "Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L7-TEXT",
+      "axis_name": "Textualização jornalística, narrativa e de pesquisa",
+      "academic_topics": "notícia, reportagem, artigo, resumo, resenha, relato, roteiro e texto de divulgação",
+      "formal_system": "apuração, planejamento, coesão, progressão temática, citação, revisão e edição",
+      "transfer_field": "transformar pesquisa em produtos textuais para públicos diferentes",
+      "supported_competences": [
+        "Textualizar",
+        "Organizar",
+        "Criar",
+        "Comunicar"
+      ]
+    },
+    {
+      "axis_id": "L7-ALIS",
+      "axis_name": "Análise linguística, variação e efeitos de sentido",
+      "academic_topics": "estrutura da oração, verbos, nomes, concordância, conectivos, pontuação, figuras e variedades linguísticas",
+      "formal_system": "sintaxe, coesão, modalização, norma e adequação sociocomunicativa",
+      "transfer_field": "revisar estilo e explicar como escolhas linguísticas alteram sentidos",
+      "supported_competences": [
+        "Interpretar",
+        "Organizar",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "L7-LEIT",
+      "axis_name": "Leitura crítica, gêneros jornalísticos e navegação digital",
+      "academic_topics": "notícia, reportagem, entrevista, artigo, resenha, hipertexto, links, fontes e literatura juvenil",
+      "formal_system": "fato e opinião, hierarquia da informação, confiabilidade, intertextualidade e percurso de leitura",
+      "transfer_field": "comparar coberturas, verificar informação e construir leitura autônoma",
+      "supported_competences": [
+        "Interpretar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-portuguesa HAS_TOPIC bncc:EF07LP10",
+    "topic_has_okf": "bncc:EF07LP10 HAS_OKF okf:bncc:EF07LP10",
+    "okf_compiles_tensor": "okf:bncc:EF07LP10 COMPILES_TO tensor:bncc:EF07LP10"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "e15e59c58bf5f0d39e4bba896dffd1fe484887d5b911aa2bdf7535b53606b0db"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07GE03",
+  "topic_key": "geografia/EF07GE03",
+  "title": "EF07GE03 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 389
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF07GE03",
+    "year_block": "7º ano",
+    "statement": "Selecionar argumentos que reconheçam as territorialidades dos povos indígenas originários, das comunidades remanescentes de quilombos, de povos das florestas e do cerrado, de ribeirinhos e caiçaras, entre outros grupos sociais do campo e da cidade, como direitos legais dessas comunidades.",
+    "verbs": [
+      "selecionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Interpretar",
+      "Argumentar",
+      "Organizar"
+    ],
+    "social_axes": [
+      "Colaboração",
+      "Autoria pública"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "H7-NAT",
+      "axis_name": "População, urbanização, campo e ambiente",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Interpretar | Argumentar | Organizar",
+      "vertentes_sociais": "Colaboração | Autoria pública",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H7-NAT",
+      "axis_name": "População, urbanização, campo e ambiente",
+      "academic_topics": "migração, urbanização, campo, cidade, recursos, biodiversidade e problemas ambientais",
+      "formal_system": "dinâmica populacional, uso da terra, rede urbana, risco e sustentabilidade",
+      "transfer_field": "avaliar transformação territorial e propor ação situada",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF07GE03",
+    "topic_has_okf": "bncc:EF07GE03 HAS_OKF okf:bncc:EF07GE03",
+    "okf_compiles_tensor": "okf:bncc:EF07GE03 COMPILES_TO tensor:bncc:EF07GE03"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4960792df5c967c05f14f1e09f063c7b7f8796d47519eeab5c7fc4312021250c"
+}

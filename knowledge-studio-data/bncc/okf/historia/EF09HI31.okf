@@ -1,0 +1,105 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09HI31",
+  "topic_key": "historia/EF09HI31",
+  "title": "EF09HI31 — História",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 435
+  },
+  "matter": {
+    "id": 3,
+    "name": "História",
+    "slug": "historia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF09HI31",
+    "year_block": "9º ano",
+    "statement": "Descrever e avaliar os processos de descolonização na África e na Ásia.",
+    "verbs": [
+      "descrever",
+      "avaliar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Contextualizar",
+    "competences": [
+      "Textualizar",
+      "Contextualizar",
+      "Avaliar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "competencia_primaria": "Contextualizar",
+      "competencias_desenvolvimento": "Textualizar | Contextualizar | Avaliar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H9-CULT",
+      "axis_name": "Direitos, identidades e movimentos sociais",
+      "academic_topics": "racismo, gênero, povos indígenas, juventudes, cultura, direitos humanos e movimentos sociais",
+      "formal_system": "identidade, reconhecimento, representação, desigualdade e resistência",
+      "transfer_field": "argumentar sobre direitos com base histórica e múltiplas vozes",
+      "supported_competences": [
+        "Contextualizar",
+        "Interpretar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "H9-POD",
+      "axis_name": "Democracia, autoritarismo e geopolítica",
+      "academic_topics": "República, fascismo, nazismo, ditaduras, democracia, instituições, conflitos e ordem mundial",
+      "formal_system": "Estado, ideologia, autoritarismo, participação, direitos e relações internacionais",
+      "transfer_field": "avaliar instituições e deliberar sobre ameaça democrática",
+      "supported_competences": [
+        "Contextualizar",
+        "Argumentar",
+        "Interpretar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:historia HAS_TOPIC bncc:EF09HI31",
+    "topic_has_okf": "bncc:EF09HI31 HAS_OKF okf:bncc:EF09HI31",
+    "okf_compiles_tensor": "okf:bncc:EF09HI31 COMPILES_TO tensor:bncc:EF09HI31"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "c639abff3302e099021e5abb6c111a65f0b65f50760e0a984060a7baf2a3df47"
+}

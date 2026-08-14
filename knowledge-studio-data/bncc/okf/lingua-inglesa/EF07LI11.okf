@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07LI11",
+  "topic_key": "lingua-inglesa/EF07LI11",
+  "title": "EF07LI11 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 255
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF07LI11",
+    "year_block": "7º ano",
+    "statement": "Participar de troca de opiniões e informações sobre textos, lidos na sala de aula ou em outros ambientes.",
+    "verbs": [
+      "participar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Textualizar",
+      "Comunicar"
+    ],
+    "social_axes": [
+      "Colaboração"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ING",
+      "axis_name": "Inglês global, passado, futuro e leitura digital",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Textualizar | Comunicar",
+      "vertentes_sociais": "Colaboração",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L7-ING",
+      "axis_name": "Inglês global, passado, futuro e leitura digital",
+      "academic_topics": "experiências passadas, planos, mundo global, leitura online, instruções, opinião e interação",
+      "formal_system": "tempos verbais de uso, estratégias de leitura, finalidade, repertório e interculturalidade",
+      "transfer_field": "pesquisar e comunicar experiência ou projeto em contexto intercultural",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF07LI11",
+    "topic_has_okf": "bncc:EF07LI11 HAS_OKF okf:bncc:EF07LI11",
+    "okf_compiles_tensor": "okf:bncc:EF07LI11 COMPILES_TO tensor:bncc:EF07LI11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "3c4291aee985dcb3ccde02d4ee995452cc366d61e2f054a3bd2f0e7881ec6892"
+}

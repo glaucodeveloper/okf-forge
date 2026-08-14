@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09LI17",
+  "topic_key": "lingua-inglesa/EF09LI17",
+  "title": "EF09LI17 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 265
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF09LI17",
+    "year_block": "9º ano",
+    "statement": "Debater sobre a expansão da língua inglesa pelo mundo, em função do processo de colonização nas Américas, África, Ásia e Oceania.",
+    "verbs": [
+      "debater"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Calcular",
+      "Argumentar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Calcular | Argumentar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L9-ING",
+      "axis_name": "Cidadania global e comunicação acadêmico-digital",
+      "academic_topics": "mídia, ciência, trabalho, cidadania, cultura, apresentação, argumento e produção digital",
+      "formal_system": "registro, estratégia discursiva, repertório, autoria, mediação e interculturalidade",
+      "transfer_field": "pesquisar, argumentar e publicar em inglês para audiência ampliada",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF09LI17",
+    "topic_has_okf": "bncc:EF09LI17 HAS_OKF okf:bncc:EF09LI17",
+    "okf_compiles_tensor": "okf:bncc:EF09LI17 COMPILES_TO tensor:bncc:EF09LI17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "dbc023ebd3a21ee891360a107e8470b68b64a855d3b7e5b2f58f45a1d82914c6"
+}

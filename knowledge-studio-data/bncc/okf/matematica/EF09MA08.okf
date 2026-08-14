@@ -1,0 +1,155 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA08",
+  "topic_key": "matematica/EF09MA08",
+  "title": "EF09MA08 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 319
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA08",
+    "year_block": "9º ano",
+    "statement": "Resolver e elaborar problemas que envolvam relações de proporcionalidade direta e inversa entre duas ou mais grandezas, inclusive escalas, divisão em partes proporcionais e taxa de variação, em contextos socioculturais, ambientais e de outras áreas.",
+    "verbs": [
+      "resolver",
+      "elaborar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Calcular",
+      "Aplicar",
+      "Textualizar",
+      "Contextualizar",
+      "Criar"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-PROP",
+      "axis_name": "Proporcionalidade e educação financeira",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Calcular | Aplicar | Textualizar | Contextualizar | Criar",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-GEO",
+      "axis_name": "Semelhança, relações métricas e circunferência",
+      "academic_topics": "semelhança, teorema de Pitágoras, relações em triângulos, polígonos, circunferência e coordenadas",
+      "formal_system": "demonstração, proporcionalidade geométrica, propriedades e construção",
+      "transfer_field": "resolver projeto espacial e justificar formalmente o método",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    },
+    {
+      "axis_id": "M9-MED",
+      "axis_name": "Medidas compostas, áreas e volumes",
+      "academic_topics": "áreas, volumes, capacidade, densidade, velocidade, escalas e unidades compostas",
+      "formal_system": "fórmulas, dimensionalidade, conversão, precisão e estimativa",
+      "transfer_field": "dimensionar projeto real e avaliar viabilidade e erro",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M9-PROP",
+      "axis_name": "Proporcionalidade e educação financeira",
+      "academic_topics": "razões, escalas, taxas, porcentagens sucessivas, juros, crescimento e decrescimento",
+      "formal_system": "taxa, fator multiplicativo, proporcionalidade e modelo financeiro",
+      "transfer_field": "analisar crédito, investimento, consumo e mudanças de escala",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    },
+    {
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "academic_topics": "números reais, irracionais, potências, raízes, notação científica e aproximações",
+      "formal_system": "propriedades, densidade, ordem de grandeza, erro e representação",
+      "transfer_field": "avaliar modelos, medidas e informação científica numericamente",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA08",
+    "topic_has_okf": "bncc:EF09MA08 HAS_OKF okf:bncc:EF09MA08",
+    "okf_compiles_tensor": "okf:bncc:EF09MA08 COMPILES_TO tensor:bncc:EF09MA08"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "4b6aeeb2e00f1a47de4cb435a0d5c07693daf9f734ac4e590b1ea544bbf35e67"
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08GE02",
+  "topic_key": "geografia/EF08GE02",
+  "title": "EF08GE02 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 391
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF08GE02",
+    "year_block": "8º ano",
+    "statement": "Relacionar fatos e situações representativas da história das famílias do Município em que se localiza a escola, considerando a diversidade e os fluxos migratórios da população mundial.",
+    "verbs": [
+      "relacionar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Mapear",
+    "competences": [
+      "Interpretar",
+      "Contextualizar",
+      "Mapear"
+    ],
+    "social_axes": [
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Mapear",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    },
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "H8-NAT",
+      "axis_name": "População, migração, urbanização e ambiente",
+      "competencia_primaria": "Mapear",
+      "competencias_desenvolvimento": "Interpretar | Contextualizar | Mapear",
+      "vertentes_sociais": "Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H8-TERR",
+      "axis_name": "Américas, África e cartografias do poder",
+      "academic_topics": "territórios, fronteiras, redes, regionalizações, mapas temáticos e geopolítica",
+      "formal_system": "território, escala, projeção, fluxo, regionalização e poder",
+      "transfer_field": "mapear conflito ou desigualdade em diferentes escalas",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Interpretar",
+        "Organizar"
+      ]
+    },
+    {
+      "axis_id": "H8-NAT",
+      "axis_name": "População, migração, urbanização e ambiente",
+      "academic_topics": "migrações, cidades, recursos, redes, conflitos socioambientais, América e África",
+      "formal_system": "mobilidade, segregação, uso de recursos, risco e sustentabilidade",
+      "transfer_field": "avaliar política territorial e propor intervenção",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF08GE02",
+    "topic_has_okf": "bncc:EF08GE02 HAS_OKF okf:bncc:EF08GE02",
+    "okf_compiles_tensor": "okf:bncc:EF08GE02 COMPILES_TO tensor:bncc:EF08GE02"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "69a4510a082b814283a7a689bafb553f3823b99f2fdbbae339b64c0a20503e30"
+}

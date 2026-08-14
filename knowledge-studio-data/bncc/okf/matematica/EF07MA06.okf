@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07MA06",
+  "topic_key": "matematica/EF07MA06",
+  "title": "EF07MA06 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 309
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF07MA06",
+    "year_block": "7º ano",
+    "statement": "Reconhecer que as resoluções de um grupo de problemas que têm a mesma estrutura podem ser obtidas utilizando os mesmos procedimentos.",
+    "verbs": [
+      "reconhecer"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Aplicar"
+    ],
+    "social_axes": [
+      "Colaboração"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "M7-NUM",
+      "axis_name": "Inteiros, racionais e operações",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Aplicar",
+      "vertentes_sociais": "Colaboração",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M7-NUM",
+      "axis_name": "Inteiros, racionais e operações",
+      "academic_topics": "números inteiros, racionais, frações, decimais, reta numérica, operações e cálculo exato ou aproximado",
+      "formal_system": "ordem, módulo, propriedades operatórias e equivalência de representações",
+      "transfer_field": "resolver problemas financeiros, de variação e de medida com estratégia própria",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Interpretar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF07MA06",
+    "topic_has_okf": "bncc:EF07MA06 HAS_OKF okf:bncc:EF07MA06",
+    "okf_compiles_tensor": "okf:bncc:EF07MA06 COMPILES_TO tensor:bncc:EF07MA06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "1f0c25c08c4f549af0ddb03508381ecfc27eaf8b970e0a58d8b52de87d1559fc"
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07MA11",
+  "topic_key": "matematica/EF07MA11",
+  "title": "EF07MA11 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 309
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF07MA11",
+    "year_block": "7º ano",
+    "statement": "Compreender e utilizar a multiplicação e a divisão de números racionais, a relação entre elas e suas propriedades operatórias.",
+    "verbs": [
+      "compreender",
+      "utilizar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Calcular",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Aplicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "M7-NUM",
+      "axis_name": "Inteiros, racionais e operações",
+      "competencia_primaria": "Calcular",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Aplicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M7-NUM",
+      "axis_name": "Inteiros, racionais e operações",
+      "academic_topics": "números inteiros, racionais, frações, decimais, reta numérica, operações e cálculo exato ou aproximado",
+      "formal_system": "ordem, módulo, propriedades operatórias e equivalência de representações",
+      "transfer_field": "resolver problemas financeiros, de variação e de medida com estratégia própria",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Interpretar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF07MA11",
+    "topic_has_okf": "bncc:EF07MA11 HAS_OKF okf:bncc:EF07MA11",
+    "okf_compiles_tensor": "okf:bncc:EF07MA11 COMPILES_TO tensor:bncc:EF07MA11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "2607ee2855b892d8482a1e21a5d80fdbc4dd98b79c35d1895d6a5f9b547927f3"
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09MA17",
+  "topic_key": "matematica/EF09MA17",
+  "title": "EF09MA17 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 321
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF09MA17",
+    "year_block": "9º ano",
+    "statement": "Reconhecer vistas ortogonais de figuras espaciais e aplicar esse conhecimento para desenhar objetos em perspectiva.",
+    "verbs": [
+      "reconhecer",
+      "aplicar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Aplicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Aplicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M9-NUM",
+      "axis_name": "Reais, irracionais e notação científica",
+      "academic_topics": "números reais, irracionais, potências, raízes, notação científica e aproximações",
+      "formal_system": "propriedades, densidade, ordem de grandeza, erro e representação",
+      "transfer_field": "avaliar modelos, medidas e informação científica numericamente",
+      "supported_competences": [
+        "Calcular",
+        "Aplicar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF09MA17",
+    "topic_has_okf": "bncc:EF09MA17 HAS_OKF okf:bncc:EF09MA17",
+    "okf_compiles_tensor": "okf:bncc:EF09MA17 COMPILES_TO tensor:bncc:EF09MA17"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "ddb7dcbd24dae00d03876f78caf409948e961e22b5d1457fdbdcd1e369cada8f"
+}

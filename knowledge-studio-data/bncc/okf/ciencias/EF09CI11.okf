@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI11",
+  "topic_key": "ciencias/EF09CI11",
+  "title": "EF09CI11 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI11",
+    "year_block": "9º ano",
+    "statement": "Discutir a evolução e a diversidade das espécies com base na atuação da seleção natural sobre as variantes de uma mesma espécie, resultantes de processo reprodutivo.",
+    "verbs": [
+      "discutir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Argumentar",
+    "competences": [
+      "Interpretar",
+      "Calcular",
+      "Argumentar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação",
+      "Pertencimento e identidade"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "competencia_primaria": "Argumentar",
+      "competencias_desenvolvimento": "Interpretar | Calcular | Argumentar",
+      "vertentes_sociais": "Diálogo e mediação | Pertencimento e identidade",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "academic_topics": "genes, herança, Mendel, seleção natural, evolução, espécies, biodiversidade e conservação",
+      "formal_system": "probabilidade genética, variabilidade, ancestralidade, seleção e evidências evolutivas",
+      "transfer_field": "explicar caso biológico e argumentar sobre conservação",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI11",
+    "topic_has_okf": "bncc:EF09CI11 HAS_OKF okf:bncc:EF09CI11",
+    "okf_compiles_tensor": "okf:bncc:EF09CI11 COMPILES_TO tensor:bncc:EF09CI11"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "76029ea74289194cae12b0119dcd6dccd7570c4743ad4b61ae25d03e0d67f478"
+}

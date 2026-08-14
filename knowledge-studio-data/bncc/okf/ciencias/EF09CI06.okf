@@ -1,0 +1,83 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF09CI06",
+  "topic_key": "ciencias/EF09CI06",
+  "title": "EF09CI06 — Ciências",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 353
+  },
+  "matter": {
+    "id": 6,
+    "name": "Ciências",
+    "slug": "ciencias",
+    "bncc_area": "Ciências da Natureza"
+  },
+  "skill": {
+    "code": "EF09CI06",
+    "year_block": "9º ano",
+    "statement": "Classificar as radiações eletromagnéticas por suas frequências, fontes e aplicações, discutindo e avaliando as implicações de seu uso em controle remoto, telefone celular, raio X, forno de micro-ondas, fotocélulas etc.",
+    "verbs": [
+      "classificar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Organizar",
+    "competences": [
+      "Argumentar",
+      "Organizar",
+      "Aplicar",
+      "Avaliar"
+    ],
+    "social_axes": [
+      "Diálogo e mediação"
+    ]
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-9-14_15",
+      "serie": "9º ano",
+      "idade_indicativa": "14–15 anos",
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "competencia_primaria": "Organizar",
+      "competencias_desenvolvimento": "Argumentar | Organizar | Aplicar | Avaliar",
+      "vertentes_sociais": "Diálogo e mediação",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "C9-VID",
+      "axis_name": "Hereditariedade, evolução e biodiversidade",
+      "academic_topics": "genes, herança, Mendel, seleção natural, evolução, espécies, biodiversidade e conservação",
+      "formal_system": "probabilidade genética, variabilidade, ancestralidade, seleção e evidências evolutivas",
+      "transfer_field": "explicar caso biológico e argumentar sobre conservação",
+      "supported_competences": [
+        "Interpretar",
+        "Investigar",
+        "Argumentar",
+        "Avaliar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:ciencias HAS_TOPIC bncc:EF09CI06",
+    "topic_has_okf": "bncc:EF09CI06 HAS_OKF okf:bncc:EF09CI06",
+    "okf_compiles_tensor": "okf:bncc:EF09CI06 COMPILES_TO tensor:bncc:EF09CI06"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "b78b831a5ed69eb6e9196837bdd76f7d0bcce045f140ba12fcf60f5e5ba67460"
+}

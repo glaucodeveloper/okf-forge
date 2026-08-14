@@ -1,0 +1,79 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF07LI19",
+  "topic_key": "lingua-inglesa/EF07LI19",
+  "title": "EF07LI19 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 257
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF07LI19",
+    "year_block": "7º ano",
+    "statement": "Discriminar sujeito de objeto utilizando pronomes a eles relacionados.",
+    "verbs": [
+      "discriminar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Aplicar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-7-12_13",
+      "serie": "7º ano",
+      "idade_indicativa": "12–13 anos",
+      "axis_id": "L7-ING",
+      "axis_name": "Inglês global, passado, futuro e leitura digital",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Aplicar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L7-ING",
+      "axis_name": "Inglês global, passado, futuro e leitura digital",
+      "academic_topics": "experiências passadas, planos, mundo global, leitura online, instruções, opinião e interação",
+      "formal_system": "tempos verbais de uso, estratégias de leitura, finalidade, repertório e interculturalidade",
+      "transfer_field": "pesquisar e comunicar experiência ou projeto em contexto intercultural",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Aplicar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF07LI19",
+    "topic_has_okf": "bncc:EF07LI19 HAS_OKF okf:bncc:EF07LI19",
+    "okf_compiles_tensor": "okf:bncc:EF07LI19 COMPILES_TO tensor:bncc:EF07LI19"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "f736018a532322de317b46be5b769f9dd08aef4e10263481e59ef698827d45a6"
+}

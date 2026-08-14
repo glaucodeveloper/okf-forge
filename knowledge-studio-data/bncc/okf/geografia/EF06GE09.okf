@@ -1,0 +1,78 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06GE09",
+  "topic_key": "geografia/EF06GE09",
+  "title": "EF06GE09 — Geografia",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 387
+  },
+  "matter": {
+    "id": 5,
+    "name": "Geografia",
+    "slug": "geografia",
+    "bncc_area": "Ciências Humanas"
+  },
+  "skill": {
+    "code": "EF06GE09",
+    "year_block": "6º ano",
+    "statement": "Elaborar modelos tridimensionais, blocos-diagramas e perfis topográficos e de vegetação, visando à representação de elementos e estruturas da superfície terrestre.",
+    "verbs": [
+      "elaborar"
+    ]
+  },
+  "development": {
+    "primary_competence": "Criar",
+    "competences": [
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "H6-NAT",
+      "axis_name": "Natureza, população e redes",
+      "competencia_primaria": "Criar",
+      "competencias_desenvolvimento": "Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "H6-NAT",
+      "axis_name": "Natureza, população e redes",
+      "academic_topics": "água, atmosfera, clima, solo, vegetação, campo, cidade e interação sociedade-natureza",
+      "formal_system": "sistemas naturais, uso do território, risco, impacto e conexão entre lugares",
+      "transfer_field": "avaliar transformações ambientais e propor intervenção situada",
+      "supported_competences": [
+        "Mapear",
+        "Contextualizar",
+        "Avaliar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:geografia HAS_TOPIC bncc:EF06GE09",
+    "topic_has_okf": "bncc:EF06GE09 HAS_OKF okf:bncc:EF06GE09",
+    "okf_compiles_tensor": "okf:bncc:EF06GE09 COMPILES_TO tensor:bncc:EF06GE09"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "f20b43574d07f9877f95dc8f1698901d36530bfb4df51a381773925b13bbfd9f"
+}

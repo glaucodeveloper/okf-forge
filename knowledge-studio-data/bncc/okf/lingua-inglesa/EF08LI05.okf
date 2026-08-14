@@ -1,0 +1,80 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF08LI05",
+  "topic_key": "lingua-inglesa/EF08LI05",
+  "title": "EF08LI05 — Língua Inglesa",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 259
+  },
+  "matter": {
+    "id": 4,
+    "name": "Língua Inglesa",
+    "slug": "lingua-inglesa",
+    "bncc_area": "Linguagens"
+  },
+  "skill": {
+    "code": "EF08LI05",
+    "year_block": "8º ano",
+    "statement": "Inferir informações e relações que não aparecem de modo explícito no texto para construção de sentidos.",
+    "verbs": [
+      "inferir"
+    ]
+  },
+  "development": {
+    "primary_competence": "Textualizar",
+    "competences": [
+      "Interpretar",
+      "Textualizar",
+      "Criar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-8-13_14",
+      "serie": "8º ano",
+      "idade_indicativa": "13–14 anos",
+      "axis_id": "L8-ING",
+      "axis_name": "Mídias, circulação global e autoria em inglês",
+      "competencia_primaria": "Textualizar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar | Criar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "L8-ING",
+      "axis_name": "Mídias, circulação global e autoria em inglês",
+      "academic_topics": "notícias, campanhas, redes, interculturalidade, planos, hipóteses, leitura e produção digital",
+      "formal_system": "estratégias discursivas, repertório, tempos verbais, multimodalidade e posicionamento",
+      "transfer_field": "produzir intervenção ou mídia em inglês para audiência real",
+      "supported_competences": [
+        "Interpretar",
+        "Comunicar",
+        "Textualizar",
+        "Argumentar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:lingua-inglesa HAS_TOPIC bncc:EF08LI05",
+    "topic_has_okf": "bncc:EF08LI05 HAS_OKF okf:bncc:EF08LI05",
+    "okf_compiles_tensor": "okf:bncc:EF08LI05 COMPILES_TO tensor:bncc:EF08LI05"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "07be9432b4644efa32ca75c4415578ab380f7b32b11e2f77cab4baf7ae0390f0"
+}

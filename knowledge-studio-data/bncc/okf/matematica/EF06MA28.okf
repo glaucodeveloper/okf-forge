@@ -1,0 +1,81 @@
+{
+  "schema": "okfforge.bncc.skill.v1",
+  "id": "bncc:EF06MA28",
+  "topic_key": "matematica/EF06MA28",
+  "title": "EF06MA28 — Matemática",
+  "kind": "bncc_skill",
+  "source": {
+    "project": "Lumira",
+    "stage": "Ensino Fundamental II",
+    "canonical_dataset": "lumira_bncc_efii_habilidades_por_competencias.json",
+    "context_dataset": "lumira_bncc_efii_habilidades_competencias_eixos_v5.json",
+    "progression_okf": "lumira_okf_efii_progressao_v5.yaml",
+    "mapping_status": "automático_revisável",
+    "bncc_page": 305
+  },
+  "matter": {
+    "id": 2,
+    "name": "Matemática",
+    "slug": "matematica",
+    "bncc_area": "Matemática"
+  },
+  "skill": {
+    "code": "EF06MA28",
+    "year_block": "6º ano",
+    "statement": "Interpretar, descrever e desenhar plantas baixas simples de residências e vistas aéreas.",
+    "verbs": [
+      "interpretar",
+      "descrever"
+    ]
+  },
+  "development": {
+    "primary_competence": "Interpretar",
+    "competences": [
+      "Interpretar",
+      "Textualizar",
+      "Contextualizar"
+    ],
+    "social_axes": []
+  },
+  "curriculum_contexts": [
+    {
+      "series_age_id": "EFII-6-11_12",
+      "serie": "6º ano",
+      "idade_indicativa": "11–12 anos",
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "competencia_primaria": "Interpretar",
+      "competencias_desenvolvimento": "Interpretar | Textualizar | Contextualizar",
+      "vertentes_sociais": "",
+      "axis_mapping_status": "automático_revisável"
+    }
+  ],
+  "learning_axes": [
+    {
+      "axis_id": "M6-GEO",
+      "axis_name": "Geometria e localização",
+      "academic_topics": "plano cartesiano, prismas, pirâmides, polígonos, ângulos, retas, simetrias e construções",
+      "formal_system": "propriedades geométricas, coordenadas, classificação e instrumentos de desenho",
+      "transfer_field": "mapear, construir e justificar soluções espaciais",
+      "supported_competences": [
+        "Mapear",
+        "Calcular",
+        "Aplicar",
+        "Criar"
+      ]
+    }
+  ],
+  "study_contract": {
+    "purpose": "Estudar, praticar e revisar esta habilidade BNCC com IA mantendo a memória Metis isolada por habilidade.",
+    "assistant_scope": "Somente esta habilidade, seus eixos Lumira, relações pedagógicas e histórico de estudo persistido no tensor associado.",
+    "evidence_rule": "Distinguir explicação, prática, evidência e progressão. Não alterar o texto normativo da habilidade BNCC.",
+    "tensor_update": "Cada troca confirmada na interface de estudo é commitada na memória Metis da habilidade e sobrescreve somente o safetensor deste topic_key."
+  },
+  "relations": {
+    "matter_has_topic": "matter:matematica HAS_TOPIC bncc:EF06MA28",
+    "topic_has_okf": "bncc:EF06MA28 HAS_OKF okf:bncc:EF06MA28",
+    "okf_compiles_tensor": "okf:bncc:EF06MA28 COMPILES_TO tensor:bncc:EF06MA28"
+  },
+  "generated_at": "2026-08-14T04:30:50.571124Z",
+  "source_hash": "669682f3eed877427b3020d18597b48bcafef7a4a66fdb40528b1a018b10ad2a"
+}
