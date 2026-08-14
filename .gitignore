@@ -2,6 +2,7 @@
 *.log
 *.work
 *.nimcache
+__pycache__/
 knowledge_studio_app.nim.before-*
 knowledge-studio-data/repository/
 knowledge-studio-data/data/
