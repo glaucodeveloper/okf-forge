@@ -1,43 +1,182 @@
-# OKF Forge production report
+# Relatório de Produção: OKF Forge BNCC
 
-Date: 2026-08-14
+**Padrão:** relatório técnico de produção, com rastreabilidade de escopo, evidências de execução, riscos e pendências.
 
-## Scope
+**Data da validação:** 2026-08-14  
+**Produto:** OKF Forge 0.1.0  
+**Runtime:** GlaucoPlastic em `--nw`  
+**Fonte do framework:** `F:/glaucoplastic/src`  
+**Repositório:** https://github.com/glaucodeveloper/okf-forge
 
-Validated the BNCC Lumira + Metis-4B package in the OKF Forge application using the GlaucoPlastic runtime from `F:/glaucoplastic/src`.
+## 1. Resumo executivo
 
-## Delivered
+O pacote BNCC Lumira + Metis-4B foi incorporado ao frontend existente do OKF Forge. A interface agora representa o fluxo:
 
-- BNCC catalog with 730 skills and 730 associated OKF files.
-- Frontend flow: subject -> skill -> OKF context -> Metis study memory.
-- Declarative GlaucoPlastic handlers for subject navigation, skill opening, study chat, tensor reload/rebuild, OKF, production and settings actions.
-- Network Web bridge served by the application runtime, without a parallel HTTP backend.
-- `okfforge.nimble` and `config.nims` configured for the current GlaucoPlastic source.
-- Existing preview and visual assets retained.
-
-## Validation
-
-- `nim c -d:release -d:glaucoplasticHeadless --out:okfforge_bncc_nw.exe knowledge_studio_app.nim`: passed.
-- `GET /`: HTTP 200, rendered HTML returned.
-- `GET /__glaucoplastic/health`: `{"ok":true}`.
-- `GET /__glaucoplastic/poll`: valid empty incremental payload.
-- Rendered HTML contains `data-glauco-handler-click` identities for BNCC and study actions.
-- `POST /__glaucoplastic/events`: HTTP 200 with structured bridge response.
-- BNCC verifier: 730/730 OKFs present and valid.
-
-## Real limitation
-
-The 730 Metis safetensors are not prebuilt. The package correctly reports them as absent until the Metis-4B checkpoint/runtime and required Python dependencies are installed. No fake `.safetensors` files were generated.
-
-## Startup note
-
-The first validation found a malformed global runtime file at `%LOCALAPPDATA%/KnowledgeStudioApplication/data/orm.json`. It was preserved as `orm.json.invalid-20260814`; the application then initialized a fresh ORM store and started normally.
-
-## Run
-
-```powershell
-nimble build
-.\okfforge_bncc_nw.exe --nw --nw-port=8766 --nw-host=127.0.0.1
+```text
+Matéria BNCC -> habilidade -> OKF da habilidade -> memória Metis -> estudo com IA
 ```
 
-Open `http://127.0.0.1:8766/`.
+O aplicativo foi compilado com Nim, iniciado pelo runtime Network Web do GlaucoPlastic e validado nos endpoints nativos de renderização, health, polling e eventos. O projeto contém 730 habilidades e 730 OKFs associados.
+
+## 2. Escopo entregue
+
+### Aplicação e frontend
+
+- Catálogo de matérias e habilidades BNCC.
+- Abertura contextual de uma habilidade.
+- Exibição do OKF associado à habilidade.
+- Chat de estudo contextual por habilidade.
+- Ações de carregar e reconstruir memória/tensor Metis.
+- Navegação integrada com conversas, canvas, documentos OKF, produções e configurações.
+- Preservação do preview HTML e das telas PNG existentes.
+
+### Runtime e integração
+
+- GlaucoPlastic permanece como runtime principal.
+- Network Web usa `/`, `/__glaucoplastic/health`, `/__glaucoplastic/poll` e `/__glaucoplastic/events`.
+- Eventos visuais usam handlers declarativos do GlaucoPlastic.
+- Não foi criado servidor REST paralelo.
+- `config.nims` aponta para `F:/glaucoplastic/src`.
+- `okfforge.nimble` define o projeto Nim e suas dependências.
+
+### Dados
+
+- 730 habilidades BNCC no manifesto.
+- 730 arquivos `.okf` materializados.
+- 9 áreas: Língua Portuguesa, Matemática, História, Língua Inglesa, Geografia, Ciências, Educação Física, Arte e Ensino Religioso.
+- Safetensors não são falsificados nem substituídos por JSON renomeado.
+
+## 3. Alterações principais
+
+| Arquivo ou diretório | Função |
+|---|---|
+| `knowledge_studio_app.nim` | Aplicação GlaucoPlastic, estado, ORM, UI, agentes e handlers BNCC/Metis |
+| `config.nims` | Importação do GlaucoPlastic em `F:/glaucoplastic/src` |
+| `okfforge.nimble` | Manifesto do projeto Nim |
+| `data/lumira/` | Dados Lumira BNCC e progressão pedagógica |
+| `knowledge-studio-data/bncc/` | Manifesto e 730 OKFs por habilidade |
+| `scripts/metis_skill_service.py` | Serviço persistente de memória Metis por habilidade |
+| `scripts/bootstrap_bncc_metis.py` | Inicialização/verificação do serviço Metis |
+| `scripts/verify_bncc_assets.py` | Verificação de habilidades, OKFs e tensors |
+| `scripts/build_bncc_okfs.py` | Geração dos OKFs BNCC |
+| `preview.html` | Preview navegável da interface BNCC |
+| `PRODUCTION_REPORT.md` | Este relatório |
+
+## 4. Fluxo funcional
+
+1. O usuário abre a aplicação em Network Web.
+2. O frontend renderiza o catálogo BNCC por estado GlaucoPlastic.
+3. Ao abrir uma habilidade, o handler `Shell.BnccSkillOpen` seleciona o código e solicita o carregamento da memória.
+4. O serviço Metis verifica o OKF e o tensor correspondente.
+5. O chat envia mensagens no contexto da habilidade selecionada.
+6. O estado da memória é persistido no tensor correspondente quando o runtime Metis está disponível.
+7. Ao trocar de habilidade, a memória ativa é substituída pelo contexto do novo tópico.
+
+## 5. Handlers frontend/backend
+
+Os handlers declarativos confirmados no HTML incluem:
+
+- `Shell.Materias`
+- `Shell.SubjectOpen`
+- `Shell.BnccSkillOpen`
+- `Shell.StudySend`
+- `Shell.SkillTensorReload`
+- `Shell.SkillTensorRebuild`
+- `Shell.OpenOkf`
+- `Shell.RequestSafetensors`
+- `Shell.SaveSettings`
+
+Os valores de eventos são capturados por estado GlaucoPlastic, usando o padrão suportado pelo framework: `states.Campo = eventValue`.
+
+## 6. Evidências de validação
+
+### Compilação
+
+Comando executado:
+
+```powershell
+nim c -d:release -d:glaucoplasticHeadless `
+  --out:okfforge_bncc_nw.exe knowledge_studio_app.nim
+```
+
+Resultado: **passou**. O executável foi gerado em `F:/okf forge/okfforge_bncc_nw.exe`.
+
+### Network Web
+
+| Verificação | Resultado |
+|---|---|
+| `GET /` | HTTP 200, HTML renderizado |
+| Tamanho inicial do HTML | 45.954 bytes |
+| `GET /__glaucoplastic/health` | `{"ok":true}` |
+| `GET /__glaucoplastic/poll` | `{"ok":true,"properties":[]}` |
+| `POST /__glaucoplastic/events` | HTTP 200, resposta estruturada |
+| `data-glauco-handler-click` | Presente para BNCC e estudo |
+
+### Dados BNCC
+
+| Item | Resultado |
+|---|---:|
+| Habilidades no manifesto | 730 |
+| OKFs válidos | 730 |
+| OKFs ausentes | 0 |
+| Safetensors pré-gerados | 0 |
+
+## 7. Pendências reais
+
+Os 730 tensors Metis ainda não estão incluídos no pacote. A geração depende do checkpoint Metis-4B, ambiente Python compatível, pacote `safetensors` e, para inferência prática, hardware adequado. A ausência é reportada como estado real e não impede a existência dos OKFs nem a execução do frontend.
+
+Instalação prevista:
+
+```powershell
+pip install -r requirements-metis.txt
+python scripts/bootstrap_bncc_metis.py
+```
+
+## 8. Recuperação de startup
+
+Durante a primeira execução foi encontrado um `orm.json` inválido no armazenamento global do runtime:
+
+```text
+%LOCALAPPDATA%/KnowledgeStudioApplication/data/orm.json
+```
+
+O arquivo original foi preservado como `orm.json.invalid-20260814`. O runtime iniciou um armazenamento ORM novo e o servidor Network Web passou a responder normalmente.
+
+## 9. Execução reproduzível
+
+```powershell
+cd 'F:/okf forge'
+nimble build
+./okfforge_bncc_nw.exe --nw --nw-port=8766 --nw-host=127.0.0.1
+```
+
+Acessar:
+
+```text
+http://127.0.0.1:8766/
+```
+
+Para verificar os assets:
+
+```powershell
+python scripts/verify_bncc_assets.py --root 'F:/okf forge'
+```
+
+## 10. Versionamento e publicação
+
+Repositório criado e publicado:
+
+```text
+https://github.com/glaucodeveloper/okf-forge
+```
+
+Commits publicados:
+
+- `eeac66e feat: add BNCC OKF Forge frontend`
+- `40da265 chore: exclude generated Python cache`
+
+A publicação foi concluída pelo credential helper oficial do `gh`, sem token exposto na URL. O SSH local está cadastrado na conta, mas o transporte SSH deste ambiente recusou a chave durante o push.
+
+## 11. Critério de conclusão
+
+O frontend BNCC está compilável, executável e conectado ao bridge Network Web do GlaucoPlastic. A etapa de inferência Metis permanece condicionada à instalação do checkpoint e do ambiente de execução correspondente.
