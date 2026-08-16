@@ -9,3 +9,8 @@ knowledge-studio-data/data/
 knowledge-studio-data/.glauco/
 data/bncc/safetensors/
 *.invalid-*
+build/
+runtime-data/
+nimble.develop
+nimble.paths
+nimbledeps
