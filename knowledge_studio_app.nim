@@ -1,5 +1,5 @@
 import std/[algorithm, httpclient, json, os, osproc, sequtils, strutils, tables, times]
-import glaucoplastic, base64
+import plasticglauco, base64
 
 const
   # Alteração controlada para validar o watcher hot reload do GlaucoPlastic.
@@ -848,24 +848,23 @@ proc importStoredOkf(knowledge: JsonNode; sessionId, processId: int): JsonNode =
   })
 
 proc ensureKnowledgeOkfs(knowledgeRows: seq[JsonNode]; sessionId, processId: int) =
-  ## No boot, cada conhecimento passa pelo mesmo request que cria o OKF e a
-  ## memória Safetensors. Isso evita documentos-resumo de um único parágrafo.
+  ## Rehydrate already generated OKFs at boot.  Generating every card again
+  ## here serialized several long model calls before the browser could open.
+  ## A card without an artifact is generated on demand when the user opens it.
   for knowledge in knowledgeRows:
     let kid = jsonInt(knowledge, "id")
     if kid <= 0:
       continue
-    let current = ormGetById("Knowledge", kid)
-    var generated = createOkfSnapshot(sessionId, processId, kid, sessionMessages(sessionId).len, true)
-    # Uma falha transitória do serviço (reinício do modelo, socket ou saída
-    # JSON incompleta) não pode deixar o conhecimento sem artefato no boot.
-    if jsonInt(generated, "id") <= 0:
-      sleep(250)
-      generated = createOkfSnapshot(sessionId, processId, kid, sessionMessages(sessionId).len, true)
-    if jsonInt(generated, "id") > 0:
-      discard updateEntity("Knowledge", kid, proc(row: var JsonNode) =
-        row["okfDocumentId"] = %jsonInt(generated, "id")
-        row["updatedAt"] = %nowIso()
-      )
+    if jsonInt(knowledge, "okfDocumentId") > 0:
+      continue
+    let stored = storedOkfForTitle(jsonStr(knowledge, "title", ""))
+    if stored.document.kind == JObject:
+      let generated = importStoredOkf(knowledge, sessionId, processId)
+      if jsonInt(generated, "id") > 0:
+        discard updateEntity("Knowledge", kid, proc(row: var JsonNode) =
+          row["okfDocumentId"] = %jsonInt(generated, "id")
+          row["updatedAt"] = %nowIso()
+        )
 
 proc ensureDemoKnowledge() =
   ## Conteúdo inicial para o canvas do Study Studio, sem depender do catálogo BNCC.
@@ -909,6 +908,16 @@ proc ensureDemoKnowledge() =
     discard createKnowledgeRelation(jsonInt(created[5], "id"), jsonInt(created[2], "id"), "verifies", "valida inferência")
   if created.len >= 8:
     discard createKnowledgeRelation(jsonInt(created[3], "id"), jsonInt(created[6], "id"), "composes", "compõe sentido")
+  let conversationCard = knowledgeByTitle("Conhecimento identificado na conversa")
+  if conversationCard.kind == JObject and created.len > 0:
+    let conversationId = jsonInt(conversationCard, "id")
+    let anchorId = jsonInt(created[0], "id")
+    var alreadyLinked = false
+    for relation in knowledgeRelations():
+      if jsonInt(relation, "fromKnowledgeId") == conversationId and jsonInt(relation, "toKnowledgeId") == anchorId:
+        alreadyLinked = true
+    if not alreadyLinked:
+      discard createKnowledgeRelation(conversationId, anchorId, "explains", "explica recuperação")
     discard createKnowledgeRelation(jsonInt(created[6], "id"), jsonInt(created[7], "id"), "patterns", "estabiliza símbolos")
     discard createKnowledgeRelation(jsonInt(created[7], "id"), jsonInt(created[1], "id"), "orients", "orienta contexto")
 
@@ -1166,6 +1175,20 @@ proc studyWithBnccSkill(code, prompt: string): JsonNode =
     setSkillTensorState(code, "error")
   response
 
+proc chatWithActiveOkf(prompt: string): JsonNode =
+  ## The editor and its companion chat share the current draft. This is kept
+  ## deliberately bounded so an editor interaction remains responsive.
+  let document = appStateStr("KnowledgeDocumentDraft")
+  if document.strip.len == 0 or prompt.strip.len == 0:
+    return opError("okf.document.chat", "invalid", "Documento ou pergunta vazia.")
+  if not ensureMetisService():
+    return opError("okf.document.chat", "metis-service", "Serviço Metis não está disponível.")
+  metisRequest("/document-chat", %*{
+    "document": document,
+    "prompt": prompt.strip,
+    "max_new_tokens": 256
+  }, 120_000)
+
 proc localContextSummary(reason: string): string =
   let knowledge = activeKnowledge()
   if knowledge.kind != JNull:
@@ -1210,11 +1233,19 @@ proc pageTitle(): string =
     jsonStr(skill, "code", "Habilidade") & " · " & jsonStr(skill, "subject", "BNCC")
   else: mainViewTitle()
 
-glaucoplastic KnowledgeStudioApplication, application:
+plasticglauco KnowledgeStudioApplication, application:
   product:
     title AppTitle
     description "Runtime OKF para conversas, processos, conhecimento e produção Safetensors."
     version "0.1.0"
+
+  # The Study Studio sidecar is the single resident Metis runtime.  Starting a
+  # second embedded copy here exhausts the RTX 3050 before the browser can
+  # bind, so this application delegates inference to that warmed local service.
+  config:
+    metis:
+      enabled false
+      startup false
 
   installation:
     windowsMsi:
@@ -1262,6 +1293,7 @@ glaucoplastic KnowledgeStudioApplication, application:
     SettingsRepositoryBranchDraft = ""
     SettingsRepositoryDirectoryDraft = ""
     StatusMessage = ""
+    KnowledgeChatResponse = ""
     PendingPickerKind = ""
     PendingOperationJson = ""
     KnowledgeDraftTitle = ""
@@ -2142,10 +2174,14 @@ glaucoplastic KnowledgeStudioApplication, application:
                         divi class = "ks-message":
                           b $jsonStr(message, "role", "user")
                           text $jsonStr(message, "content", "")
+                      when states.KnowledgeChatResponse.len > 0:
+                        divi class = "ks-message ks-message-assistant":
+                          b "assistant"
+                          text states.KnowledgeChatResponse
                   divi class = "ks-form ks-chat-composer":
                     textarea MessageDraft(value = binds states.MessageDraft, placeholder = "Conte por onde começamos…")
                     CdsButton MessageSend(class = "ks-primary-button", "kind" = "primary", value = states.MessageDraft):
-                      text "Iniciar conversa →"
+                      text "Enviar →"
 
             when states.ActivePage == "canvas":
               article class = "ks-card":
@@ -2230,7 +2266,19 @@ glaucoplastic KnowledgeStudioApplication, application:
                       text "+"
                     button KnowledgeOpen(value = "Personalidade simbólica das conexões"):
                       text "Abrir OKF →"
+                  let conversationCard = knowledgeByTitle("Conhecimento identificado na conversa")
+                  article class = "ks-node ks-knowledge-card", id = "Conhecimento identificado na conversa", "data-diagram-node" = "true", "data-node-id" = "Conhecimento identificado na conversa", style = "left:370px;top:720px;":
+                    span class = "ks-skill-code":
+                      text "CONVERSA"
+                    strong "Conhecimento identificado na conversa"
+                    small $jsonStr(conversationCard, "summary", "Crie uma conversa estruturada para adicionar este card.")
+                    button class = "ks-edge-port", title = "Criar ou conectar card", "data-edge-handle" = "true":
+                      text "+"
+                    button KnowledgeOpen(value = "Conhecimento identificado na conversa"):
+                      text "Abrir OKF →"
                   divi class = "ks-relation-list":
+                    CdsButton KnowledgeRelate(class = "ks-secondary-button", "kind" = "secondary", value = "{\"from\":\"Conhecimento identificado na conversa\",\"to\":\"Embeddings e busca semântica\",\"label\":\"explica recuperação\"}"):
+                      text "Relacionar conhecimento → Embeddings (explica recuperação)"
                     span class = "ks-relation-label":
                       text "Embeddings → RAG · recupera contexto"
                     span class = "ks-relation-label":
@@ -2247,6 +2295,11 @@ glaucoplastic KnowledgeStudioApplication, application:
                       text "Tokenização → Instrução · organiza contexto"
                     span class = "ks-relation-label":
                       text "Instrução → Avaliação · refina resposta"
+                    for relation in knowledgeRelations():
+                      let fromCard = ormGetById("Knowledge", jsonInt(relation, "fromKnowledgeId"))
+                      let toCard = ormGetById("Knowledge", jsonInt(relation, "toKnowledgeId"))
+                      span class = "ks-relation-label":
+                        text $jsonStr(fromCard, "title") & " → " & $jsonStr(toCard, "title") & " · " & $jsonStr(relation, "label", "relaciona")
                 divi class = "ks-footer":
                   CdsButton KnowledgeCreate(class = "ks-primary-button", "kind" = "primary"):
                     text "+ Novo card"
@@ -2580,19 +2633,22 @@ glaucoplastic KnowledgeStudioApplication, application:
           else:
             let knowledge = activeKnowledge()
             if knowledge.kind != JNull:
-              let previousDraft = appStateStr("KnowledgeDraftSummary")
-              let nextDraft = if previousDraft.strip.len > 0:
-                previousDraft & "\n\n> Conversa: " & eventText.strip
+              let response = chatWithActiveOkf(eventText)
+              if response.kind == JObject and response.hasKey("ok") and response["ok"].getBool:
+                let answer = jsonStr(response, "answer", "Sem resposta do Metis.")
+                discard appendMessage(
+                  activeSessionId(),
+                  "assistant",
+                  answer
+                )
+                stateSet(appRef.statesValue, "KnowledgeChatResponse", %answer)
+                stateSet(appRef.statesValue, "StatusMessage", %("Resposta local do Metis recebida"))
               else:
-                "> Conversa: " & eventText.strip
-              stateSet(appRef.statesValue, "KnowledgeDraftSummary", %nextDraft)
-              discard updateEntity("Knowledge", jsonInt(knowledge, "id"), proc(row: var JsonNode) =
-                let previous = jsonStr(row, "summary", "")
-                row["summary"] = %(previous & "\n\n> Conversa: " & eventText.strip)
-                row["updatedAt"] = %nowIso()
-                row["revision"] = %(jsonInt(row, "revision", 1) + 1)
-              )
-              discard appendMessage(activeSessionId(), "assistant", "Memória do conhecimento atualizada a partir do documento.")
+                let error = jsonStr(response, "error", "erro do runtime Metis")
+                let answer = "Falha do Metis: " & error
+                discard appendMessage(activeSessionId(), "assistant", answer)
+                stateSet(appRef.statesValue, "KnowledgeChatResponse", %answer)
+                stateSet(appRef.statesValue, "StatusMessage", %("Falha na conversa com o Metis"))
           stateSet(appRef.statesValue, "MessageDraft", %(""))
           refreshContextSummary("conversa atualizada")
       when KnowledgeCreate clicks:
@@ -2661,6 +2717,15 @@ glaucoplastic KnowledgeStudioApplication, application:
         let toKnowledge = knowledgeByTitle(jsonStr(relation, "to"))
         let fromId = jsonInt(fromKnowledge, "id")
         let toId = jsonInt(toKnowledge, "id")
+        if fromId > 0 and toId > 0:
+          discard createKnowledgeRelation(fromId, toId, "related", jsonStr(relation, "label", "relaciona"))
+      when KnowledgeRelate clicks:
+        states.EventValueDraft = eventValue
+        var relation = payload(appStateStr("EventValueDraft"))
+        if relation.kind != JObject:
+          relation = payload("{\"from\":\"Conhecimento identificado na conversa\",\"to\":\"Embeddings e busca semântica\",\"label\":\"explica recuperação\"}")
+        let fromId = jsonInt(knowledgeByTitle(jsonStr(relation, "from")), "id")
+        let toId = jsonInt(knowledgeByTitle(jsonStr(relation, "to")), "id")
         if fromId > 0 and toId > 0:
           discard createKnowledgeRelation(fromId, toId, "related", jsonStr(relation, "label", "relaciona"))
       when KnowledgeSave clicks:
@@ -2768,19 +2833,3 @@ when isMainModule:
   refreshContextSummary("inicialização")
   stateSet(appRef.statesValue, "ActivePage", %"inicio")
   appRef.run(startModel = false)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

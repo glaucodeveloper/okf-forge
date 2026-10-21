@@ -33,6 +33,7 @@ def write_json(path: Path, value: dict) -> None:
 def model_source_from_env() -> str:
     for name in (
         "OKFFORGE_METIS_MODEL",
+        "PLASTICGLAUCO_METIS_MODEL_PATH",
         "GLAUCOPLASTIC_METIS_MODEL_PATH",
         "GLAUCOPLASTIC_METIS_MODEL",
         "GLAUCOPLASTIC_MODEL_PATH",
@@ -40,6 +41,13 @@ def model_source_from_env() -> str:
         value = os.getenv(name, "").strip()
         if value:
             return value
+    # Reuse PlasticGlauco's retained checkpoint before considering a Hub
+    # download. This keeps Study Studio and the framework on one model copy.
+    plasticglauco_model = Path.home() / "dev" / "plasticglauco" / "models" / "Metis-4B"
+    if (plasticglauco_model / "config.json").is_file() and (
+        plasticglauco_model / "model.safetensors.index.json"
+    ).is_file():
+        return str(plasticglauco_model)
     local_model = Path("F:/metis4")
     if local_model.is_dir():
         return str(local_model)
@@ -418,10 +426,10 @@ class MetisSkillRuntime:
             ], add_generation_prompt=True)
             generation_kwargs = dict(
                 **encoded,
-                # Um OKF completo precisa de espaço para as listas, não só
-                # para o resumo. O limite recebido pela API continua sendo
-                # respeitado como piso, mas nunca corta a estrutura cedo.
-                max_new_tokens=max(1200, max_new_tokens),
+                # Interactive chat and editor requests must respect their
+                # caller budget. Full OKF generation uses generate_okf(),
+                # which keeps its separate larger budget below.
+                max_new_tokens=max(16, min(384, max_new_tokens)),
                 do_sample=False,
                 eos_token_id=self.tokenizer.eos_token_id,
                 pad_token_id=self.tokenizer.pad_token_id,
@@ -439,6 +447,38 @@ class MetisSkillRuntime:
                 self.model(**commit_encoded, commit_memory=True, use_cache=False)
             saved = self._save_memory(code, reason="study-exchange", extra_metadata={"last_prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest()})
             return {"ok": True, "code": code, "answer": answer, "tensor": saved}
+
+    def document_chat(self, document: str, prompt: str, max_new_tokens: int = 256) -> dict:
+        """Answer against the active OKF draft without rebuilding skill memory."""
+        prompt = prompt.strip()
+        if not prompt:
+            raise ValueError("Document chat prompt is empty.")
+        document = document.strip()
+        if not document:
+            raise ValueError("Active OKF document is empty.")
+        with self.model_lock:
+            self.ensure_model()
+            system = (
+                "You are the local Metis assistant for an OKF document editor. "
+                "Answer only from the current document. Be concise, preserve the "
+                "document's language, and say when the document lacks the answer."
+            )
+            context = document[:12000]
+            encoded = self._encode([
+                {"role": "system", "content": system},
+                {"role": "user", "content": "Current OKF document:\n" + context + "\n\nQuestion:\n" + prompt},
+            ], add_generation_prompt=True)
+            with self.torch.no_grad():
+                output = self.model.generate(
+                    **encoded,
+                    max_new_tokens=max(16, min(256, max_new_tokens)),
+                    do_sample=False,
+                    eos_token_id=self.tokenizer.eos_token_id,
+                    pad_token_id=self.tokenizer.pad_token_id,
+                )
+            input_len = encoded["input_ids"].shape[-1]
+            answer = self.tokenizer.decode(output[0, input_len:], skip_special_tokens=True).strip()
+            return {"ok": True, "answer": answer}
 
     def context_summary(self, context: dict, max_new_tokens: int = 160) -> dict:
         """Gera um resumo curto da superfície ativa sem gravar memória nova."""
@@ -868,6 +908,8 @@ class Handler(BaseHTTPRequestHandler):
                 self._send(200, self.runtime.load_skill(str(data["code"])))
             elif self.path == "/chat":
                 self._send(200, self.runtime.study_chat(str(data["code"]), str(data.get("prompt", "")), int(data.get("max_new_tokens", 320))))
+            elif self.path == "/document-chat":
+                self._send(200, self.runtime.document_chat(str(data.get("document", "")), str(data.get("prompt", "")), int(data.get("max_new_tokens", 256))))
             elif self.path == "/context-summary":
                 self._send(200, self.runtime.context_summary(dict(data.get("context", {})), int(data.get("max_new_tokens", 160))))
             elif self.path == "/generate-okf":
